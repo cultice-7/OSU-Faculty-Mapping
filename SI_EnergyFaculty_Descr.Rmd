@@ -1,0 +1,1118 @@
+---
+title: "SI Faculty Mapping"
+author: "Brian Cultice"
+date: "3/23/2021"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(include = FALSE)
+
+libraries <- c("tidyverse",
+               "tidytext",
+               "tictoc",
+               "data.table",
+               "here",
+               "future", 
+               "future.apply",
+               "furrr",
+               "pryr",
+               "httr",
+               "jsonlite",
+               "xml2",
+               "rvest",
+               "RSelenium",
+               "stringdist",
+               "topicmodels",
+               "igraph", 
+               "network", 
+               "sna",
+               "ggraph",
+               "visNetwork",
+               "threejs",
+               "networkD3",
+               "ndtv")
+pacman::p_load(char = libraries)
+```
+## Overview of Next Steps
+* Merge all unique authors to salaries database (current and potentially historic)
+* Check for SI affiliates in our "energy adjacent" results
+* Keywords within SI Faculty Research
+* Other to-do/questions
+  - Likelihood of interdisciplinary work for SI/non-SI faculty?
+  
+## Overview of database management
+- Datasets to merge
+  * SI faculty database
+  * SI energy email list
+
+
+## Create keywords and SI faculty databases
+- Create list of the main SI discipline areas
+- Compile all unique keywords from faculty database
+- Compile list of SI faculty and affiliates
+- Read in list of expanded energy faculty from email list
+```{r OSUSal, include=FALSE}
+  # Note: Read in current salaries data from OSU HR
+salaries.dt <- fread(input = here("OSU_FY2020_Salaries.csv"))
+name_v      <- str_trim(str_replace(salaries.dt$NAME, ",", ", "))
+salaries.df <- salaries.dt                              %>%
+  .[, NAME := name_v]                                   %>%
+  setnames(c("LAST_NAME", "FIRST_NAME", "MIDDLE_NAME"),
+           c("Last Name", "First Name", "Middle Name")) %>%
+  .[POSITION_GROUP == "University"]                     %>%
+  as.data.frame()                                       %>%
+  rowwise()                                             %>%
+  mutate(Last_Name_e = str_replace_all(str_to_lower(str_replace_all(`Last Name`,
+                                                    " ",
+                                                    "")),
+                                       pattern     = "[:punct:]",
+                                       replacement = ""))     %>%
+  mutate(Name_fl   = str_trim(str_c(`First Name`,
+                              `Middle Name`,
+                              `Last Name`,
+                              sep = " ")))                    %>%
+  mutate(Name_fl   = str_replace_all(Name_fl,
+                                     "  ",
+                                     " "))                    %>%
+  mutate(Name_fl   = str_replace_all(Name_fl,
+                                     "[:punct:]",
+                                     ""))
+
+write_csv(salaries.df,
+          here("OSU_FY2020_Sal_Edits.csv"))
+```
+
+```{r SI Aff, include=FALSE}
+SI_disc       <- c("Healthy Land, Water & Air Systems",
+                   "Sustainable Energy",
+                   "Smart & Resilient Communities",
+                   "Sustainable Resources",
+                   "Circular Economy")
+SI_energydim  <- c("Energy Technologies",
+                  "Energy Resources",
+                  "Environmental Technologies and Systems",
+                  "Energy Systems Management", 
+                  "Economics, Business, and Policy",
+                  "Human Behavior and Well-Being")
+
+college_sal   <- c("College of Engineering", "College of Medicine",           
+                   "College of Veterinary Med", "Arts and Sciences",             
+                   "Ofc of Business and Finance", "Coll of Education & Human Ecol",
+                   "Office of Academic Affairs", "Office of Human Resources",     
+                   "College of Social Work", "Senior VP Admin & Planning",    
+                   "Ofc of Student Life", "Coll of Food,Agr,Envir Science",
+                   "College of Law", "College of Pharmacy",           
+                   "Senior VP-Executive Officer", "Mansfield Campus",              
+                   "University Advancement", "Marion Campus",                 
+                   "College of Nursing", "Newark Campus",                 
+                   "John Glenn College Public Affa", "Fisher College of Business",    
+                   "Lima Campus", "College of Dentistry",          
+                   "College of Public Health", "College of Optometry",          
+                   "Office of the President", "Office of Legal Affairs",       
+                   "Ofc of Government Affairs", "Board of Trustees",              
+                   "Strategy Management Office")
+
+college_si    <- c("Engineering", "",
+                   "Veterinary Medicine", "ASC",
+                   "", "",
+                   "OAA", "",
+                   "", "",
+                   "", "CFAES",
+                   "Law", "",
+                   "", "Mansfield Campus",
+                   "", "",
+                   "", "",
+                   "Public Affairs", "Business",
+                   "", "",
+                   "Public Health", "", 
+                   "", "",
+                   "", "",
+                   "")
+
+  # Note: Read in SI faculty database and create dot numbers
+SI_faculty.df <- read_csv(here("SI_FacultyAffiliates.csv"))             %>%
+  .[,1:33]
+SI_faculty.df <- SI_faculty.df[order(SI_faculty.df$`Last Name`),]       %>%
+  mutate(SI_faculty_ID       = as.character(1:dim(SI_faculty.df)[1]))   %>%
+  mutate(VP_COLLEGE = "")                                               %>%
+  filter(!is.na(Email))                                                 %>%
+  rowwise()                                                             %>%
+  mutate(Name_Dot = str_sub(Email, 
+                            end = str_locate(Email,
+                                             pattern = "@")[1,1]-1))
+
+  # Note: Grab colleges and match them to salary database names
+SI_match <- SI_faculty.df$`Primary Appointment College` %>%
+  match(college_si)
+for (i in 1:length(SI_match)){
+  SI_faculty.df$VP_COLLEGE[i] <- college_sal[SI_match[i]]
+}
+
+  # Note: Read in current salaries data from OSU HR
+salaries.dt <- fread(input = here("OSU_FY2020_Salaries.csv"))
+name_v      <- str_trim(str_replace(salaries.dt$NAME, ",", ", "))
+salaries.df <- salaries.dt                              %>%
+  .[, NAME := name_v]                                   %>%
+  setnames(c("LAST_NAME", "FIRST_NAME", "MIDDLE_NAME"),
+           c("Last Name", "First Name", "Middle Name")) %>%
+  .[POSITION_GROUP == "University"]                     %>%
+  as.data.frame()                                       %>%
+  rowwise()                                             %>%
+  mutate(Last_Name_e = str_replace_all(str_to_lower(str_replace_all(`Last Name`,
+                                                    " ",
+                                                    "")),
+                                       pattern     = "[:punct:]",
+                                       replacement = ""))     %>%
+  mutate(Name_fl   = str_trim(str_c(`First Name`,
+                              `Middle Name`,
+                              `Last Name`,
+                              sep = " ")))                    %>%
+  mutate(Name_fl   = str_replace_all(Name_fl,
+                                     "  ",
+                                     " "))                    %>%
+  mutate(Name_fl   = str_replace_all(Name_fl,
+                                     "[:punct:]",
+                                     ""))
+
+### Note: First attempt at merging salaries to faculty data; First Name/Last Name
+merge_1 <- left_join(SI_faculty.df, salaries.df,
+                       by = c("Last Name", "First Name")) %>%
+  group_by(SI_faculty_ID)                                 %>%
+  mutate(app = n())                               
+
+  # Capture successful single matches
+merge_1.0 <- merge_1[merge_1$app == 1,] %>%
+  filter(!is.na(IDENTIFIER))                             %>%
+  dplyr::select(one_of("SI_faculty_ID", "NAME", "IDENTIFIER"))   %>%
+  unique()
+
+  # First Name and Last Name; multiple matches: Sorting through multiple matched SI faculty; not worried about multiple matches if joint appointments
+test <- merge_1[merge_1$app > 1,]         %>%
+  group_by(IDENTIFIER)                    %>%
+  mutate(matches = n())                   %>%
+  mutate(ind     = if_else(matches == app,
+                           1,
+                           0))
+test2     <- test                         %>%
+  filter(ind == 0)
+
+dropID    <- c(19692, 28540, 37985, 39731)
+merge_1.1 <- test %>%
+  filter(!(IDENTIFIER %in% dropID))                               %>%
+  dplyr::select(one_of("SI_faculty_ID", "NAME", "IDENTIFIER"))   %>%
+  unique()
+
+
+### Sorting through unmatched SI faculty; match on last name and appointing college
+test <- merge_1[is.na(merge_1$NAME),]     %>%
+  .[,1:35]                                %>%
+  rename(VP_COLLEGE = VP_COLLEGE.x)
+
+merge_2 <- left_join(test, salaries.df,
+                   by = c("Last Name", "VP_COLLEGE")) %>%
+  group_by(SI_faculty_ID)                             %>%
+  mutate(app = n())
+
+  # Keep successful single matches
+merge_2.0 <- merge_2[merge_2$app == 1, ]                         %>%
+  filter(!is.na(IDENTIFIER))                                     %>%
+  dplyr::select(one_of("SI_faculty_ID", "NAME", "IDENTIFIER"))   %>%
+  unique()
+
+  # Multiple merges
+test <- merge_2[merge_2$app > 1,]           %>%
+  group_by(IDENTIFIER)                      %>%
+  mutate(matches = n())                     %>%
+  mutate(ind     = if_else(matches == app,
+                           1,
+                           0))
+
+test2 <- test %>%
+  filter(ind == 0)
+keepID <- c(30222, 5904, 26230, 35459, 22570, 17511, 28498,
+            17949, 33167)  
+merge_2.1 <- test %>%
+  filter(ind == 1 | IDENTIFIER %in% keepID)                      %>%
+  dplyr::select(one_of("SI_faculty_ID", "NAME", "IDENTIFIER"))   %>%
+  unique()
+
+  # Failed matches in second round; Identify identifiers in salaries manually
+test <- merge_2[is.na(merge_2$NAME),]
+
+keepvec <- c(28201, 5406, 23852, NA, NA, 21894, NA, 23593,
+             785, 33784, 33730, NA, NA, 36622)
+merge_2.2 <- test[,1:35]        %>%
+  ungroup()                     %>%
+  mutate(IDENTIFIER = keepvec)  %>%
+  left_join(salaries.df, by = "IDENTIFIER") %>%
+  dplyr::select(one_of("SI_faculty_ID", "NAME", "IDENTIFIER")) 
+
+### Note: Pull together all merges
+temp <- rbind(merge_1.0,
+                  merge_1.1,
+                  merge_2.0,
+                  merge_2.1,
+                  merge_2.2)   %>%
+  rename(Full_Name_Sal = NAME)
+
+SI_sal.m <- SI_faculty.df                                                             %>%
+  dplyr::select(one_of("SI_faculty_ID", "Last Name", "First Name", "Middle Initial", "Email", "Name_Dot"))                                                                 %>%
+  left_join(temp,
+            by = "SI_faculty_ID")
+
+  # Last explicit match
+SI_sal.m[SI_sal.m$SI_faculty_ID==257,"IDENTIFIER"] <- 24099
+write_csv(SI_sal.m,
+          here("SI_Affiliates_Sal_m.csv"))
+```
+
+```{r SI_Aff_Selenium, include=FALSE, echo=FALSE}
+f_findperson <- function(dot){
+  remDr$navigate(OSU_find)
+  
+    # Note: Send test name to field and click
+  remDr$findElement(using = "id", 
+                    value = "name_n")$sendKeysToElement(list(dot))
+  remDr$findElements(using = "xpath", "//input[@type='submit']")[[1]]$clickElement()
+  
+    # Note: Scrape result for names
+  Sys.sleep(0.5)
+  html   <- remDr$getPageSource()[[1]]
+  html.r <- read_html(html)           %>%
+    html_nodes(".results-name")       %>%
+    html_text()
+  if (length(html.r)==0){
+    html.r <- ""
+  }else{
+    html.r <- html.r %>%
+      str_replace(
+        pattern     = "\\n",
+        replacement = ""
+      )                                 %>%
+      str_sub(
+        string = .,
+        end = str_locate(
+          string  =.,
+          pattern = "\\("
+        )[1,1] - 1
+      )                                 %>%
+      str_trim(
+        string = .,
+        side   = c("both")
+      )
+  }
+  return(html.r)
+}
+
+rD <- rsDriver(browser="firefox", port=4545L, verbose=F)
+remDr <- rD[["client"]]
+
+osu_names <- lapply(SI_faculty.df$Name_Dot,
+                    f_findperson)
+osu_names <- osu_names %>%
+  unlist()             %>%
+  str_replace(.,
+              pattern = "\\\\",
+              replacement = "")
+
+```
+
+```{r SI Eng Functions, include=FALSE}
+f_mergesort <- function(id1, tolerance){
+  temp.df <- merge_df[merge_df$Eng_ID == id1,]
+  temp.m  <- stringdist(temp.df$Name_fl.x,
+                        temp.df$Name_fl.y,
+                        method = "jaccard",
+                        q = 2)
+  min_s   <- min(temp.m)
+  col_s   <- match(min_s, temp.m)
+  if (is.na(min_s)){
+    E_id.v  <- temp.df$Eng_ID[col_s]
+    A_id.v  <- NA
+  }else{
+    if (min_s < tolerance){
+      E_id.v    <- temp.df$Eng_ID[col_s]
+      A_id.v    <- temp.df$IDENTIFIER[col_s]
+    }else{
+      E_id.v    <- temp.df$Eng_ID[col_s]
+      A_id.v    <- NA
+    }
+  }
+  output <- list(E_id.v, A_id.v)
+  return(output)
+}
+
+f_mergesort2 <- function(id1, tolerance){
+  temp.df <- merge_df[merge_df$Eng_ID == id1,]
+  temp.m  <- stringdist(temp.df$Name_fl.x,
+                        temp.df$Name_fl.y,
+                        method = "jaccard",
+                        q = 2)
+  min_s   <- temp.m[temp.m < tolerance]
+  
+  E_id <- vector(mode = "numeric",
+                 length = length(min_s))
+  A_id <- vector(mode = "numeric",
+                 length = length(min_s))
+  if (length(min_s)==0){
+    E_id  <- id1
+    A_id  <- NA
+  }else if(is.na(min_s)){
+    E_id  <- id1
+    A_id  <- NA
+  }else{
+    for (i in 1:length(min_s)){
+      col_s   <- match(min_s[i],
+                       temp.m)
+      E_id.v  <- id1
+      A_id.v  <- temp.df$IDENTIFIER[col_s]
+      
+      E_id[i] <- E_id.v
+      A_id[i] <- A_id.v
+    }
+  }
+  output <- list(E_id, A_id)
+  return(output)
+}
+```
+```{r SI Eng, include=FALSE, echo=FALSE}
+### Note: Load Salaries Data
+salaries.df <- read_csv("OSU_FY2020_Sal_Edits.csv")
+### Note: Load Energy Faculty Data
+SI_Eng.df <- read_csv(here("SI_EnergyFaculty_List.csv"))      %>%
+  .[1:288,1:7]
+SI_Eng.df[SI_Eng.df$email== "shelton.1", "email"] <- "sheldon.1"
+SI_Eng.df <- SI_Eng.df                                        %>%
+  mutate(VP_COLLEGE = "",
+         Eng_ID     = 1:288)                                  %>%
+  filter(name != "Allen Klaiber")                             %>%
+  rowwise()                                                   %>%
+  mutate(First_Init = str_sub(name,
+                              end = 1),
+         Name_Dot   = email)                                  %>%
+  mutate(Last_Name_e = str_sub(email,
+                              end = str_locate(email,
+                                               "\\.")[1,1]-1)) %>%
+  mutate(Last_Name_e = str_replace_all(Last_Name_e,
+                                       pattern = "[:punct:]",
+                                       replacement = ""))      %>%
+  mutate(Name_fl   = str_replace_all(name,
+                                     "[:punct:]",
+                                     ""))
+
+
+  # Note: Replace specific names for consistency
+col_rename <- matrix(data = c("Arts & Sciences\nEngineering", "Arts & Sciences",
+                              "Art & Sciences", "Arts & Sciences",
+                              "Byrd Polar", "Arts & Sciences",
+                              "Fisher College of Business", "Fisher",
+                              "Public Affairs", "John Glenn",
+                              "Business", "Fisher"),
+                              ncol = 2,
+                              byrow = T)
+for (i in 1:dim(col_rename)[1]){
+  SI_Eng.df[SI_Eng.df$college==col_rename[i,1], "college"] <- col_rename[i,2]
+}  
+
+  # Note: Create harmonized college names with salary database
+cols_sal <- unique(salaries.dt$VP_COLLEGE)
+cols_si  <- unique(SI_Eng.df$college)
+
+test <- stringdistmatrix(cols_si, cols_sal,
+                         method = "jaccard",
+                         q = 2)
+match_v <- vector(mode   = "character",
+                  length = length(cols_si))
+for (i in 1:length(cols_si)){
+  test_v <- match(min(test[i,],
+                      na.rm = TRUE),
+                  test[i,])
+  match_v[i] <- cols_sal[test_v]
+}
+testmat <- matrix(data  = c(cols_si, match_v),
+                  ncol  = 2,
+                  byrow = F)
+ 
+for (i in 1:dim(testmat)[1]){
+  SI_Eng.df[SI_Eng.df$college == testmat[i,1], "VP_COLLEGE"] <- testmat[i,2]
+}
+
+### Note: Merge using last name and college
+merge_df <- left_join(SI_Eng.df, 
+                      salaries.df, 
+                      by = c("Last_Name_e",
+                             "VP_COLLEGE"))
+
+### Note: Identify best matches using similarity scores
+id_input  <- unique(merge_df$Eng_ID)
+tolerance <- rep(0.4, 
+                 times = length(id_input))
+matches    <- map2(id_input, tolerance, f_mergesort)
+matches.tf <- purrr::transpose(matches)
+matches.df <- data.frame(matrix(unlist(matches.tf), 
+                                       ncol = length(matches.tf), 
+                                       byrow = F)) %>%
+  setnames(c("X1", "X2"),
+           c("Eng_ID", "IDENTIFIER"))
+
+  # Note: Check positive merges
+merge_1 <- SI_Eng.df         %>%
+  left_join(matches.df, 
+            by = "Eng_ID")   %>%
+  filter(!is.na(IDENTIFIER)) %>%
+  dplyr::select("name", "Last_Name_e", "Name_Dot", "Eng_ID", "IDENTIFIER")
+  
+  # Note: Check non merges by merging solely on last name
+merge_df <- SI_Eng.df                  %>%
+  left_join(matches.df,
+            by = "Eng_ID")             %>%
+  filter(is.na(IDENTIFIER))            %>%
+  dplyr::select(!one_of("IDENTIFIER")) %>%
+  left_join(salaries.df,
+            by = "Last_Name_e")
+
+### Note: Sort through second group of unmatched
+id_input  <- unique(merge_df$Eng_ID)
+tol       <- rep(0.6, 
+                 times = length(id_input))
+matches    <- map2(id_input, tol, f_mergesort2)
+matches.tf <- purrr::transpose(matches)
+matches.df <- data.frame(matrix(unlist(matches.tf), 
+                                       ncol = length(matches.tf), 
+                                       byrow = F)) %>%
+  setnames(c("X1", "X2"),
+           c("Eng_ID", "IDENTIFIER"))
+
+### Note: Merge based on similarity scores
+merge_2 <- SI_Eng.df         %>%
+  left_join(matches.df,
+            by = "Eng_ID")   %>%
+  filter(!is.na(IDENTIFIER)) %>%
+  left_join(salaries.df,
+            by = 'IDENTIFIER') %>%
+  group_by(Eng_ID)             %>%
+  mutate(multi = n())          %>%
+  rename(Last_Name_e = Last_Name_e.x)
+
+merge_2.0 <- merge_2[merge_2$multi == 1, ] %>%
+  dplyr::select("name", "Last_Name_e", "Name_Dot", "Eng_ID", "IDENTIFIER")
+
+### Check multiple merges from second round of merges
+merge_2.1 <- merge_2[merge_2$multi > 1, ]
+keep_v <- c(13796, 6509, 12640, 36773, 341, 7135, 32045, 38238,
+            1772)
+merge_2.1 <- merge_2.1[merge_2.1$IDENTIFIER %in% keep_v,] %>%
+  dplyr::select("name", "Last_Name_e", "Name_Dot", "Eng_ID", "IDENTIFIER")      %>%
+  unique()
+
+merge_m <- rbind(merge_1, merge_2.0, merge_2.1)
+drop_v  <- c(merge_1$Eng_ID, merge_2.0$Eng_ID, merge_2.1$Eng_ID) 
+merge_3 <- SI_Eng.df[!(SI_Eng.df$Eng_ID %in% drop_v), ] %>%
+  mutate(IDENTIFIER = NA_real_)                         %>%
+  dplyr::select("name", "Last_Name_e", "Name_Dot", "Eng_ID", "IDENTIFIER")
+
+  # Change specific entries
+change_mat <- matrix(data = c(193, 33167, 156, 24099, 60, 18237, 74, 19318, 114, 3520,
+                              129, 11991, 142, 23852, 150, 17950, 210, 40473, 215, 37783,
+                              236, 2194, 259, 35545, 262, 36598, 265, 36118, 271, 4110),
+                     byrow = T, 
+                     ncol  = 2)
+for (i in 1:dim(change_mat)[1]){
+  merge_3[merge_3$Eng_ID == change_mat[i,1], "IDENTIFIER"] <- change_mat[i,2]
+}
+
+
+SI_eng_m.df <- rbind(merge_m, merge_3)                                     %>%
+  left_join(salaries.df,
+            by = "IDENTIFIER")                                             %>%
+  rename(Last_Name_e = Last_Name_e.x)                                      %>%
+  .[,c("name", "Last_Name_e", "Name_Dot", "Eng_ID", "IDENTIFIER", "NAME")] %>%
+  unique()
+write_csv(SI_eng_m.df,
+          here("SI_EnergyFaculty_Sal_m.csv"))
+```
+```{r Keywords, include=FALSE}
+keywords <- str_to_lower(SI_faculty.df$`SI AFR Research Keyword #1`) 
+```
+
+## Parsing individual authors from coinvestigators
+- Co-investigators are delimited by semi-colons in the raw data; there are different numbers of co-investigators for each proposal.
+- I parse each co-investigator and reshape the data long such that each row is a single author
+
+```{r Parse, echo=FALSE}
+### Proposals Data
+prop_dt <- fread(input = here("RDO_Proposals_2013-2020.csv")) %>%
+  .[`Proposal ID`!=""]
+
+### Note: Creating coinvestigators variables
+coI_v    <- prop_dt$`Co-I`
+coI_c    <- str_count(coI_v, ";")
+coI_l    <- str_locate_all(coI_v, ";")
+
+  # Identify max number of co_I and pairs (for later)
+n       <- 0
+count_v <- vector("numeric",
+                  length = length(coI_v))
+for (i in 1:length(coI_l)){
+  m <- dim(coI_l[[i]])[1]
+  if (m>n){
+    n <- m
+  }
+  if (coI_v[i] == ""){
+    count_t <- 0
+  }else if(coI_v[i] != "" & coI_c[i] == 0){
+    count_t <- 1
+  }else if(coI_v[i] != "" & coI_c[i] > 0){
+    count_t <- factorial(m+2)/((factorial(2))*(factorial((m))))
+  }
+  count_v[i] <- count_t
+}
+
+coI_mat <- matrix(data = "",
+                  nrow = length(coI_v),
+                  ncol = n+1)
+
+for (i in 1:length(coI_v)){
+  if (coI_c[i]==0){
+    coI_mat[i, 1] <- coI_v[i]
+  } else {
+    for (j in 0:coI_c[i]){
+      if (j == 0){
+        coI_mat[i,j+1] <- str_sub(coI_v[i],
+                                  start = 0,
+                                  end   = coI_l[[i]][j+1,1]-1) 
+      } else if (j==coI_c[i]) {
+        coI_mat[i,j+1] <- str_sub(coI_v[i],
+                                  start = coI_l[[i]][j,1]+1)
+      } else {
+        coI_mat[i,j+1] <- str_sub(coI_v[i], 
+                                  start = coI_l[[i]][j,1]+1,
+                                  end   = coI_l[[i]][j+1,1]-1)
+      }
+    }
+  }
+}
+
+  # Create investigators dataset
+prop_inv_dt <- prop_dt %>%
+  .[,c("Proposal ID", "PI Name")]
+for (i in 1:(n+1)){
+  tempname <- paste0("CoI_", i)
+  prop_inv_dt <- prop_inv_dt      %>%
+    .[, tempvar := coI_mat[,i]]   %>%
+    setnames(old = c("tempvar"),
+             new = c(tempname))
+}
+
+prop_inv_dt.m <- prop_inv_dt                   %>%
+  setnames(.,
+           old = c("PI Name"),
+           new = c("CoI_0"))                   %>%
+  melt(id.vars       = c("Proposal ID"),
+       measure       = patterns("^CoI_"),
+       variable.name = c("Investigator_Type"),
+       value.name    = c("Name"))              %>%
+  .[,':=' (PI = if_else(Investigator_Type == "CoI_0",
+                        1,
+                        0))]                   %>%
+  .[, !c("Investigator_Type")]                 %>%
+  .[Name != ""]
+
+fwrite(prop_inv_dt.m,
+       file = here("Proposals_Authors.csv"))
+```
+
+# Data Construction
+## Unique authors and details
+- Create a unique list of faculty observed in the proposals dataset
+- Merge details of each faculty to the unique list
+```{r Authors Func, echo=FALSE}
+f_mergesort <- function(id1, tolerance){
+  temp.df <- authors_dt[authors_dt$A_ID == id1,]
+  temp.m  <- stringdist(temp.df$FirstName,
+                        temp.df$FirstName_e,
+                        method = "jaccard",
+                        q = 2)
+
+  if (is.na(temp.m[1])){
+    A_id.v  <- id1
+    S_id.v  <- NA
+  }else{
+    min_s   <- min(temp.m,
+               na.rm = T)
+    col_s   <- match(min_s, temp.m)
+    if (min_s < tolerance){
+      A_id.v    <- id1
+      S_id.v    <- temp.df$IDENTIFIER[col_s]
+    }else{
+      A_id.v    <- id1
+      S_id.v    <- NA
+    }
+  }
+  output <- list(A_id.v, S_id.v)
+  return(output)
+}
+
+
+```
+```{r Authors, echo=FALSE}
+### Note: Read in Salaries Data
+salaries.df <- read_csv(here("OSU_FY2020_Sal_Edits.csv")) %>%
+  .[,c(1:6, 15:17)]                                       %>%
+  unique()
+
+### Read in Proposal/Author Dataset
+prop_inv_dt.m <- fread(here("Proposals_Authors.csv"))
+
+### Unique Author Names
+authors_dt <- prop_inv_dt.m %>%
+  .[, c("Name")]            %>%
+  .[, ':=' (Name      = str_trim(Name))]             %>%
+  unique()
+
+str_comma  <- str_locate(authors_dt$Name, ",")[,2]
+authors_dt <- authors_dt                                           %>%
+  .[, ':=' (delimiter = str_comma)]                                %>%
+  .[, ':=' (LastName  = str_sub(Name,
+                                start = 1L,
+                                end   = str_comma - 1))]           %>%
+  .[, ':=' (FirstName = str_trim(str_sub(Name,
+                                         start = str_comma + 1)))] %>%
+  .[, ':=' (Name_fl   = str_c(FirstName,
+                              LastName,
+                              sep = " "))]               %>%
+  .[, ':=' (Last_Name_e = str_replace_all(str_to_lower(str_replace_all(LastName,
+                                                           pattern     = "[:punct:]",
+                                                           replacement = "")),
+                                              pattern     = " ",
+                                              replacement = ""))]         %>%
+  .[order(.)]                                                             %>%
+  .[, ':=' (A_ID      = 1:dim(authors_dt)[1])]                            %>%
+  .[,!c("delimiter")]                                                     %>%
+  left_join(salaries.df,
+            by    = "Last_Name_e")                                        %>%
+  as.data.table()                                                         %>%
+  .[,':=' (FirstName_e = str_trim(str_c(`First Name`,
+                                        `Middle Name`,
+                                        sep = " ")))]
+
+### Check first set of merges 
+id_input  <- unique(authors_dt$A_ID)
+tol       <- rep(0.5, 
+                 times = length(id_input))
+matches    <- map2(id_input, tol, f_mergesort)
+matches.tf <- purrr::transpose(matches)
+matches.df <- data.frame(matrix(unlist(matches.tf), 
+                                       ncol = length(matches.tf), 
+                                       byrow = F)) %>%
+  setnames(c("X1", "X2"),
+           c("A_ID", "IDENTIFIER"))
+
+authors_dt <- authors_dt                                   %>%
+  as.data.frame()                                          %>%
+  .[,1:6]                                                  %>%
+  unique()                                                 %>%
+  left_join(matches.df,
+            by = "A_ID")                                   %>%
+  left_join(salaries.df,
+            by = "IDENTIFIER")                             %>%
+  mutate(first_init_a = str_sub(str_trim(FirstName),
+                              end = 1),
+         first_init_s = str_sub(`First Name`,
+                                end = 1))                  %>%
+  mutate(IDENTIFIER = if_else(first_init_a != first_init_s,
+                              NA_real_,
+                              IDENTIFIER))                 %>%
+  .[,c("Name", "A_ID", "IDENTIFIER", "Last_Name_e.x",
+       "Name_fl.x")]                                       %>%
+  rename(LastName_e_trim = Last_Name_e.x,
+         Name_fl = Name_fl.x)                              %>%
+  unique()
+
+  # Note: Hard coded Identifiers
+authors_dt[str_detect(authors_dt$Name, "Conejo"),"IDENTIFIER"] <- 19318
+
+write_csv(authors_dt,
+          here("Proposals_UniqueAuthors.csv"))
+```
+```{r EngFaculty Func, echo=F}
+  # Create a function that takes matching last name combos and sorts through them
+f_mergesort <- function(id1, tolerance){
+  temp.df <- SI_eng_m_fil.df[SI_eng_m_fil.df$Eng_ID == id1,]
+  temp.m  <- stringdist(temp.df$Name_fl.x,
+                        temp.df$Name_fl.y,
+                        method = "jaccard",
+                        q = 2)
+  min_s   <- min(temp.m)
+  col_s   <- match(min_s, temp.m)
+  if (is.na(min_s)){
+    E_id.v  <- temp.df$Eng_ID[col_s]
+    A_id.v  <- NA
+  }else{
+    if (min_s < tolerance){
+      E_id.v    <- temp.df$Eng_ID[col_s]
+      A_id.v    <- temp.df$A_ID[col_s]
+    }else{
+      E_id.v    <- temp.df$Eng_ID[col_s]
+      A_id.v    <- NA
+    }
+  }
+  output <- list(E_id.v, A_id.v)
+  return(output)
+}
+
+f_mergesort2 <- function(id1, tolerance){
+  temp.df <- SI_eng_m_nfil.df2[SI_eng_m_nfil.df2$Eng_ID == id1,]
+  temp.m  <- stringdist(temp.df$Name_fl.x,
+                        temp.df$Name_fl,
+                        method = "jaccard",
+                        q = 2)
+  min_s   <- min(temp.m)
+  col_s   <- match(min_s, temp.m)
+  if (is.na(min_s)){
+    E_id.v  <- temp.df$Eng_ID[col_s]
+    A_id.v  <- NA
+  }else{
+    if (min_s < tolerance){
+      E_id.v    <- temp.df$Eng_ID[col_s]
+      A_id.v    <- temp.df$A_ID.y[col_s]
+    }else{
+      E_id.v    <- temp.df$Eng_ID[col_s]
+      A_id.v    <- NA
+    }
+  }
+  output <- list(E_id.v, A_id.v)
+  return(output)
+}
+```
+
+```{r EngFaculty, include=F, echo=F}
+
+### Read in 2020
+salaries_dt <- fread(input = here("OSU_FY2020_Sal_Edits.csv"))
+name_v      <- str_trim(str_replace(salaries_dt$NAME, ",", ", "))
+salaries_dt <- salaries_dt                              %>%
+  .[, NAME := name_v]                                   %>%
+  .[POSITION_GROUP == "University"]
+
+### Read in authors data table
+authors_df <- read_csv(here("Proposals_UniqueAuthors.csv"))
+
+### Read in energy faculty/sal
+SI_eng_m.df <- read_csv(here("SI_EnergyFaculty_Sal_m.csv"))
+
+### Test Merge
+  # Filter missing names from energy faculty database; test to see if any matches with authors
+SI_eng_m_fil.df <- SI_eng_m.df                                     %>%
+  filter(is.na(NAME))                                              %>% 
+  rename(Name_fl         = name)                                   %>%
+  mutate(LastName_e_trim = str_replace(Last_Name_e,
+                                        pattern     = "[:punct:]",
+                                        replacement = ""))         %>%
+  left_join(authors_df,
+            by = "LastName_e_trim")
+
+id_input  <- unique(SI_eng_m_fil.df$Eng_ID)
+tolerance <- rep(0.4, 
+                 times = length(id_input))
+matches    <- map2(id_input, tolerance, f_mergesort)
+matches.tf <- purrr::transpose(matches)
+matches.df <- data.frame(matrix(unlist(matches.tf), 
+                                       ncol = length(matches.tf), 
+                                       byrow = F))
+for (i in 1:dim(matches.df)[1]){
+  SI_eng_m_fil.df[SI_eng_m_fil.df$Eng_ID == matches.df[i,1],"A_ID"] <- matches.df[i,2]
+}
+SI_eng_m_fil.df <- SI_eng_m_fil.df %>%
+  unique()                         %>%
+  left_join(authors_dt,
+            by = "A_ID")           %>%
+  dplyr::select(one_of("Name_Dot", "Eng_ID", "IDENTIFIER", "A_ID")) %>%
+  unique()
+
+  # Checking those with a salary match
+SI_eng_m_nfil.df <- SI_eng_m.df %>%
+  filter(!is.na(NAME))          %>% 
+  rename(Name_fl         = name) %>%
+  rename(Name = NAME)            %>%
+  left_join(authors_dt,
+            by = "Name")
+
+  # For those without direct name match, match by last name and sort via similarity scores
+SI_eng_m_nfil.df2 <- SI_eng_m_nfil.df %>%
+  filter(is.na(LastName_e_trim))      %>%
+  mutate(LastName_e_trim = str_replace(Last_Name_e,
+                                        pattern     = "[:punct:]",
+                                        replacement = ""))         %>%
+  left_join(authors_dt,
+            by = "LastName_e_trim")
+
+
+id_input  <- unique(SI_eng_m_nfil.df2$Eng_ID)
+tolerance <- rep(0.4, 
+                 times = length(id_input))
+matches    <- map2(id_input, tolerance, f_mergesort2)
+matches.tf <- purrr::transpose(matches)
+matches.df <- data.frame(matrix(unlist(matches.tf), 
+                                       ncol = length(matches.tf), 
+                                       byrow = F))
+for (i in 1:dim(matches.df)[1]){
+  SI_eng_m_nfil.df2[SI_eng_m_nfil.df2$Eng_ID == matches.df[i,1],"A_ID"] <- matches.df[i,2]
+}
+SI_eng_m_nfil.df2 <- SI_eng_m_nfil.df2 %>%
+  unique()                             %>%
+  left_join(authors_dt,
+            by = "A_ID")               %>%
+  rename(IDENTIFIER = IDENTIFIER.x)    %>%
+  dplyr::select(one_of("Name_Dot", "Eng_ID", "IDENTIFIER", "A_ID")) %>%
+  unique()
+
+SI_eng_m_nfil.df <- SI_eng_m_nfil.df %>%
+  rename(IDENTIFIER = IDENTIFIER.x)   %>%
+  dplyr::select(one_of("Name_Dot", "Eng_ID", "IDENTIFIER", "A_ID"))
+SI_eng_m_auth <- rbind(SI_eng_m_fil.df, SI_eng_m_nfil.df, SI_eng_m_nfil.df2) %>%
+  unique()
+
+  # Note: Drop the weird duplicate
+SI_eng_m_auth <- SI_eng_m_auth %>%
+  filter(!(Eng_ID == 8 & !is.na(A_ID)))
+write_csv(SI_eng_m_auth,
+          here("SI_EnergyFaculty_Auth_m.csv"))
+```
+
+```{r AffAuth Func, echo=F}
+f_mergesort <- function(id1, tolerance){
+  temp.df <- SI_Fac_m1[SI_Fac_m1$SI_faculty_ID == id1,]
+  temp.m  <- stringdist(temp.df$Name_fl.x,
+                        temp.df$Name_fl.y,
+                        method = "jaccard",
+                        q = 2)
+  min_s   <- min(temp.m)
+  col_s   <- match(min_s, temp.m)
+  if (is.na(min_s)){
+    E_id.v  <- temp.df$SI_faculty_ID[col_s]
+    A_id.v  <- NA
+  }else{
+    if (min_s < tolerance){
+      E_id.v    <- temp.df$SI_faculty_ID[col_s]
+      A_id.v    <- temp.df$A_ID[col_s]
+    }else{
+      E_id.v    <- temp.df$SI_faculty_ID[col_s]
+      A_id.v    <- NA
+    }
+  }
+  output <- list(E_id.v, A_id.v)
+  return(output)
+}
+```
+```{r AffAuth, echo=F}
+### Note: Read in merged affiliates data
+SI_Fac.df <- read_csv(here("SI_Affiliates_Sal_m.csv"))         %>%
+  rowwise()                                                    %>%
+  mutate(Last_Name_e = str_sub(Name_Dot,
+                              end = str_locate(Name_Dot,
+                                               "\\.")[1,1]-1)) %>%
+  mutate(Last_Name_e = str_replace_all(Last_Name_e,
+                                       pattern = "[:punct:]",
+                                       replacement = ""))      %>%
+  mutate(First_Name_s = str_trim(str_sub(Full_Name_Sal,
+                                         start = str_locate(Full_Name_Sal, ",")[1,1]+1)),
+         Last_Name_s = str_trim(str_sub(Full_Name_Sal,
+                                        end = str_locate(Full_Name_Sal, ",")[1,1]-1))) %>%
+  mutate(Name_fl = str_c(First_Name_s, Last_Name_s,
+                         sep = " "))
+
+### Note: Read in Authors database
+authors_df <- read_csv(here("Proposals_UniqueAuthors.csv"))
+
+### Note: First test merge with authors database
+SI_Fac_m1 <- SI_Fac.df                                             %>%
+  mutate(LastName_e_trim = str_replace(Last_Name_e,
+                                        pattern     = "[:punct:]",
+                                        replacement = ""))         %>%
+  left_join(authors_df,
+            by = "LastName_e_trim")
+
+### Note: Sort through potential matches
+id_input  <- unique(SI_Fac_m1$SI_faculty_ID)
+tolerance <- rep(0.5, 
+                 times = length(id_input))
+matches    <- map2(id_input, tolerance, f_mergesort)
+matches.tf <- purrr::transpose(matches)
+matches.df <- data.frame(matrix(unlist(matches.tf), 
+                                       ncol = length(matches.tf), 
+                                       byrow = F))
+for (i in 1:dim(matches.df)[1]){
+  SI_Fac_m1[SI_Fac_m1$SI_faculty_ID == matches.df[i,1],"A_ID"] <- matches.df[i,2]
+}
+SI_Fac_m1 <- SI_Fac_m1                                                     %>%
+  rename(IDENTIFIER = IDENTIFIER.x)                                        %>%
+  dplyr::select(one_of("Name_Dot", "SI_faculty_ID", "IDENTIFIER", "A_ID")) %>%
+  unique()
+write_csv(SI_Fac_m1,
+          here("SI_FacAffiliates_Auth_m.csv"))
+```
+## Creating Dataset of Binary Pairs of Researchers
+- Create a dataset of all observed pairs of researchers to create edges between nodes
+- Merge solo authored proposals to this dataset
+
+```{r Binary, echo=FALSE}
+### Create a dataset of all pairs of connected researchers
+count <- sum(count_v)
+  # Pre-populate a pairs matrix
+pairs_mat <- matrix(data = "",
+                    nrow = count,
+                    ncol = 3)
+
+  # Populate pairs matrix
+row_ind <- 1
+for (i in 1:dim(prop_inv_dt)[1]){
+  index <- 0
+  for (j in 2:dim(prop_inv_dt)[2]){
+    inv <- if(prop_inv_dt[[i,j]] != ""){
+      index <- index + 1
+    }
+  }
+  
+  if (index > 1){
+    combs     <- factorial(index)/(factorial(2)*factorial(index-2))
+    row_mat   <- matrix(data = NA, 
+                        nrow = combs,
+                        ncol = 2)
+    row_ind1  <- 1
+    for (j in 1:(index-1)){
+      row_mat[row_ind1:(row_ind1 + index-j-1),1] <- rep(j, times = (index-j))
+      row_ind1                                   <- row_ind1 + (index-j)
+    }  
+    row_ind2  <- 1
+    for (j in 1:(index-1)){
+      row_mat[row_ind2:(row_ind2 + index-j-1),2] <- (j+1):index
+      row_ind2                                   <- row_ind2 + (index-j)
+    }
+    
+    for (j in 1:combs){
+      pairs_mat[row_ind + j - 1, 1] <- prop_inv_dt$`Proposal ID`[i]
+      pairs_mat[row_ind + j - 1, 2] <- prop_inv_dt[[i, row_mat[[j,1]]+1]]
+      pairs_mat[row_ind + j - 1, 3] <- prop_inv_dt[[i, row_mat[[j,2]]+1]]
+    }
+    row_ind <- row_ind + combs
+  }
+}
+prop_pairs_dt <- data.table("Proposal ID" = pairs_mat[,1],
+                            "Investigator1" = pairs_mat[,2],
+                            "Investigator2" = pairs_mat[,3]) %>%
+  .[,Investigator1 := str_trim(Investigator1)]               %>%
+  .[,Investigator2 := str_trim(Investigator2)]               %>%
+  .[!(`Proposal ID` == "")]
+
+  # Merge solo proposals to pairs dt
+prop_solo_dt <- prop_inv_dt            %>%
+  .[CoI_1 == "", 1:2]                  %>%
+  .[, ':=' (Investigator1 = `CoI_0`,
+            Investigator2 = "")]       %>%
+  .[,c(1, 3:4)]
+
+prop_binary_dt <- data.table::rbindlist(list(prop_pairs_dt, prop_solo_dt))
+fwrite(prop_binary_dt,
+       file = here("Proposals_FacultyPairs.csv"))
+```
+## Using merged author data and SI energy faculty dataset to identify "adjacent" researchers
+```{r Identify, include=FALSE, echo=FALSE}
+SI_Eng_m_auth <- fread(here("SI_EnergyFaculty_Auth_m.csv"))
+  
+SI_sal.m      <- fread(here("SI_Affiliates_Sal_m.csv")) %>%
+  filter(!is.na(IDENTIFIER))
+
+### Unique Author Names
+authors_dt <- read_csv(here("Proposals_UniqueAuthors.csv")) %>%
+  left_join(SI_Eng_m_auth,
+            by = "A_ID")                                    %>%
+  rename(IDENTIFIER = IDENTIFIER.x)                         %>%
+  left_join(SI_sal.m,
+            by = "IDENTIFIER")                              %>%
+  .[,c("Name", "A_ID", "Eng_ID", "IDENTIFIER", "SI_faculty_ID")]
+
+col_idx    <- grep("A_ID", names(authors_dt))
+authors_dt <- authors_dt[, c(col_idx, (1:ncol(authors_dt))[-col_idx])]
+
+### Note: Ensure uniqueness of authors
+authors_uni_dt <- authors_dt %>%
+  filter(!(A_ID == 389 & Eng_ID == 189) &
+         !(A_ID == 2650 & Eng_ID == 158) &
+         !(A_ID == 3025 & Eng_ID == 271))
+
+### Note: Load in proposals and unique authors
+prop_inv_dt.m  <- read_csv(here("Proposals_Authors.csv"))
+
+### Note: Read in binary pairs
+inv1_id <- data.frame("A_ID1" = authors_dt$A_ID,
+                      "Name1" = authors_dt$Name)
+inv2_id <- data.frame("A_ID2" = authors_dt$A_ID,
+                      "Name2" = authors_dt$Name)
+authors_bin_df <- read_csv(here("Proposals_FacultyPairs.csv")) %>%
+  left_join(inv1_id,
+            by = c("Investigator1" = "Name1"))                 %>%
+  left_join(inv2_id,
+            by = c("Investigator2" = "Name2"))
+col_idx    <- grep("A_ID1", names(authors_bin_df))
+col_idx2   <- grep("A_ID2", names(authors_bin_df))
+authors_bin_df <- authors_bin_df[, c(col_idx, col_idx2, (1:ncol(authors_bin_df))[-c(col_idx, col_idx2)])]
+authors_bin_df <- authors_bin_df %>%
+  group_by(A_ID1, A_ID2)         %>%
+  mutate(weight = n())
+
+authors_edge_df <- authors_bin_df  %>%
+  dplyr::select(!c("Proposal ID")) %>%
+  unique()
+
+### Note: Identify "Adjacent" Energy Faculty via proposals
+adjacent      <- prop_inv_dt.m                        %>%
+  left_join(authors_dt,
+            by = "Name")                              %>%
+  group_by(`Proposal ID`)                             %>%
+  mutate(ind = length(unique(Eng_ID)))                %>%
+  ungroup()                                           %>%
+  filter(ind > 1)                                     %>%
+  dplyr::select(!one_of("ind"))
+
+authors_bin_adj  <- authors_bin_df                   %>%
+  filter(`Proposal ID` %in% adjacent$`Proposal ID`)
+authors_edge_adj <- authors_bin_adj  %>%
+  dplyr::select(!c("Proposal ID"))   %>%
+  unique()                           %>%
+  filter(!is.na(A_ID2))              %>%
+  filter(weight >4)
+
+authors_uni_adj <- authors_uni_dt %>%
+  filter(A_ID %in% c(authors_edge_adj$A_ID1, authors_edge_adj$A_ID2)) %>%
+  mutate(SI_faculty_ind = if_else(is.na(SI_faculty_ID),
+                                  1,
+                                  2))
+
+### Note: Network Plotting
+net <- igraph::graph_from_data_frame(d        = authors_edge_adj,
+                                     vertices = authors_uni_adj,
+                                     directed = F)
+clrs         <- c("green", "gold")
+V(net)$color <- clrs[V(net)$SI_faculty_ind]
+E(net)$width <- E(net)$weight/3
+plot(net,
+     vertex.label = NA,
+     vertex.size  = 5,
+     layout = layout_with_graphopt(net, charge=0.01),
+     main = "Energy Adjacent Faculty Network (min: 4 Co-Proposals)")
+legend(x=-1.5, y=-1.1, c("NonSI", "SI"), pch=21,
+       pt.bg=clrs, pt.cex=2, cex=.8, bty="n", ncol=1)
+
+  # group_by(A_ID)                                      %>%
+  # mutate(Appearances = n())                           %>%
+  # unique()                                            %>%
+  # left_join(salaries.df,
+  #           by = "IDENTIFIER")                        %>%
+  # filter(!is.na(IDENTIFIER))                          %>%
+  # .[,c(1,5:6, 13:16)]
+
+### Note: 
+```
+

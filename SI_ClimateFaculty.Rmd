@@ -1,0 +1,440 @@
+---
+title: "SI_ClimateChange"
+author: "Brian Cultice"
+date: "6/11/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+libraries <- c("tidyverse",
+               "tidytext",
+               "tictoc",
+               "data.table",
+               "np",
+               "caTools",
+               "here",
+               "future", 
+               "future.apply",
+               "furrr",
+               "pryr",
+               "httr",
+               "jsonlite",
+               "xml2",
+               "rvest",
+               "RSelenium",
+               "stringdist",
+               "topicmodels",
+               "wordcloud2")
+pacman::p_load(char = libraries)
+```
+
+
+```{r SI Fac, echo=F, message=FALSE}
+### Note: Read in merged affiliates data
+SI_Fac.df <- read_csv(here("SI_Affiliates_Sal_m.csv"))
+
+### Note: Read in Fac to Authors crosswalk
+SI_walk <- read_csv(here("SI_FacAffiliates_Auth_m.csv"))
+
+### Note: Read in raw affiliates data for keywords
+SI_faculty.df <- read_csv(here("SI_FacultyAffiliates.csv"))             %>%
+  .[,1:33]
+SI_faculty.df <- SI_faculty.df[order(SI_faculty.df$`Last Name`),]       %>%
+  mutate(SI_faculty_ID       = 1:dim(SI_faculty.df)[1])                 %>%
+  mutate(VP_COLLEGE = "")                                               %>%
+  filter(!is.na(Email))                                                 %>%
+  rowwise()                                                             %>%
+  mutate(Name_Dot = str_sub(Email, 
+                            end = str_locate(Email,
+                                             pattern = "@")[1,1]-1))    %>%
+  left_join(SI_walk,
+            by = "Name_Dot")                                            %>%
+  rename(SI_faculty_ID = SI_faculty_ID.x)                               %>%
+  dplyr::select(!one_of("SI_faculty_ID.y"))
+```
+
+```{r Proposals, echo=F, message=F}
+### Note: Unique Authors
+prop_ua <- read_csv(here("Proposals_UniqueAuthors.csv"))
+
+### Note: Authors to Prop IDs
+prop_ap <- read_csv(here("Proposals_Authors.csv"))
+
+### Note: Full authors data
+prop_raw <- read_csv(here("RDO_Proposals_2013-2020.csv"))[1:31593,] %>%
+  mutate(Title = str_to_lower(Title))                               %>%
+  filter(!is.na(Title))
+
+### Note: Publications Data
+
+### Note: Keywords
+keywords.dt <- fread(here("IGS", "IGS_Topics.csv"))
+
+### Note: SI Keywords
+data(stop_words)
+  # Note: Tracker of overall usefulness of keywords. Trashkeywords
+keepvar_v  <- names(SI_faculty.df)[c(27:31, 34)]
+SI_keywords.df <- SI_faculty.df %>%
+  dplyr::select(one_of(keepvar_v))                                                %>%
+  pivot_longer(!SI_faculty_ID, names_to = "Keyword_Number", values_to = "Phrase") %>%
+  filter(!is.na(Phrase))                                                          %>%
+  .[,c("SI_faculty_ID", "Keyword_Number", "Phrase")]                              %>%
+  mutate(Phrase = str_to_lower(Phrase))                                           %>%
+  unique()                                                                        %>%
+  unnest_tokens(word, Phrase)                                                     %>%
+  anti_join(stop_words)                                                           %>%
+  group_by(SI_faculty_ID, Keyword_Number)                                         %>%
+  summarize(across(word,
+                  ~ paste(.x, collapse = " ")))                                   %>%
+  mutate(Keyword_Number = str_sub(Keyword_Number, start = -1))                    %>%
+  mutate(SI_kID = paste0(SI_faculty_ID, "_", Keyword_Number))
+
+SI_keywords_u.df <- SI_keywords.df %>%
+    .[,c("word")]                  %>%
+  unique()                         %>%
+  mutate(SI_ukID = row.names(.))
+```
+
+## Identifying specializations of OSU researchers within a topic area
+
+### Word/topic associations within an inquiry area
+  - Within a keyword/topic area, identify proposals that include the keyword in the title
+  - Other "meaningful" words in those titles create a set of words or topics in that space
+  - Searches for those subtopics generate new collection of words/associations, giving a bigger picture of what topics researchers are focused on that intersect with the larger topic area (in this case, climate)
+  
+### Researcher Networks within an inquiry area
+  - Within a topic area, identify the proposals that include the keyword(s) in the title
+  - Affiliated faculty for the filtered proposals compose the researchers operating within or adjacent to the main topic area (e.g. climate). 
+  - The titles of their other proposals provide context as to what they work on or specialize in, at least in their proposed work
+
+### SI affiliated researchers
+  - Each SI affiliate provides a set of keywords describing their work
+  - For any root topic area, SI affiliates that are coinvestigators on filtered proposals provide a set of keywords that describe in detail the focus of the affiliates
+  - These keywords can be used to query the proposals dataset for affiliated faculty or projects; this is particularly useful for describing the strengths of the university
+  
+### 
+```{r Keywords Test, echo=F, message=F}
+aca_stopwords <- c("research", "collaborat", "understand", "analys", "role",
+                   "student", "enable", "learn", "school", "inform", "dataset", "enhanc",
+                   "perform", "control", "engagement", "assess", "doctoral", "ii",
+                   "science", "dissertation", "support", "implication", "study", "project", "manage", "improve",
+                   "fellowship", "[:digit:]", "effect",
+                   "impact", "role", "approach", "investigat", "model", "experiment", "improving", "data",
+                   "develop", "grant", "center")
+
+### Note: This function sorts through SI keyword phrases and finds matches based on q-gram distances in the proposal database
+f_mergesort <- function(id1, tolerance){
+  temp.df  <- prop_SI[prop_SI$SI_kID == id1,]
+  temp.df2 <- prop_raw %>%
+    mutate(Title = str_to_lower(Title))
+  temp.m  <- stringdist(temp.df$Phrase,
+                        temp.df2$Title,
+                        method = "jaccard",
+                        q = 2)
+  temp.m[temp.m < tolerance]  <- 0
+  temp.m[temp.m >= tolerance] <- 1
+  
+  temp.df2 <- temp.df2   %>%
+    mutate(ind = temp.m) %>%
+    filter(ind == 0)
+  prop_id_v <- temp.df2$`Proposal ID
+  
+  output <- list(id1, prop_id_v)
+  return(output)
+}
+
+f_prop_to_people <- function(keyword){
+
+  keyword     <- "energy storage"
+  phrase_size <- 1
+  
+  ### Note: Test proposal title based keywords; tokenize words in the titles
+  prop_f1_word <- prop_raw[str_detect(prop_raw$Title, keyword),] %>%
+    .[,c("Proposal ID", "Title")]                                %>%
+    unnest_tokens(word, Title)                                   %>%
+    anti_join(stop_words, by = "word")                           %>%
+    mutate(Layer = 1)
+  
+  ### Note: Grab unique proposal ID's that inlcude the keyword
+  prop_IDs <- prop_f1_word[,"Proposal ID"] %>%
+    unique()
+    
+  ### Note: GrabIDs and author names
+  prop_f1_auth <- prop_ap[prop_ap$`Proposal ID` %in% prop_IDs$`Proposal ID`,] %>%
+    .[,c("Name")]                                                             %>%
+    group_by(Name)                                                            %>%
+    mutate(Count = n())                                                       %>%
+    unique()
+  
+  ### Note: Crosswalk to Faculty
+  prop_f1_walk <- prop_ua[prop_ua$Name %in% prop_f1_auth$Name,] %>%
+    left_join(SI_walk,
+              by = "A_ID",
+              suffix = c("", ".y"))                             %>%
+    dplyr::select(!one_of("IDENTIFIER.y"))
+    
+  
+  ### Note: SI Faculty Keywords/specializations
+  keepvar_v  <- names(SI_faculty.df)[c(27:31)]
+  keepvar_v2 <- names(prop_f1_walk)[7]
+  
+  prop_f1_SI <- prop_f1_walk            %>%
+    left_join(SI_faculty.df,
+              by     = "SI_faculty_ID",
+              suffix = c("", ".y"))     %>%
+    .[,c(keepvar_v2, keepvar_v)]        %>%
+    filter(!is.na(SI_faculty_ID))       %>%
+    pivot_longer(!SI_faculty_ID, names_to = "Keyword_Number", values_to = "Phrase") %>%
+    filter(!is.na(Phrase))                                                          %>%
+    mutate(Keyword_Number = str_sub(Keyword_Number, start = -1))
+
+  
+  ### Note: Grab titles of authors affiliated with keywords (excluding climate)
+    # Note: Exclude climate related proposals
+  prop_f2_raw <- prop_raw         %>%
+    anti_join(prop_IDs,
+              by = "Proposal ID")
+
+    # Note: Grab proposals of authors from first tranche (e.g. climate related proposals)
+  prop_f2_prop <- prop_ap[prop_ap$Name %in% prop_f1_auth$Name,] %>%
+    .[,c("Proposal ID")]                                        %>%
+    unique()
+  
+    # Note: Grab titles from larger tranch of proposals
+  prop_f2_word <- prop_f2_raw %>%
+    .[prop_f2_raw$`Proposal ID` %in% prop_f2_prop$`Proposal ID`,] %>%
+    .[,c("Proposal ID", "Title")]                                 %>%
+    unnest_tokens(word, Title)                                    %>%
+    anti_join(stop_words, by = "word")                            %>%
+    mutate(Layer = 2)
+  
+    # Note: Grab second level network of authors from new "tranche"
+  prop_f2_auth <- prop_ap[prop_ap$`Proposal ID` %in% prop_f2_prop$`Proposal ID`,] %>%
+    .[,c("Name")]                                                                 %>%
+    group_by(Name)                                                                %>%
+    mutate(Count = n())                                                           %>%
+    unique()
+  
+    # Note: Create crosswalk for second layer of authors; merge with SI keywords dataset
+  prop_f2_walk <- prop_ua[prop_ua$Name %in% prop_f2_auth$Name,] %>%
+    left_join(SI_walk,
+              by = "A_ID",
+              suffix = c("", ".y"))                             %>%
+    dplyr::select(!one_of("IDENTIFIER.y"))
+    
+  
+  ### Note: SI Faculty Keywords/specializations
+  keepvar_v  <- names(SI_faculty.df)[c(27:31)]
+  keepvar_v2 <- names(prop_f2_walk)[7]
+  
+  prop_f2_SI <- prop_f2_walk            %>%
+    left_join(SI_faculty.df,
+              by     = "SI_faculty_ID",
+              suffix = c("", ".y"))     %>%
+    .[,c(keepvar_v2, keepvar_v)]        %>%
+    filter(!is.na(SI_faculty_ID))       %>%
+    pivot_longer(!SI_faculty_ID, names_to = "Keyword_Number", values_to = "Phrase") %>%
+    filter(!is.na(Phrase))                                                          %>%
+    mutate(Keyword_Number = str_sub(Keyword_Number, start = -1))
+  
+    # Note: Combine words from first tranche and second tranche; remove academic buzzword bullshittery
+  prop_words <- bind_rows(prop_f1_word, prop_f2_word) %>%
+    rowwise()                                         %>%
+    mutate(aca_ind = str_detect(word,
+                                paste(keyword, aca_stopwords, 
+                                      collapse = "|",
+                                      sep      = "|")))                %>%
+    filter(aca_ind == FALSE)                                           %>%
+    dplyr::select(!one_of("aca_ind"))
+  
+    # Note: Count instances of words in combined data frame
+  prop_count <- prop_words                %>%
+    dplyr::select(!one_of("Proposal ID")) %>%
+    group_by(word, Layer)                 %>%
+    mutate(count=n())                     %>%
+    unique()                              %>%
+    ungroup()                             %>%
+    group_by(Layer)                       %>%
+    mutate(TotalWords = sum(count))       %>%
+    ungroup()                             %>%
+    mutate(Share = count/TotalWords)      %>%
+    filter(count > 1)
+  
+  ### Note: Merge together SI keywords; search proposal titles for all phrases
+  prop_SI <- bind_rows(prop_f1_SI, prop_f2_SI) %>%
+    unique()                                   %>%
+    mutate(SI_kID = paste0(SI_faculty_ID, "_", Keyword_Number)) %>%
+    mutate(Phrase = str_to_lower(Phrase))
+  
+  ### Note: Generate sets of proposals that fit into our faculty speciality areas based on text matching
+  # df_kw <- prop_SI
+  # df_p  <- prop_raw
+  # id_v  <- prop_SI$SI_kID
+  # id1   <- id_v[4]
+  # tolerance <- 0.70
+  inp_list <- list(prop_SI$SI_kID, rep(0.65, 
+                                       times = length(prop_SI$SI_kID)))
+  out_list <- pmap(inp_list, f_mergesort)
+  test <- purrr::transpose(out_list)
+  
+  ind_vec <- rep(0, times = length(test[[2]]))
+  cnt_vec <- rep(0, times = length(test[[2]]))
+  for (i in 1:length(test[[2]])){
+    if (length(test[[2]][[i]])>100){
+      ind_vec[i] <- test[[1]][[i]][1]
+      cnt_vec[i] <- length(test[[2]][[i]])
+    }
+  }
+  ind_vec <- ind_vec[ind_vec != 0]
+  cnt_vec <- cnt_vec[cnt_vec != 0]
+  ind.df  <- data.frame(SI_kID = ind_vec,
+                        count  = cnt_vec) %>%
+    left_join(prop_SI,
+              by = "SI_kID")
+  
+  ### Note: Generate wordcloud
+  # define a nice color palette
+  pal <- brewer.pal(8,"Dark2")
+  
+  # plot the 50 most common words
+
+  prop_count %>% 
+  with(wordcloud(word, count, random.order = FALSE, max.words = Inf, colors=pal))
+  
+  
+}
+
+lists <- f_prop_to_people("Lithium")
+```
+
+```{r FuzzyMatching, echo=F, message=F}
+### Note: Identifying length specific tolerances
+f_tolerances <- function(phrase){
+  temp.v   <- phrase 
+  temp.df2 <- prop_raw %>%
+    mutate(Title = str_to_lower(Title))
+  temp.m  <- stringdist(temp.v,
+                        temp.df2$Title,
+                        method = "jaccard",
+                        q = 2)
+  
+  ### Grab Length of phrase and string; get difference
+  length_prop.v <- str_length(temp.df2$Title)
+  length_phr.v  <- str_length(temp.v)
+  
+  diff.v <- vector(mode = "numeric",
+                   length = length(length_prop.v))
+  for (i in 1:length(length_prop.v)){
+    diff.v[i] <- length_prop.v[i] - length_phr.v
+  }
+  
+  output <- list(temp.m, diff.v)
+  return(output)
+}
+### Note: Run tolerance function
+tol.l <- map(SI_keywords_u.df$word, f_tolerances)
+
+### Note: Combine runs into a data frame
+simscore.v <- vector(mode = "double")
+diff.v     <- vector(mode = "double")
+SI_kid.v  <- vector(mode = "character")
+for (i in 1:length(tol.l)){
+  # Similarity for phrase i
+  simscore.v <- c(simscore.v, tol.l[[i]][[1]])
+  diff.v     <- c(diff.v,     tol.l[[i]][[2]])
+  SI_kid.v   <- c(SI_kid.v,   rep(SI_keywords_u.df$SI_ukID[i],
+                                  times = length(tol.l[[i]][[1]])))
+}
+sim.df <- data.frame("SI_kid"   = SI_kid.v,
+                     "SimScore" = simscore.v,
+                     "SizeDif"  = diff.v)
+rm(simscore.v, diff.v, SI_kid.v)
+
+# plot(sim.df[sim.df$SI_kid == "30", "SizeDif"], sim.df[sim.df$SI_kid == "30", "SimScore"])
+# test.df <- sim.df[sim.df$SI_kid == "30",] %>%
+#   filter(SimScore != 1)
+# plot(test.df[test.df$SI_kid == "30", "SizeDif"], test.df[test.df$SI_kid == "30", "SimScore"])
+
+### Try to non-parametrically fit phrase data
+
+  # Note: Train/test split w/ random number generator
+set.seed(69)
+index.v <- runif(10000,
+                 min = 1,
+                 max = dim(sim.df)[1])
+train.1 <- sim.df[index.v,]
+
+  # Note: Train/test split
+# splitsize <- 0.001
+# set.seed(101) 
+# sample <- sample.split(sim.df$SI_kid, 
+#                        SplitRatio = splitsize)
+# train  <- subset(sim.df, sample == TRUE)
+# test   <- subset(sim.df, sample == FALSE)
+
+np_obj <- npreg(SimScore ~ SizeDif,
+                regtype  = "ll",
+                data      = train.1)
+summary(np_obj)
+plot(np_obj, 
+     plot.errors.method    ="bootstrap",
+     plot.errors.quantiles = c(0.001,0.999))
+np_obj$merr
+
+f_fuzzymatch <- function(phrase, tolerance){
+  temp.v   <- phrase 
+  temp.df2 <- prop_raw %>%
+    mutate(Title = str_to_lower(Title))
+  temp.m  <- stringdist(temp.v,
+                        temp.df2$Title,
+                        method = "jaccard",
+                        q = 2)
+  
+  temp.m[temp.m < tolerance]  <- 0
+  temp.m[temp.m >= tolerance] <- 1
+  
+  temp.df2 <- temp.df2   %>%
+    mutate(ind = temp.m) %>%
+    filter(ind == 0)
+  prop_id_v <- temp.df2$`Proposal ID`
+  
+  output <- list(phrase, prop_id_v)
+  return(output)
+}
+
+test <- f_mergesort2(keyword, tolerance)
+f_prop_to_people2 <- function(keyword, tolerance){
+
+  keyword     <- "energy storage"
+  phrase_size <- 1
+  tolerance   <- 0.75
+  
+    ### Note: Generate sets of proposals that fit into our faculty speciality areas based on text matching
+  # df_kw <- prop_SI
+  # df_p  <- prop_raw
+  # id_v  <- prop_SI$SI_kID
+  # id1   <- id_v[4]
+  # tolerance <- 0.70
+  inp_list <- list(keyword, 
+                   rep(tolerance, times = length(keyword)))
+  out_list <- pmap(inp_list, f_mergesort)
+  test <- purrr::transpose(out_list)
+  
+  ind_vec <- rep(0, times = length(test[[2]]))
+  cnt_vec <- rep(0, times = length(test[[2]]))
+  for (i in 1:length(test[[2]])){
+    if (length(test[[2]][[i]])>100){
+      ind_vec[i] <- test[[1]][[i]][1]
+      cnt_vec[i] <- length(test[[2]][[i]])
+    }
+  }
+  ind_vec <- ind_vec[ind_vec != 0]
+  cnt_vec <- cnt_vec[cnt_vec != 0]
+  ind.df  <- data.frame(SI_kID = ind_vec,
+                        count  = cnt_vec) %>%
+    left_join(prop_SI,
+              by = "SI_kID")
+}
+```
