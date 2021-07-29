@@ -5,7 +5,7 @@ date: "6/11/2021"
 output: html_document
 ---
 
-```{r setup, include=FALSE}
+```{r setup, include=FALSE, message=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 
 libraries <- c("tidyverse",
@@ -33,13 +33,13 @@ pacman::p_load(char = libraries)
 
 ```{r SI Fac, echo=F, message=FALSE}
 ### Note: Read in merged affiliates data
-SI_Fac.df <- read_csv(here("SI_Affiliates_Sal_m.csv"))
+SI_Fac.df <- read_csv(here("Data", "SI_Affiliates_Sal_m.csv"))
 
 ### Note: Read in Fac to Authors crosswalk
-SI_walk <- read_csv(here("SI_FacAffiliates_Auth_m.csv"))
+SI_walk <- read_csv(here("Data", "SI_FacAffiliates_Auth_m.csv"))
 
 ### Note: Read in raw affiliates data for keywords
-SI_faculty.df <- read_csv(here("SI_FacultyAffiliates.csv"))             %>%
+SI_faculty.df <- read_csv(here("Data", "SI_FacultyAffiliates.csv"))             %>%
   .[,1:33]
 SI_faculty.df <- SI_faculty.df[order(SI_faculty.df$`Last Name`),]       %>%
   mutate(SI_faculty_ID       = 1:dim(SI_faculty.df)[1])                 %>%
@@ -57,20 +57,20 @@ SI_faculty.df <- SI_faculty.df[order(SI_faculty.df$`Last Name`),]       %>%
 
 ```{r Proposals, echo=F, message=F}
 ### Note: Unique Authors
-prop_ua <- read_csv(here("Proposals_UniqueAuthors.csv"))
+prop_ua <- read_csv(here("Data", "Proposals_UniqueAuthors.csv"))
 
 ### Note: Authors to Prop IDs
-prop_ap <- read_csv(here("Proposals_Authors.csv"))
+prop_ap <- read_csv(here("Data", "Proposals_Authors.csv"))
 
 ### Note: Full authors data
-prop_raw <- read_csv(here("RDO_Proposals_2013-2020.csv"))[1:31593,] %>%
-  mutate(Title = str_to_lower(Title))                               %>%
+prop_raw <- read_csv(here("Data", "RDO_Proposals_2013-2020.csv"))[1:31593,] %>%
+  mutate(Title = str_to_lower(Title))                                       %>%
   filter(!is.na(Title))
 
 ### Note: Publications Data
 
 ### Note: Keywords
-keywords.dt <- fread(here("IGS", "IGS_Topics.csv"))
+keywords.dt <- fread(here("Data", "IGS_Topics.csv"))
 
 ### Note: SI Keywords
 data(stop_words)
@@ -333,6 +333,7 @@ f_tolerances <- function(phrase){
   output <- list(temp.m, diff.v)
   return(output)
 }
+
 ### Note: Run tolerance function
 tol.l <- map(SI_keywords_u.df$word, f_tolerances)
 
@@ -352,29 +353,27 @@ sim.df <- data.frame("SI_kid"   = SI_kid.v,
                      "SizeDif"  = diff.v)
 rm(simscore.v, diff.v, SI_kid.v)
 
-# plot(sim.df[sim.df$SI_kid == "30", "SizeDif"], sim.df[sim.df$SI_kid == "30", "SimScore"])
-# test.df <- sim.df[sim.df$SI_kid == "30",] %>%
-#   filter(SimScore != 1)
-# plot(test.df[test.df$SI_kid == "30", "SizeDif"], test.df[test.df$SI_kid == "30", "SimScore"])
-
 ### Try to non-parametrically fit phrase data
-
   # Note: Train/test split w/ random number generator
 set.seed(69)
 index.v <- runif(10000,
                  min = 1,
                  max = dim(sim.df)[1])
 train.1 <- sim.df[index.v,]
+test.1  <- sim.df[-index.v,]
 
-  # Note: Train/test split
-# splitsize <- 0.001
-# set.seed(101) 
-# sample <- sample.split(sim.df$SI_kid, 
-#                        SplitRatio = splitsize)
-# train  <- subset(sim.df, sample == TRUE)
-# test   <- subset(sim.df, sample == FALSE)
+### Note: Try linear models
+lm.1 <- lm(exp(SimScore) ~ SizeDif + factor(SI_kid),
+           data = train.1)
 
-np_obj <- npreg(SimScore ~ SizeDif,
+lm.1out <- predict(lm.1,
+                   newdata = data.frame(SizeDif = seq(0,1, 0.01),
+                                        SI_kid  = rep(1, length(seq(0,1, 0.01)))))
+plot(x = seq(0,1, 0.01),
+     y = log(lm.1out))
+
+### Note: Calculate optimal bandwidth
+np_obj <- npreg(SimScore ~ SizeDif + factor(SI_kid),
                 regtype  = "ll",
                 data      = train.1)
 summary(np_obj)

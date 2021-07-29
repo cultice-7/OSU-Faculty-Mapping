@@ -1,0 +1,1299 @@
+SI_faculty_ID,Keyword_Number,word,SI_kID,Last Name,First Name,Middle Initial,Email,SI Core Faculty,Name_Dot,IDENTIFIER
+1,1,environmental health,1_1,Adetona,Olorunfemi,NA,adetona.1@osu.edu,NA,adetona.1,21020
+1,2,occupational health,1_2,Adetona,Olorunfemi,NA,adetona.1@osu.edu,NA,adetona.1,21020
+1,3,air pollution,1_3,Adetona,Olorunfemi,NA,adetona.1@osu.edu,NA,adetona.1,21020
+1,4,firefighters,1_4,Adetona,Olorunfemi,NA,adetona.1@osu.edu,NA,adetona.1,21020
+1,5,exposure science,1_5,Adetona,Olorunfemi,NA,adetona.1@osu.edu,NA,adetona.1,21020
+2,1,power electronics,2_1,Agarwal,Anant,NA,agarwal.334@osu.edu,NA,agarwal.334,23914
+2,2,grid inverters,2_2,Agarwal,Anant,NA,agarwal.334@osu.edu,NA,agarwal.334,23914
+2,3,distributed energy resources,2_3,Agarwal,Anant,NA,agarwal.334@osu.edu,NA,agarwal.334,23914
+3,1,atomic force microscopy,3_1,Agarwal,Gunjan,NA,agarwal.60@osu.edu,NA,agarwal.60,2551
+3,2,surface morphology,3_2,Agarwal,Gunjan,NA,agarwal.60@osu.edu,NA,agarwal.60,2551
+3,3,nanoscale stiffness,3_3,Agarwal,Gunjan,NA,agarwal.60@osu.edu,NA,agarwal.60,2551
+3,4,nanoscale adhesion,3_4,Agarwal,Gunjan,NA,agarwal.60@osu.edu,NA,agarwal.60,2551
+3,5,electron microscopy,3_5,Agarwal,Gunjan,NA,agarwal.60@osu.edu,NA,agarwal.60,2551
+4,1,sustainable mobility,4_1,Ahmed,Qadeer,NA,ahmed.358@osu.edu,NA,ahmed.358,16002
+4,2,powertrain control,4_2,Ahmed,Qadeer,NA,ahmed.358@osu.edu,NA,ahmed.358,16002
+4,3,safety security,4_3,Ahmed,Qadeer,NA,ahmed.358@osu.edu,NA,ahmed.358,16002
+5,1,transportation planning,5_1,Akar,Gulsah,NA,akar.3@osu.edu,NA,akar.3,12334
+5,2,access equity,5_2,Akar,Gulsah,NA,akar.3@osu.edu,NA,akar.3,12334
+5,3,transportation safety,5_3,Akar,Gulsah,NA,akar.3@osu.edu,NA,akar.3,12334
+5,4,mobility,5_4,Akar,Gulsah,NA,akar.3@osu.edu,NA,akar.3,12334
+5,5,shared mobility,5_5,Akar,Gulsah,NA,akar.3@osu.edu,NA,akar.3,12334
+6,1,gas sensors,6_1,Akbar,Sheikh,NA,akbar.1@osu.edu,NA,akbar.1,35716
+6,2,oxide nanostructures,6_2,Akbar,Sheikh,NA,akbar.1@osu.edu,NA,akbar.1,35716
+6,3,electrochemical devices,6_3,Akbar,Sheikh,NA,akbar.1@osu.edu,NA,akbar.1,35716
+6,4,ceramic processing,6_4,Akbar,Sheikh,NA,akbar.1@osu.edu,NA,akbar.1,35716
+6,5,electronic ceramics,6_5,Akbar,Sheikh,NA,akbar.1@osu.edu,NA,akbar.1,35716
+7,1,nuclear energy,7_1,Aldemir,Tunc,NA,aldemir.1@osu.edu,NA,aldemir.1,34757
+7,2,probabilistic risk assessment,7_2,Aldemir,Tunc,NA,aldemir.1@osu.edu,NA,aldemir.1,34757
+7,3,reliability,7_3,Aldemir,Tunc,NA,aldemir.1@osu.edu,NA,aldemir.1,34757
+7,4,maintainability,7_4,Aldemir,Tunc,NA,aldemir.1@osu.edu,NA,aldemir.1,34757
+8,1,resilient infrastructure,8_1,Allen,Theodore,NA,allen.515@osu.edu,NA,allen.515,38620
+8,2,operations research,8_2,Allen,Theodore,NA,allen.515@osu.edu,NA,allen.515,38620
+8,3,supply chain optimization,8_3,Allen,Theodore,NA,allen.515@osu.edu,NA,allen.515,38620
+8,4,experimental design,8_4,Allen,Theodore,NA,allen.515@osu.edu,NA,allen.515,38620
+8,5,cybersecurity,8_5,Allen,Theodore,NA,allen.515@osu.edu,NA,allen.515,38620
+9,1,welding,9_1,Ames,Nate,NA,ames.21@osu.edu,NA,ames.21,38208
+9,2,nuclear energy,9_2,Ames,Nate,NA,ames.21@osu.edu,NA,ames.21,38208
+9,3,product design,9_3,Ames,Nate,NA,ames.21@osu.edu,NA,ames.21,38208
+9,4,infrastructure construction,9_4,Ames,Nate,NA,ames.21@osu.edu,NA,ames.21,38208
+10,1,corporate social responsibility,10_1,Anand,Jay,NA,anand.18@osu.edu,NA,anand.18,3236
+10,2,sustainable firm strategies,10_2,Anand,Jay,NA,anand.18@osu.edu,NA,anand.18,3236
+11,1,semiconductor lasers,11_1,Arafin,Shamsul,NA,arafin.1@osu.edu,NA,arafin.1,25834
+11,2,photonic sensors,11_2,Arafin,Shamsul,NA,arafin.1@osu.edu,NA,arafin.1,25834
+11,3,sustainable energy,11_3,Arafin,Shamsul,NA,arafin.1@osu.edu,NA,arafin.1,25834
+11,4,air pollution monitoring,11_4,Arafin,Shamsul,NA,arafin.1@osu.edu,NA,arafin.1,25834
+11,5,water quality,11_5,Arafin,Shamsul,NA,arafin.1@osu.edu,NA,arafin.1,25834
+12,1,environmental sociology,12_1,Ard,Kerry,NA,ard.7@osu.edu,NA,ard.7,17902
+12,2,environmental inequality,12_2,Ard,Kerry,NA,ard.7@osu.edu,NA,ard.7,17902
+12,3,stratification,12_3,Ard,Kerry,NA,ard.7@osu.edu,NA,ard.7,17902
+12,4,environmental justice,12_4,Ard,Kerry,NA,ard.7@osu.edu,NA,ard.7,17902
+12,5,health inequality,12_5,Ard,Kerry,NA,ard.7@osu.edu,NA,ard.7,17902
+13,1,renewable energy,13_1,Arehart,Aaron,NA,arehart.5@osu.edu,NA,arehart.5,39505
+13,2,defects,13_2,Arehart,Aaron,NA,arehart.5@osu.edu,NA,arehart.5,39505
+13,3,traps,13_3,Arehart,Aaron,NA,arehart.5@osu.edu,NA,arehart.5,39505
+13,4,solar cells,13_4,Arehart,Aaron,NA,arehart.5@osu.edu,NA,arehart.5,39505
+14,1,co2 conversion,14_1,Asthagiri,Aravind,NA,asthagiri.1@osu.edu,NA,asthagiri.1,38059
+14,2,renewable energy,14_2,Asthagiri,Aravind,NA,asthagiri.1@osu.edu,NA,asthagiri.1,38059
+14,3,multi scale modeling,14_3,Asthagiri,Aravind,NA,asthagiri.1@osu.edu,NA,asthagiri.1,38059
+14,4,selective chemistry,14_4,Asthagiri,Aravind,NA,asthagiri.1@osu.edu,NA,asthagiri.1,38059
+15,1,mobility,15_1,Atkinson,Chris,NA,atkinson.284@osu.edu,NA,atkinson.284,30222
+15,2,smart mobility,15_2,Atkinson,Chris,NA,atkinson.284@osu.edu,NA,atkinson.284,30222
+15,3,transportation,15_3,Atkinson,Chris,NA,atkinson.284@osu.edu,NA,atkinson.284,30222
+15,4,energy,15_4,Atkinson,Chris,NA,atkinson.284@osu.edu,NA,atkinson.284,30222
+15,5,sustainability,15_5,Atkinson,Chris,NA,atkinson.284@osu.edu,NA,atkinson.284,30222
+16,1,adaptation evolution,16_1,Babcock,Loren,NA,babcock.5@osu.edu,NA,babcock.5,36298
+16,2,sea level change,16_2,Babcock,Loren,NA,babcock.5@osu.edu,NA,babcock.5,36298
+16,3,earth resources,16_3,Babcock,Loren,NA,babcock.5@osu.edu,NA,babcock.5,36298
+16,4,sustainable resource extraction,16_4,Babcock,Loren,NA,babcock.5@osu.edu,NA,babcock.5,36298
+17,1,sustainable engineering,17_1,Bakshi,Bhavik,Ramesh,bakshi.2@osu.edu,NA,bakshi.2,37481
+17,2,life cycle assessment,17_2,Bakshi,Bhavik,Ramesh,bakshi.2@osu.edu,NA,bakshi.2,37481
+17,3,ecosystem services,17_3,Bakshi,Bhavik,Ramesh,bakshi.2@osu.edu,NA,bakshi.2,37481
+17,4,process design,17_4,Bakshi,Bhavik,Ramesh,bakshi.2@osu.edu,NA,bakshi.2,37481
+17,5,product design,17_5,Bakshi,Bhavik,Ramesh,bakshi.2@osu.edu,NA,bakshi.2,37481
+18,1,sensor technology,18_1,Ball,Christopher,NA,ball.51@osu.edu,NA,ball.51,37056
+18,2,ambient air monitoring,18_2,Ball,Christopher,NA,ball.51@osu.edu,NA,ball.51,37056
+18,3,earth remote sensing,18_3,Ball,Christopher,NA,ball.51@osu.edu,NA,ball.51,37056
+18,4,food quality characterization,18_4,Ball,Christopher,NA,ball.51@osu.edu,NA,ball.51,37056
+18,5,pollution monitoring,18_5,Ball,Christopher,NA,ball.51@osu.edu,NA,ball.51,37056
+19,1,grassland,19_1,Barker,David,NA,barker.169@osu.edu,NA,barker.169,316
+19,2,prairie,19_2,Barker,David,NA,barker.169@osu.edu,NA,barker.169,316
+19,3,forages,19_3,Barker,David,NA,barker.169@osu.edu,NA,barker.169,316
+19,4,livestock,19_4,Barker,David,NA,barker.169@osu.edu,NA,barker.169,316
+20,1,water resources management,20_1,Bayraksan,Guzin,NA,bayraksan.1@osu.edu,NA,bayraksan.1,16897
+20,2,resilient infrastructures,20_2,Bayraksan,Guzin,NA,bayraksan.1@osu.edu,NA,bayraksan.1,16897
+20,3,climate adaptation,20_3,Bayraksan,Guzin,NA,bayraksan.1@osu.edu,NA,bayraksan.1,16897
+20,4,sustainable water resources infrastructures,20_4,Bayraksan,Guzin,NA,bayraksan.1@osu.edu,NA,bayraksan.1,16897
+20,5,energy water nexus,20_5,Bayraksan,Guzin,NA,bayraksan.1@osu.edu,NA,bayraksan.1,16897
+21,1,hydropower,21_1,Belloni,Clarissa,NA,belloni.5@osu.edu,NA,belloni.5,32738
+21,2,wind energy,21_2,Belloni,Clarissa,NA,belloni.5@osu.edu,NA,belloni.5,32738
+21,3,hydrokinetic,21_3,Belloni,Clarissa,NA,belloni.5@osu.edu,NA,belloni.5,32738
+21,4,tidal energy,21_4,Belloni,Clarissa,NA,belloni.5@osu.edu,NA,belloni.5,32738
+21,5,fluid dynamics,21_5,Belloni,Clarissa,NA,belloni.5@osu.edu,NA,belloni.5,32738
+22,1,technology,22_1,Bendoly,Elliot,NA,bendoly.2@osu.edu,NA,bendoly.2,19722
+22,2,supply chain,22_2,Bendoly,Elliot,NA,bendoly.2@osu.edu,NA,bendoly.2,19722
+22,3,human behavior,22_3,Bendoly,Elliot,NA,bendoly.2@osu.edu,NA,bendoly.2,19722
+22,4,sustainable,22_4,Bendoly,Elliot,NA,bendoly.2@osu.edu,NA,bendoly.2,19722
+22,5,corporate social responsibility,22_5,Bendoly,Elliot,NA,bendoly.2@osu.edu,NA,bendoly.2,19722
+23,1,soil,23_1,Bennett,Alison,NA,bennett.1242@osu.edu,NA,bennett.1242,24244
+23,2,land change,23_2,Bennett,Alison,NA,bennett.1242@osu.edu,NA,bennett.1242,24244
+23,3,agriculture,23_3,Bennett,Alison,NA,bennett.1242@osu.edu,NA,bennett.1242,24244
+23,4,nutrient efficiency,23_4,Bennett,Alison,NA,bennett.1242@osu.edu,NA,bennett.1242,24244
+23,5,arbuscular mycorrhizal fungi,23_5,Bennett,Alison,NA,bennett.1242@osu.edu,NA,bennett.1242,24244
+24,1,aerospace research,24_1,Benzakein,M. J.,NA,benzakein.2@osu.edu,NA,benzakein.2,3520
+24,2,electronics,24_2,Benzakein,M. J.,NA,benzakein.2@osu.edu,NA,benzakein.2,3520
+24,3,propulsion,24_3,Benzakein,M. J.,NA,benzakein.2@osu.edu,NA,benzakein.2,3520
+24,4,carbon reduction,24_4,Benzakein,M. J.,NA,benzakein.2@osu.edu,NA,benzakein.2,3520
+24,5,international cooperation,24_5,Benzakein,M. J.,NA,benzakein.2@osu.edu,NA,benzakein.2,3520
+25,1,water policy,25_1,Berardo,Alfredo (Ramiro),NA,berardo.3@osu.edu,NA,berardo.3,20358
+25,2,climate policy,25_2,Berardo,Alfredo (Ramiro),NA,berardo.3@osu.edu,NA,berardo.3,20358
+25,3,collaborative governance,25_3,Berardo,Alfredo (Ramiro),NA,berardo.3@osu.edu,NA,berardo.3,20358
+25,4,social network analysis,25_4,Berardo,Alfredo (Ramiro),NA,berardo.3@osu.edu,NA,berardo.3,20358
+25,5,polycentric governance systems,25_5,Berardo,Alfredo (Ramiro),NA,berardo.3@osu.edu,NA,berardo.3,20358
+26,1,computational ecology,26_1,Berger-Wolf,Tanya,NA,berger-wolf.1@osu.edu,NA,berger-wolf.1,29022
+26,2,human wildlife interface,26_2,Berger-Wolf,Tanya,NA,berger-wolf.1@osu.edu,NA,berger-wolf.1,29022
+26,3,artificial intelligence,26_3,Berger-Wolf,Tanya,NA,berger-wolf.1@osu.edu,NA,berger-wolf.1,29022
+26,4,machine learning,26_4,Berger-Wolf,Tanya,NA,berger-wolf.1@osu.edu,NA,berger-wolf.1,29022
+26,5,data science,26_5,Berger-Wolf,Tanya,NA,berger-wolf.1@osu.edu,NA,berger-wolf.1,29022
+27,1,energy systems,27_1,Bielicki,Jeffrey,M.,bielicki.2@osu.edu,NA,bielicki.2,17905
+27,2,renewable energy,27_2,Bielicki,Jeffrey,M.,bielicki.2@osu.edu,NA,bielicki.2,17905
+27,3,carbon management,27_3,Bielicki,Jeffrey,M.,bielicki.2@osu.edu,NA,bielicki.2,17905
+27,4,energy water nexus,27_4,Bielicki,Jeffrey,M.,bielicki.2@osu.edu,NA,bielicki.2,17905
+27,5,public policy,27_5,Bielicki,Jeffrey,M.,bielicki.2@osu.edu,NA,bielicki.2,17905
+28,1,water rights,28_1,Birkhold,Matthew,H.,birkhold.22@osu.edu,NA,birkhold.22,22521
+28,2,law sea,28_2,Birkhold,Matthew,H.,birkhold.22@osu.edu,NA,birkhold.22,22521
+28,3,environmental humanities,28_3,Birkhold,Matthew,H.,birkhold.22@osu.edu,NA,birkhold.22,22521
+28,4,ice,28_4,Birkhold,Matthew,H.,birkhold.22@osu.edu,NA,birkhold.22,22521
+28,5,climate change,28_5,Birkhold,Matthew,H.,birkhold.22@osu.edu,NA,birkhold.22,22521
+29,1,air quality,29_1,Bisesi,Michael,NA,bisesi.12@osu.edu,NA,bisesi.12,12171
+29,2,water quality,29_2,Bisesi,Michael,NA,bisesi.12@osu.edu,NA,bisesi.12,12171
+29,3,soil quality,29_3,Bisesi,Michael,NA,bisesi.12@osu.edu,NA,bisesi.12,12171
+29,4,exposure assessment,29_4,Bisesi,Michael,NA,bisesi.12@osu.edu,NA,bisesi.12,12171
+29,5,health impacts,29_5,Bisesi,Michael,NA,bisesi.12@osu.edu,NA,bisesi.12,12171
+30,1,supply chain,30_1,Blanco,Christian,C.,blanco.58@osu.edu,NA,blanco.58,23414
+30,2,carbon emissions reduction,30_2,Blanco,Christian,C.,blanco.58@osu.edu,NA,blanco.58,23414
+30,3,operations management,30_3,Blanco,Christian,C.,blanco.58@osu.edu,NA,blanco.58,23414
+31,1,ecohydrology,31_1,Bohrer,Gil,NA,bohrer.17@osu.edu,NA,bohrer.17,10945
+31,2,forest meteorology,31_2,Bohrer,Gil,NA,bohrer.17@osu.edu,NA,bohrer.17,10945
+31,3,eddy flux measurements,31_3,Bohrer,Gil,NA,bohrer.17@osu.edu,NA,bohrer.17,10945
+31,4,movement ecology,31_4,Bohrer,Gil,NA,bohrer.17@osu.edu,NA,bohrer.17,10945
+31,5,wetlands,31_5,Bohrer,Gil,NA,bohrer.17@osu.edu,NA,bohrer.17,10945
+32,1,water quality,32_1,Bohrerova,Zuzana,NA,Bohrerova.1@osu.edu,NA,Bohrerova.1,11324
+32,2,water treatment,32_2,Bohrerova,Zuzana,NA,Bohrerova.1@osu.edu,NA,Bohrerova.1,11324
+32,3,resilient communities,32_3,Bohrerova,Zuzana,NA,Bohrerova.1@osu.edu,NA,Bohrerova.1,11324
+32,4,environmental microbiology,32_4,Bohrerova,Zuzana,NA,Bohrerova.1@osu.edu,NA,Bohrerova.1,11324
+32,5,disinfection,32_5,Bohrerova,Zuzana,NA,Bohrerova.1@osu.edu,NA,Bohrerova.1,11324
+33,1,invasive species,33_1,Bonello,Pierluigi (Enrico),NA,bonello.2@osu.edu,NA,bonello.2,22
+33,2,forest ecosystems,33_2,Bonello,Pierluigi (Enrico),NA,bonello.2@osu.edu,NA,bonello.2,22
+33,3,tree diseases,33_3,Bonello,Pierluigi (Enrico),NA,bonello.2@osu.edu,NA,bonello.2,22
+33,4,tree pests,33_4,Bonello,Pierluigi (Enrico),NA,bonello.2@osu.edu,NA,bonello.2,22
+34,1,oral history,34_1,Borland,Katherine,NA,borland.19@osu.edu,NA,borland.19,40246
+34,2,ethnography,34_2,Borland,Katherine,NA,borland.19@osu.edu,NA,borland.19,40246
+34,3,community engaged research practices,34_3,Borland,Katherine,NA,borland.19@osu.edu,NA,borland.19,40246
+34,4,social justice,34_4,Borland,Katherine,NA,borland.19@osu.edu,NA,borland.19,40246
+34,5,grassroots environmentalism,34_5,Borland,Katherine,NA,borland.19@osu.edu,NA,borland.19,40246
+35,1,climate adaptation,35_1,Boswell,Jake,NA,boswell.33@osu.edu,NA,boswell.33,2696
+35,2,carbon sequestration,35_2,Boswell,Jake,NA,boswell.33@osu.edu,NA,boswell.33,2696
+35,3,land change,35_3,Boswell,Jake,NA,boswell.33@osu.edu,NA,boswell.33,2696
+35,4,water quality,35_4,Boswell,Jake,NA,boswell.33@osu.edu,NA,boswell.33,2696
+35,5,resilient infrastructure,35_5,Boswell,Jake,NA,boswell.33@osu.edu,NA,boswell.33,2696
+37,1,water,37_1,Breyfogle,Nicholas,NA,breyfogle.1@osu.edu,NA,breyfogle.1,39524
+37,2,water quality,37_2,Breyfogle,Nicholas,NA,breyfogle.1@osu.edu,NA,breyfogle.1,39524
+37,3,hydroelectricity,37_3,Breyfogle,Nicholas,NA,breyfogle.1@osu.edu,NA,breyfogle.1,39524
+37,4,social justice,37_4,Breyfogle,Nicholas,NA,breyfogle.1@osu.edu,NA,breyfogle.1,39524
+37,5,climate water,37_5,Breyfogle,Nicholas,NA,breyfogle.1@osu.edu,NA,breyfogle.1,39524
+38,1,culture food,38_1,Brintlinger,Angela,NA,brintlinger.3@osu.edu,NA,brintlinger.3,37764
+38,2,agriculture sustainable gardening,38_2,Brintlinger,Angela,NA,brintlinger.3@osu.edu,NA,brintlinger.3,37764
+38,3,urban infrastructure health,38_3,Brintlinger,Angela,NA,brintlinger.3@osu.edu,NA,brintlinger.3,37764
+38,4,industrialization agriculture repercussions,38_4,Brintlinger,Angela,NA,brintlinger.3@osu.edu,NA,brintlinger.3,37764
+38,5,village life russia,38_5,Brintlinger,Angela,NA,brintlinger.3@osu.edu,NA,brintlinger.3,37764
+39,1,biodiversity conservation,39_1,Brooks,Jeremy,NA,brooks.719@osu.edu,NA,brooks.719,15852
+39,2,cultural evolution,39_2,Brooks,Jeremy,NA,brooks.719@osu.edu,NA,brooks.719,15852
+39,3,sustainable consumption,39_3,Brooks,Jeremy,NA,brooks.719@osu.edu,NA,brooks.719,15852
+39,4,green infrastructure,39_4,Brooks,Jeremy,NA,brooks.719@osu.edu,NA,brooks.719,15852
+39,5,sustainable resilient social ecological systems,39_5,Brooks,Jeremy,NA,brooks.719@osu.edu,NA,brooks.719,15852
+40,1,biomass conversion,40_1,Brunelli,Nicholas,A.,brunelli.2@osu.edu,NA,brunelli.2,1258
+40,2,catalysis,40_2,Brunelli,Nicholas,A.,brunelli.2@osu.edu,NA,brunelli.2,1258
+40,3,energy,40_3,Brunelli,Nicholas,A.,brunelli.2@osu.edu,NA,brunelli.2,1258
+40,4,materials,40_4,Brunelli,Nicholas,A.,brunelli.2@osu.edu,NA,brunelli.2,1258
+41,1,conservation policy,41_1,Bruskotter,Jeremy,T.,bruskotter.9@osu.edu,NA,bruskotter.9,6730
+41,2,natural resources management,41_2,Bruskotter,Jeremy,T.,bruskotter.9@osu.edu,NA,bruskotter.9,6730
+41,3,wildlife ecology,41_3,Bruskotter,Jeremy,T.,bruskotter.9@osu.edu,NA,bruskotter.9,6730
+41,4,social conflict,41_4,Bruskotter,Jeremy,T.,bruskotter.9@osu.edu,NA,bruskotter.9,6730
+42,1,coal combustion products,42_1,Burris,Lisa,NA,burris.189@osu.edu,NA,burris.189,23008
+42,2,green building,42_2,Burris,Lisa,NA,burris.189@osu.edu,NA,burris.189,23008
+42,3,water quality,42_3,Burris,Lisa,NA,burris.189@osu.edu,NA,burris.189,23008
+42,4,efficient infrastructure,42_4,Burris,Lisa,NA,burris.189@osu.edu,NA,burris.189,23008
+43,1,transportation mobility,43_1,Burton,Kimberly,NA,burton.90@osu.edu,NA,burton.90,38858
+43,2,hazard mitigation,43_2,Burton,Kimberly,NA,burton.90@osu.edu,NA,burton.90,38858
+43,3,community revitalization,43_3,Burton,Kimberly,NA,burton.90@osu.edu,NA,burton.90,38858
+43,4,renewable energy,43_4,Burton,Kimberly,NA,burton.90@osu.edu,NA,burton.90,38858
+43,5,green building,43_5,Burton,Kimberly,NA,burton.90@osu.edu,NA,burton.90,38858
+44,1,carbon capture,44_1,Butalia,Tarunjit,Singh,butalia.1@osu.edu,NA,butalia.1,36257
+44,2,land,44_2,Butalia,Tarunjit,Singh,butalia.1@osu.edu,NA,butalia.1,36257
+44,3,reclamation,44_3,Butalia,Tarunjit,Singh,butalia.1@osu.edu,NA,butalia.1,36257
+44,4,partnership,44_4,Butalia,Tarunjit,Singh,butalia.1@osu.edu,NA,butalia.1,36257
+45,1,humans nature,45_1,Byram,Katra,NA,byram.4@osu.edu,NA,byram.4,11322
+45,2,sustainable lifestyles,45_2,Byram,Katra,NA,byram.4@osu.edu,NA,byram.4,11322
+45,3,posthumanism,45_3,Byram,Katra,NA,byram.4@osu.edu,NA,byram.4,11322
+45,4,social equality,45_4,Byram,Katra,NA,byram.4@osu.edu,NA,byram.4,11322
+45,5,social justice,45_5,Byram,Katra,NA,byram.4@osu.edu,NA,byram.4,11322
+46,1,climate change economics,46_1,Cai,Yongyang,NA,cai.619@osu.edu,Y,cai.619,32374
+46,2,integrated assessment models,46_2,Cai,Yongyang,NA,cai.619@osu.edu,Y,cai.619,32374
+47,1,collaboration,47_1,Campbell,Joe,NA,campbell.844@osu.edu,NA,campbell.844,5904
+47,2,regenerative development,47_2,Campbell,Joe,NA,campbell.844@osu.edu,NA,campbell.844,5904
+47,3,experiential learning,47_3,Campbell,Joe,NA,campbell.844@osu.edu,NA,campbell.844,5904
+47,4,environmental professionals,47_4,Campbell,Joe,NA,campbell.844@osu.edu,NA,campbell.844,5904
+47,5,rural sociology,47_5,Campbell,Joe,NA,campbell.844@osu.edu,NA,campbell.844,5904
+48,1,climate law,48_1,Carlarne,Cinnamon,Pinon,carlarne.1@osu.edu,NA,carlarne.1,14849
+48,2,climate justice,48_2,Carlarne,Cinnamon,Pinon,carlarne.1@osu.edu,NA,carlarne.1,14849
+48,3,energy law,48_3,Carlarne,Cinnamon,Pinon,carlarne.1@osu.edu,NA,carlarne.1,14849
+48,4,environmental law,48_4,Carlarne,Cinnamon,Pinon,carlarne.1@osu.edu,NA,carlarne.1,14849
+48,5,sustainability law,48_5,Carlarne,Cinnamon,Pinon,carlarne.1@osu.edu,NA,carlarne.1,14849
+49,1,transportation,49_1,Carrel,Andre,NA,carrel.20@osu.edu,NA,carrel.20,22630
+49,2,travel behavior,49_2,Carrel,Andre,NA,carrel.20@osu.edu,NA,carrel.20,22630
+49,3,sustainable mobility,49_3,Carrel,Andre,NA,carrel.20@osu.edu,NA,carrel.20,22630
+49,4,emerging technologies,49_4,Carrel,Andre,NA,carrel.20@osu.edu,NA,carrel.20,22630
+50,1,biodiversity,50_1,Carstens,Bryan,NA,carstens.12@osu.edu,NA,carstens.12,16300
+50,2,quaternary,50_2,Carstens,Bryan,NA,carstens.12@osu.edu,NA,carstens.12,16300
+50,3,global change,50_3,Carstens,Bryan,NA,carstens.12@osu.edu,NA,carstens.12,16300
+50,4,genomics,50_4,Carstens,Bryan,NA,carstens.12@osu.edu,NA,carstens.12,16300
+50,5,computational,50_5,Carstens,Bryan,NA,carstens.12@osu.edu,NA,carstens.12,16300
+51,1,demography,51_1,Casterline,John,B,Casterline.10@osu.edu,NA,Casterline.10,5903
+51,2,population growth,51_2,Casterline,John,B,Casterline.10@osu.edu,NA,Casterline.10,5903
+51,3,saharan africa,51_3,Casterline,John,B,Casterline.10@osu.edu,NA,Casterline.10,5903
+52,1,sustainable supply chain management,52_1,Castillo,Vincent,E,Castillo.230@osu.edu,NA,Castillo.230,25091
+52,2,urban logistics,52_2,Castillo,Vincent,E,Castillo.230@osu.edu,NA,Castillo.230,25091
+52,3,ethics,52_3,Castillo,Vincent,E,Castillo.230@osu.edu,NA,Castillo.230,25091
+52,4,simulation modeling,52_4,Castillo,Vincent,E,Castillo.230@osu.edu,NA,Castillo.230,25091
+52,5,urban agriculture,52_5,Castillo,Vincent,E,Castillo.230@osu.edu,NA,Castillo.230,25091
+53,1,migration,53_1,Chen,Joyce,NA,chen.1276@osu.edu,NA,chen.1276,5253
+53,2,climate change,53_2,Chen,Joyce,NA,chen.1276@osu.edu,NA,chen.1276,5253
+53,3,economics,53_3,Chen,Joyce,NA,chen.1276@osu.edu,NA,chen.1276,5253
+53,4,agriculture,53_4,Chen,Joyce,NA,chen.1276@osu.edu,NA,chen.1276,5253
+53,5,water,53_5,Chen,Joyce,NA,chen.1276@osu.edu,NA,chen.1276,5253
+54,1,transportation infrastructure,54_1,Chen,Zhenhua,NA,chen.7172@osu.edu,Y,chen.7172,32360
+54,2,economic impact,54_2,Chen,Zhenhua,NA,chen.7172@osu.edu,Y,chen.7172,32360
+54,3,resilience,54_3,Chen,Zhenhua,NA,chen.7172@osu.edu,Y,chen.7172,32360
+54,4,disasters,54_4,Chen,Zhenhua,NA,chen.7172@osu.edu,Y,chen.7172,32360
+54,5,data,54_5,Chen,Zhenhua,NA,chen.7172@osu.edu,Y,chen.7172,32360
+55,1,power systems,55_1,Chen,Chen,NA,chen.8018@osu.edu,Y,chen.8018,23922
+55,2,energy,55_2,Chen,Chen,NA,chen.8018@osu.edu,Y,chen.8018,23922
+55,3,optimization,55_3,Chen,Chen,NA,chen.8018@osu.edu,Y,chen.8018,23922
+55,4,machine learning,55_4,Chen,Chen,NA,chen.8018@osu.edu,Y,chen.8018,23922
+56,1,bioenergy,56_1,Christy,Ann,D.,christy.14@osu.edu,NA,christy.14,34789
+56,2,ground water vulnerability assessment,56_2,Christy,Ann,D.,christy.14@osu.edu,NA,christy.14,34789
+56,3,solid waste management,56_3,Christy,Ann,D.,christy.14@osu.edu,NA,christy.14,34789
+57,1,grassroots innovation,57_1,Ciftci,Hazal,Gumus,gumusciftci.1@osu.edu,NA,gumusciftci.1,28201
+57,2,local production,57_2,Ciftci,Hazal,Gumus,gumusciftci.1@osu.edu,NA,gumusciftci.1,28201
+57,3,resilient communities,57_3,Ciftci,Hazal,Gumus,gumusciftci.1@osu.edu,NA,gumusciftci.1,28201
+57,4,social development,57_4,Ciftci,Hazal,Gumus,gumusciftci.1@osu.edu,NA,gumusciftci.1,28201
+57,5,design sustainability,57_5,Ciftci,Hazal,Gumus,gumusciftci.1@osu.edu,NA,gumusciftci.1,28201
+58,1,community economics,58_1,Civittolo,David,NA,civittolo.1@osu.edu,NA,civittolo.1,311
+58,2,business retention expansion,58_2,Civittolo,David,NA,civittolo.1@osu.edu,NA,civittolo.1,311
+58,3,community strategic panning,58_3,Civittolo,David,NA,civittolo.1@osu.edu,NA,civittolo.1,311
+58,4,community leadership,58_4,Civittolo,David,NA,civittolo.1@osu.edu,NA,civittolo.1,311
+59,1,food systems,59_1,Clark,Jill,K.,clark.1099@osu.edu,NA,clark.1099,1988
+59,2,governance,59_2,Clark,Jill,K.,clark.1099@osu.edu,NA,clark.1099,1988
+59,3,public participation,59_3,Clark,Jill,K.,clark.1099@osu.edu,NA,clark.1099,1988
+59,4,social equity,59_4,Clark,Jill,K.,clark.1099@osu.edu,NA,clark.1099,1988
+59,5,planning,59_5,Clark,Jill,K.,clark.1099@osu.edu,NA,clark.1099,1988
+60,1,energy efficiency,60_1,Clark,Jordan,O.,clark.1217@osu.edu,Y,clark.1217,23539
+60,2,indoor air quality,60_2,Clark,Jordan,O.,clark.1217@osu.edu,Y,clark.1217,23539
+60,3,buildings,60_3,Clark,Jordan,O.,clark.1217@osu.edu,Y,clark.1217,23539
+60,4,demand response,60_4,Clark,Jordan,O.,clark.1217@osu.edu,Y,clark.1217,23539
+60,5,heating ventilation air conditioning,60_5,Clark,Jordan,O.,clark.1217@osu.edu,Y,clark.1217,23539
+61,1,cities regional planning,61_1,Clark,Jennifer,NA,clark.3550@osu.edu,NA,clark.3550,28184
+61,2,inclusive innovation,61_2,Clark,Jennifer,NA,clark.3550@osu.edu,NA,clark.3550,28184
+61,3,regional policy,61_3,Clark,Jennifer,NA,clark.3550@osu.edu,NA,clark.3550,28184
+61,4,economic development,61_4,Clark,Jennifer,NA,clark.3550@osu.edu,NA,clark.3550,28184
+61,5,economic geography,61_5,Clark,Jennifer,NA,clark.3550@osu.edu,NA,clark.3550,28184
+62,1,migration,62_1,Cohen,Jeffrey Harris,NA,cohen.319@osu.edu,NA,cohen.319,4224
+62,2,community development,62_2,Cohen,Jeffrey Harris,NA,cohen.319@osu.edu,NA,cohen.319,4224
+62,3,food,62_3,Cohen,Jeffrey Harris,NA,cohen.319@osu.edu,NA,cohen.319,4224
+62,4,sustainability,62_4,Cohen,Jeffrey Harris,NA,cohen.319@osu.edu,NA,cohen.319,4224
+62,5,anthropology,62_5,Cohen,Jeffrey Harris,NA,cohen.319@osu.edu,NA,cohen.319,4224
+63,1,subsurface energy systems,63_1,Cole,David,R,cole.618@osu.edu,NA,cole.618,13796
+63,2,carbon capture storage,63_2,Cole,David,R,cole.618@osu.edu,NA,cole.618,13796
+63,3,earth materials,63_3,Cole,David,R,cole.618@osu.edu,NA,cole.618,13796
+63,4,natural resources renewables,63_4,Cole,David,R,cole.618@osu.edu,NA,cole.618,13796
+63,5,monitoring engineered geo systems,63_5,Cole,David,R,cole.618@osu.edu,NA,cole.618,13796
+64,1,power systems,64_1,Conejo,Antonio,NA,conejo.1@osu.edu,NA,conejo.1,19318
+64,2,operations research,64_2,Conejo,Antonio,NA,conejo.1@osu.edu,NA,conejo.1,19318
+64,3,optimization,64_3,Conejo,Antonio,NA,conejo.1@osu.edu,NA,conejo.1,19318
+64,4,stochastics,64_4,Conejo,Antonio,NA,conejo.1@osu.edu,NA,conejo.1,19318
+64,5,electricity markets,64_5,Conejo,Antonio,NA,conejo.1@osu.edu,NA,conejo.1,19318
+65,1,watershed planning,65_1,Conroy,Maria,NA,conroy.36@osu.edu,NA,conroy.36,4
+65,2,protected lands,65_2,Conroy,Maria,NA,conroy.36@osu.edu,NA,conroy.36,4
+65,3,green infrastructure,65_3,Conroy,Maria,NA,conroy.36@osu.edu,NA,conroy.36,4
+66,1,solar energy,66_1,Contractor,Ardeshir,NA,contractor.15@osu.edu,NA,contractor.15,35028
+66,2,renewable integration,66_2,Contractor,Ardeshir,NA,contractor.15@osu.edu,NA,contractor.15,35028
+66,3,photovoltaic,66_3,Contractor,Ardeshir,NA,contractor.15@osu.edu,NA,contractor.15,35028
+66,4,urban mobility,66_4,Contractor,Ardeshir,NA,contractor.15@osu.edu,NA,contractor.15,35028
+66,5,asset finance,66_5,Contractor,Ardeshir,NA,contractor.15@osu.edu,NA,contractor.15,35028
+67,1,natural hazards,67_1,Contreras,Santina,NA,contreras.78@osu.edu,Y,contreras.78,24801
+67,2,international development,67_2,Contreras,Santina,NA,contreras.78@osu.edu,Y,contreras.78,24801
+67,3,community engagement,67_3,Contreras,Santina,NA,contreras.78@osu.edu,Y,contreras.78,24801
+67,4,disasters,67_4,Contreras,Santina,NA,contreras.78@osu.edu,Y,contreras.78,24801
+67,5,humanitarian engineering,67_5,Contreras,Santina,NA,contreras.78@osu.edu,Y,contreras.78,24801
+68,1,methane,68_1,Cook,Ann,NA,cook.1129@osu.edu,NA,cook.1129,15365
+68,2,earth science,68_2,Cook,Ann,NA,cook.1129@osu.edu,NA,cook.1129,15365
+68,3,marine geology,68_3,Cook,Ann,NA,cook.1129@osu.edu,NA,cook.1129,15365
+68,4,geophysics,68_4,Cook,Ann,NA,cook.1129@osu.edu,NA,cook.1129,15365
+68,5,carbon cycle,68_5,Cook,Ann,NA,cook.1129@osu.edu,NA,cook.1129,15365
+69,1,sustainable natural rubber production,69_1,Cornish,Katrina,NA,cornish.19@osu.edu,NA,cornish.19,13421
+69,2,rural development,69_2,Cornish,Katrina,NA,cornish.19@osu.edu,NA,cornish.19,13421
+69,3,industrial crops ecosystem services,69_3,Cornish,Katrina,NA,cornish.19@osu.edu,NA,cornish.19,13421
+69,4,green processing,69_4,Cornish,Katrina,NA,cornish.19@osu.edu,NA,cornish.19,13421
+69,5,risk assessment,69_5,Cornish,Katrina,NA,cornish.19@osu.edu,NA,cornish.19,13421
+70,1,nutrient dynamics aquatic systems,70_1,"Costa, Jr.",Ozeas,NA,costa.47@osu.edu,NA,costa.47,5406
+70,2,water quality eutrophication,70_2,"Costa, Jr.",Ozeas,NA,costa.47@osu.edu,NA,costa.47,5406
+70,3,moisture regime water availability ohio,70_3,"Costa, Jr.",Ozeas,NA,costa.47@osu.edu,NA,costa.47,5406
+70,4,climate change effects water resources,70_4,"Costa, Jr.",Ozeas,NA,costa.47@osu.edu,NA,costa.47,5406
+70,5,geographic information systems,70_5,"Costa, Jr.",Ozeas,NA,costa.47@osu.edu,NA,costa.47,5406
+71,1,statistical science,71_1,Craigmile,Peter,F.,craigmile.1@osu.edu,NA,craigmile.1,1070
+71,2,climate modeling,71_2,Craigmile,Peter,F.,craigmile.1@osu.edu,NA,craigmile.1,1070
+71,3,paleoclimate reconstruction,71_3,Craigmile,Peter,F.,craigmile.1@osu.edu,NA,craigmile.1,1070
+71,4,environmental monitoring,71_4,Craigmile,Peter,F.,craigmile.1@osu.edu,NA,craigmile.1,1070
+71,5,spatio temporal statistical modeling,71_5,Craigmile,Peter,F.,craigmile.1@osu.edu,NA,craigmile.1,1070
+72,1,soil health,72_1,Culman,Steve,NA,culman.2@osu.edu,NA,culman.2,18223
+72,2,ecosystem services,72_2,Culman,Steve,NA,culman.2@osu.edu,NA,culman.2,18223
+72,3,carbon sequestration,72_3,Culman,Steve,NA,culman.2@osu.edu,NA,culman.2,18223
+73,1,urban agriculture,73_1,Curtis,Kip,NA,curtis.457@osu.edu,NA,curtis.457,20608
+73,2,environmental history,73_2,Curtis,Kip,NA,curtis.457@osu.edu,NA,curtis.457,20608
+73,3,food systems,73_3,Curtis,Kip,NA,curtis.457@osu.edu,NA,curtis.457,20608
+73,4,mining,73_4,Curtis,Kip,NA,curtis.457@osu.edu,NA,curtis.457,20608
+73,5,environmental ideas,73_5,Curtis,Kip,NA,curtis.457@osu.edu,NA,curtis.457,20608
+74,1,ethics,74_1,D'Arms,Justin,NA,darms.1@osu.edu,NA,darms.1,38109
+74,2,wellbeing,74_2,D'Arms,Justin,NA,darms.1@osu.edu,NA,darms.1,38109
+74,3,justice,74_3,D'Arms,Justin,NA,darms.1@osu.edu,NA,darms.1,38109
+74,4,responsibilities future human,74_4,D'Arms,Justin,NA,darms.1@osu.edu,NA,darms.1,38109
+75,1,indoor environment,75_1,Dannemiller,Karen,NA,dannemiller.70@osu.edu,y,dannemiller.70,21219
+75,2,environmental microbiology,75_2,Dannemiller,Karen,NA,dannemiller.70@osu.edu,y,dannemiller.70,21219
+75,3,built environment,75_3,Dannemiller,Karen,NA,dannemiller.70@osu.edu,y,dannemiller.70,21219
+75,4,indoor chemistry,75_4,Dannemiller,Karen,NA,dannemiller.70@osu.edu,y,dannemiller.70,21219
+75,5,exposure,75_5,Dannemiller,Karen,NA,dannemiller.70@osu.edu,y,dannemiller.70,21219
+76,1,energy,76_1,Darrah,Thomas,NA,darrah.24@osu.edu,NA,darrah.24,18237
+76,2,water,76_2,Darrah,Thomas,NA,darrah.24@osu.edu,NA,darrah.24,18237
+76,3,environment,76_3,Darrah,Thomas,NA,darrah.24@osu.edu,NA,darrah.24,18237
+76,4,health,76_4,Darrah,Thomas,NA,darrah.24@osu.edu,NA,darrah.24,18237
+76,5,economic earth resources,76_5,Darrah,Thomas,NA,darrah.24@osu.edu,NA,darrah.24,18237
+77,1,ecosystem restoration,77_1,Davies,G. Matt,Matt,davies.411@osu.edu,NA,davies.411,19669
+77,2,fire,77_2,Davies,G. Matt,Matt,davies.411@osu.edu,NA,davies.411,19669
+77,3,wetlands,77_3,Davies,G. Matt,Matt,davies.411@osu.edu,NA,davies.411,19669
+77,4,land management,77_4,Davies,G. Matt,Matt,davies.411@osu.edu,NA,davies.411,19669
+77,5,resilience,77_5,Davies,G. Matt,Matt,davies.411@osu.edu,NA,davies.411,19669
+78,1,soil carbon,78_1,Demyan,M. Scott,NA,demyan.4@osu.edu,Y,demyan.4,620
+78,2,soil ecosystem services,78_2,Demyan,M. Scott,NA,demyan.4@osu.edu,Y,demyan.4,620
+78,3,rapid soil analysis,78_3,Demyan,M. Scott,NA,demyan.4@osu.edu,Y,demyan.4,620
+78,4,organo mineral interactions,78_4,Demyan,M. Scott,NA,demyan.4@osu.edu,Y,demyan.4,620
+78,5,land degradation,78_5,Demyan,M. Scott,NA,demyan.4@osu.edu,Y,demyan.4,620
+79,1,energy storage,79_1,Doan-Nguyen,Vicky,NA,doan-nguyen.1@osu.edu,NA,doan-nguyen.1,23852
+79,2,renewable energy,79_2,Doan-Nguyen,Vicky,NA,doan-nguyen.1@osu.edu,NA,doan-nguyen.1,23852
+79,3,energy conversion,79_3,Doan-Nguyen,Vicky,NA,doan-nguyen.1@osu.edu,NA,doan-nguyen.1,23852
+80,1,green marketing,80_1,Donnelly,Grant,NA,donnelly.177@osu.edu,y,donnelly.177,24835
+80,2,judgement decision,80_2,Donnelly,Grant,NA,donnelly.177@osu.edu,y,donnelly.177,24835
+80,3,psychology,80_3,Donnelly,Grant,NA,donnelly.177@osu.edu,y,donnelly.177,24835
+80,4,recycling,80_4,Donnelly,Grant,NA,donnelly.177@osu.edu,y,donnelly.177,24835
+80,5,consumers,80_5,Donnelly,Grant,NA,donnelly.177@osu.edu,y,donnelly.177,24835
+81,1,energy policy,81_1,Dormady,Noah,NA,dormady.1@osu.edu,NA,dormady.1,16182
+81,2,energy economics,81_2,Dormady,Noah,NA,dormady.1@osu.edu,NA,dormady.1,16182
+81,3,environmental policy,81_3,Dormady,Noah,NA,dormady.1@osu.edu,NA,dormady.1,16182
+81,4,economic resilience,81_4,Dormady,Noah,NA,dormady.1@osu.edu,NA,dormady.1,16182
+81,5,experimental economics simulation,81_5,Dormady,Noah,NA,dormady.1@osu.edu,NA,dormady.1,16182
+82,1,anthropology,82_1,Downey,Sean,S.,downey.205@osu.edu,y,downey.205,23961
+82,2,complex adaptive systems,82_2,Downey,Sean,S.,downey.205@osu.edu,y,downey.205,23961
+82,3,resilience,82_3,Downey,Sean,S.,downey.205@osu.edu,y,downey.205,23961
+82,4,swidden agriculture,82_4,Downey,Sean,S.,downey.205@osu.edu,y,downey.205,23961
+82,5,computational methods,82_5,Downey,Sean,S.,downey.205@osu.edu,y,downey.205,23961
+83,1,remote sensing,83_1,Drewry,Darren,NA,drewry.19@osu.edu,NA,drewry.19,27029
+83,2,ecohydrology,83_2,Drewry,Darren,NA,drewry.19@osu.edu,NA,drewry.19,27029
+83,3,biophysical simulation,83_3,Drewry,Darren,NA,drewry.19@osu.edu,NA,drewry.19,27029
+83,4,climate change,83_4,Drewry,Darren,NA,drewry.19@osu.edu,NA,drewry.19,27029
+83,5,ecosystem services,83_5,Drewry,Darren,NA,drewry.19@osu.edu,NA,drewry.19,27029
+84,1,hydrology,84_1,Durand,Michael,NA,durand.8@osu.edu,NA,durand.8,6723
+84,2,remote sensing,84_2,Durand,Michael,NA,durand.8@osu.edu,NA,durand.8,6723
+84,3,snow,84_3,Durand,Michael,NA,durand.8@osu.edu,NA,durand.8,6723
+84,4,rivers,84_4,Durand,Michael,NA,durand.8@osu.edu,NA,durand.8,6723
+85,1,alternative energy,85_1,Eaglin,Jennifer,NA,eaglin.5@osu.edu,y,eaglin.5,22348
+85,2,ethanol,85_2,Eaglin,Jennifer,NA,eaglin.5@osu.edu,y,eaglin.5,22348
+85,3,brazil,85_3,Eaglin,Jennifer,NA,eaglin.5@osu.edu,y,eaglin.5,22348
+85,4,sugarcane,85_4,Eaglin,Jennifer,NA,eaglin.5@osu.edu,y,eaglin.5,22348
+85,5,energy,85_5,Eaglin,Jennifer,NA,eaglin.5@osu.edu,y,eaglin.5,22348
+86,1,hydraulic fracturing,86_1,El-Monier,Ilham,NA,el-monier.1@osu.edu,NA,el-monier.1,22404
+86,2,carbon capturing storage utlization ccsu,86_2,El-Monier,Ilham,NA,el-monier.1@osu.edu,NA,el-monier.1,22404
+86,3,machine learning,86_3,El-Monier,Ilham,NA,el-monier.1@osu.edu,NA,el-monier.1,22404
+86,4,formation damage,86_4,El-Monier,Ilham,NA,el-monier.1@osu.edu,NA,el-monier.1,22404
+86,5,petrophysics,86_5,El-Monier,Ilham,NA,el-monier.1@osu.edu,NA,el-monier.1,22404
+87,1,sustainability,87_1,Elmore,Bart,NA,elmore.83@osu.edu,y,elmore.83,22456
+87,2,environmental history,87_2,Elmore,Bart,NA,elmore.83@osu.edu,y,elmore.83,22456
+87,3,history capitalism,87_3,Elmore,Bart,NA,elmore.83@osu.edu,y,elmore.83,22456
+87,4,business environment,87_4,Elmore,Bart,NA,elmore.83@osu.edu,y,elmore.83,22456
+87,5,coca cola,87_5,Elmore,Bart,NA,elmore.83@osu.edu,y,elmore.83,22456
+88,1,capacity building,88_1,Erbaugh,J.,Mark,erbaugh.1@osu.edu,NA,erbaugh.1,NA
+88,2,participatory agriculture research,88_2,Erbaugh,J.,Mark,erbaugh.1@osu.edu,NA,erbaugh.1,NA
+88,3,integrated pest management,88_3,Erbaugh,J.,Mark,erbaugh.1@osu.edu,NA,erbaugh.1,NA
+88,4,chains,88_4,Erbaugh,J.,Mark,erbaugh.1@osu.edu,NA,erbaugh.1,NA
+88,5,sustainable intensification,88_5,Erbaugh,J.,Mark,erbaugh.1@osu.edu,NA,erbaugh.1,NA
+89,1,renewable energy,89_1,Ezeji,Thaddeus Chukwuemeka,NA,ezeji.1@osu.edu,NA,ezeji.1,6449
+89,2,biofuel,89_2,Ezeji,Thaddeus Chukwuemeka,NA,ezeji.1@osu.edu,NA,ezeji.1,6449
+89,3,lignocellulosic biomass,89_3,Ezeji,Thaddeus Chukwuemeka,NA,ezeji.1@osu.edu,NA,ezeji.1,6449
+89,4,anaerobic digestion,89_4,Ezeji,Thaddeus Chukwuemeka,NA,ezeji.1@osu.edu,NA,ezeji.1,6449
+89,5,water quality,89_5,Ezeji,Thaddeus Chukwuemeka,NA,ezeji.1@osu.edu,NA,ezeji.1,6449
+90,1,co2 emission control,90_1,Fan,Liang-Shih,NA,fan.1@osu.edu,NA,fan.1,34083
+90,2,fossil energy conversion,90_2,Fan,Liang-Shih,NA,fan.1@osu.edu,NA,fan.1,34083
+90,3,process system engineering,90_3,Fan,Liang-Shih,NA,fan.1@osu.edu,NA,fan.1,34083
+90,4,modeling simulation multiphase reaction engineering,90_4,Fan,Liang-Shih,NA,fan.1@osu.edu,NA,fan.1,34083
+91,1,traditional ecological knowledge,91_1,Field,Julie,S.,field.59@osu.edu,NA,field.59,6644
+91,2,cultural resources,91_2,Field,Julie,S.,field.59@osu.edu,NA,field.59,6644
+91,3,sustainable food production,91_3,Field,Julie,S.,field.59@osu.edu,NA,field.59,6644
+91,4,stewardship,91_4,Field,Julie,S.,field.59@osu.edu,NA,field.59,6644
+91,5,land change,91_5,Field,Julie,S.,field.59@osu.edu,NA,field.59,6644
+92,1,circular economy,92_1,Fiksel,Joseph,NA,fiksel.2@osu.edu,NA,fiksel.2,NA
+92,2,enterprise sustainability,92_2,Fiksel,Joseph,NA,fiksel.2@osu.edu,NA,fiksel.2,NA
+92,3,supply chain resilience,92_3,Fiksel,Joseph,NA,fiksel.2@osu.edu,NA,fiksel.2,NA
+92,4,integrated modeling,92_4,Fiksel,Joseph,NA,fiksel.2@osu.edu,NA,fiksel.2,NA
+92,5,environmental risk analysis,92_5,Fiksel,Joseph,NA,fiksel.2@osu.edu,NA,fiksel.2,NA
+93,1,environmental assessment,93_1,Fineran,Stacey,NA,fineran.2@osu.edu,NA,fineran.2,39627
+93,2,climate adaptation,93_2,Fineran,Stacey,NA,fineran.2@osu.edu,NA,fineran.2,39627
+93,3,nature based solutions nbs,93_3,Fineran,Stacey,NA,fineran.2@osu.edu,NA,fineran.2,39627
+93,4,ecosystem based adaptation eba,93_4,Fineran,Stacey,NA,fineran.2@osu.edu,NA,fineran.2,39627
+93,5,ecosystem based disaster risk reduction eco drr,93_5,Fineran,Stacey,NA,fineran.2@osu.edu,NA,fineran.2,39627
+94,1,quantitative genetics,94_1,Fresnedo,Jonathan,NA,fresnedoramirez.1@osu.edu,y,fresnedoramirez.1,21894
+94,2,plant breeding,94_2,Fresnedo,Jonathan,NA,fresnedoramirez.1@osu.edu,y,fresnedoramirez.1,21894
+94,3,plant domestication,94_3,Fresnedo,Jonathan,NA,fresnedoramirez.1@osu.edu,y,fresnedoramirez.1,21894
+94,4,plant genomics,94_4,Fresnedo,Jonathan,NA,fresnedoramirez.1@osu.edu,y,fresnedoramirez.1,21894
+94,5,genome analytics,94_5,Fresnedo,Jonathan,NA,fresnedoramirez.1@osu.edu,y,fresnedoramirez.1,21894
+95,1,water quality,95_1,Gabor,Rachel,S.,gabor.40@osu.edu,NA,gabor.40,23844
+95,2,hydrology,95_2,Gabor,Rachel,S.,gabor.40@osu.edu,NA,gabor.40,23844
+95,3,biogeochemistry,95_3,Gabor,Rachel,S.,gabor.40@osu.edu,NA,gabor.40,23844
+95,4,disturbances,95_4,Gabor,Rachel,S.,gabor.40@osu.edu,NA,gabor.40,23844
+95,5,carbon cycle,95_5,Gabor,Rachel,S.,gabor.40@osu.edu,NA,gabor.40,23844
+96,1,insect,96_1,Gardiner,Mary,NA,gardiner.29@osu.edu,NA,gardiner.29,11904
+96,2,vacant lot,96_2,Gardiner,Mary,NA,gardiner.29@osu.edu,NA,gardiner.29,11904
+96,3,heavy metals,96_3,Gardiner,Mary,NA,gardiner.29@osu.edu,NA,gardiner.29,11904
+96,4,landscape,96_4,Gardiner,Mary,NA,gardiner.29@osu.edu,NA,gardiner.29,11904
+96,5,urban forest,96_5,Gardiner,Mary,NA,gardiner.29@osu.edu,NA,gardiner.29,11904
+97,1,wildlife conservation,97_1,Gates,Robert,NA,gates.77@osu.edu,NA,gates.77,39480
+97,2,land change,97_2,Gates,Robert,NA,gates.77@osu.edu,NA,gates.77,39480
+97,3,wetlands conservation,97_3,Gates,Robert,NA,gates.77@osu.edu,NA,gates.77,39480
+97,4,sustainable resource management,97_4,Gates,Robert,NA,gates.77@osu.edu,NA,gates.77,39480
+97,5,ecosystem services,97_5,Gates,Robert,NA,gates.77@osu.edu,NA,gates.77,39480
+98,1,global health,98_1,Gebreyes,Wondwossen,A.,gebreyes.1@osu.edu,NA,gebreyes.1,5130
+98,2,capacity building,98_2,Gebreyes,Wondwossen,A.,gebreyes.1@osu.edu,NA,gebreyes.1,5130
+98,3,zoonotic diseases,98_3,Gebreyes,Wondwossen,A.,gebreyes.1@osu.edu,NA,gebreyes.1,5130
+98,4,health,98_4,Gebreyes,Wondwossen,A.,gebreyes.1@osu.edu,NA,gebreyes.1,5130
+98,5,antimicrobial resistance,98_5,Gebreyes,Wondwossen,A.,gebreyes.1@osu.edu,NA,gebreyes.1,5130
+99,1,resilient infrastructure,99_1,Gingerich,Daniel,NA,gingerich.62@osu.edu,y,gingerich.62,29399
+99,2,urban water infrastructure,99_2,Gingerich,Daniel,NA,gingerich.62@osu.edu,y,gingerich.62,29399
+99,3,energy systems,99_3,Gingerich,Daniel,NA,gingerich.62@osu.edu,y,gingerich.62,29399
+99,4,environmental policy analysis,99_4,Gingerich,Daniel,NA,gingerich.62@osu.edu,y,gingerich.62,29399
+99,5,sustainable engineering,99_5,Gingerich,Daniel,NA,gingerich.62@osu.edu,y,gingerich.62,29399
+100,1,visible light photocatalysts,100_1,Gouma,Pelagia-Irene,NA,gouma.2@osu.edu,NA,gouma.2,38704
+100,2,advanced sorbents,100_2,Gouma,Pelagia-Irene,NA,gouma.2@osu.edu,NA,gouma.2,38704
+100,3,sensors,100_3,Gouma,Pelagia-Irene,NA,gouma.2@osu.edu,NA,gouma.2,38704
+100,4,food water energy nexus,100_4,Gouma,Pelagia-Irene,NA,gouma.2@osu.edu,NA,gouma.2,38704
+100,5,nanotechnology,100_5,Gouma,Pelagia-Irene,NA,gouma.2@osu.edu,NA,gouma.2,38704
+102,1,photovoltaics,102_1,Grassman,Tyler,NA,grassman.5@osu.edu,NA,grassman.5,6837
+102,2,solar power,102_2,Grassman,Tyler,NA,grassman.5@osu.edu,NA,grassman.5,6837
+102,3,epitaxy,102_3,Grassman,Tyler,NA,grassman.5@osu.edu,NA,grassman.5,6837
+102,4,semiconductors,102_4,Grassman,Tyler,NA,grassman.5@osu.edu,NA,grassman.5,6837
+102,5,electron microscopy,102_5,Grassman,Tyler,NA,grassman.5@osu.edu,NA,grassman.5,6837
+103,1,water quality,103_1,Gray,Suzanne,M.,gray.1030@osu.edu,NA,gray.1030,18327
+103,2,sustainable fisheries,103_2,Gray,Suzanne,M.,gray.1030@osu.edu,NA,gray.1030,18327
+103,3,ecosystem services,103_3,Gray,Suzanne,M.,gray.1030@osu.edu,NA,gray.1030,18327
+103,4,freshwater,103_4,Gray,Suzanne,M.,gray.1030@osu.edu,NA,gray.1030,18327
+104,1,economic resilinece,104_1,Greenbaum,Rob,NA,greenbaum.3@osu.edu,NA,greenbaum.3,40205
+104,2,economic development,104_2,Greenbaum,Rob,NA,greenbaum.3@osu.edu,NA,greenbaum.3,40205
+104,3,decision,104_3,Greenbaum,Rob,NA,greenbaum.3@osu.edu,NA,greenbaum.3,40205
+105,1,origins agriculture,105_1,Gremillion,Kris,NA,gremillion.1@osu.edu,NA,gremillion.1,36767
+105,2,disturbance ecology,105_2,Gremillion,Kris,NA,gremillion.1@osu.edu,NA,gremillion.1,36767
+105,3,landscape transformation,105_3,Gremillion,Kris,NA,gremillion.1@osu.edu,NA,gremillion.1,36767
+105,4,sustainable food production,105_4,Gremillion,Kris,NA,gremillion.1@osu.edu,NA,gremillion.1,36767
+105,5,historical ecology,105_5,Gremillion,Kris,NA,gremillion.1@osu.edu,NA,gremillion.1,36767
+106,1,coral reefs,106_1,Grottoli,Andrea,G,grottoli.1@osu.edu,NA,grottoli.1,4259
+106,2,climate change,106_2,Grottoli,Andrea,G,grottoli.1@osu.edu,NA,grottoli.1,4259
+106,3,organismal resilience,106_3,Grottoli,Andrea,G,grottoli.1@osu.edu,NA,grottoli.1,4259
+106,4,coral microbiome,106_4,Grottoli,Andrea,G,grottoli.1@osu.edu,NA,grottoli.1,4259
+106,5,coral geochemistry,106_5,Grottoli,Andrea,G,grottoli.1@osu.edu,NA,grottoli.1,4259
+107,1,green urban infrastructure,107_1,Guldmann,Jean-Michel,NA,guldmann.1@osu.edu,NA,guldmann.1,NA
+107,2,land dynamics,107_2,Guldmann,Jean-Michel,NA,guldmann.1@osu.edu,NA,guldmann.1,NA
+107,3,urban microclimate,107_3,Guldmann,Jean-Michel,NA,guldmann.1@osu.edu,NA,guldmann.1,NA
+107,4,environmental pollution,107_4,Guldmann,Jean-Michel,NA,guldmann.1@osu.edu,NA,guldmann.1,NA
+107,5,disaster mitigation,107_5,Guldmann,Jean-Michel,NA,guldmann.1@osu.edu,NA,guldmann.1,NA
+108,1,renewable energy markets,108_1,Gupta,Abhishek,NA,gupta.706@osu.edu,NA,gupta.706,20901
+108,2,cybersecurity,108_2,Gupta,Abhishek,NA,gupta.706@osu.edu,NA,gupta.706,20901
+108,3,multi modal transportation systems,108_3,Gupta,Abhishek,NA,gupta.706@osu.edu,NA,gupta.706,20901
+108,4,probability theory,108_4,Gupta,Abhishek,NA,gupta.706@osu.edu,NA,gupta.706,20901
+108,5,optimization game theory,108_5,Gupta,Abhishek,NA,gupta.706@osu.edu,NA,gupta.706,20901
+109,1,sustainable mobility,109_1,Guvenc,Levent,NA,guvenc.1@osu.edu,NA,guvenc.1,3765
+109,2,connected autonomous driving,109_2,Guvenc,Levent,NA,guvenc.1@osu.edu,NA,guvenc.1,3765
+109,3,smart mobility,109_3,Guvenc,Levent,NA,guvenc.1@osu.edu,NA,guvenc.1,3765
+110,1,economics,110_1,Haab,Timothy,NA,haab.1@osu.edu,NA,haab.1,446
+110,2,benefit cost analysis,110_2,Haab,Timothy,NA,haab.1@osu.edu,NA,haab.1,446
+110,3,ecosystem services,110_3,Haab,Timothy,NA,haab.1@osu.edu,NA,haab.1,446
+110,4,valuation,110_4,Haab,Timothy,NA,haab.1@osu.edu,NA,haab.1,446
+110,5,sustainable communities,110_5,Haab,Timothy,NA,haab.1@osu.edu,NA,haab.1,446
+111,1,sustainable energy,111_1,Hadad,Christopher,M.,hadad.1@osu.edu,NA,hadad.1,37783
+111,2,photocatalysis electrocatalysis,111_2,Hadad,Christopher,M.,hadad.1@osu.edu,NA,hadad.1,37783
+112,1,global development,112_1,Hagenberger,Michael,NA,hagenberger.1@osu.edu,NA,hagenberger.1,19742
+112,2,sustainable infrastructure,112_2,Hagenberger,Michael,NA,hagenberger.1@osu.edu,NA,hagenberger.1,19742
+112,3,resilient infrastructure,112_3,Hagenberger,Michael,NA,hagenberger.1@osu.edu,NA,hagenberger.1,19742
+112,4,water system development,112_4,Hagenberger,Michael,NA,hagenberger.1@osu.edu,NA,hagenberger.1,19742
+112,5,water system management,112_5,Hagenberger,Michael,NA,hagenberger.1@osu.edu,NA,hagenberger.1,19742
+113,1,polymers,113_1,Hall,Lisa,NA,hall.1004@osu.edu,NA,hall.1004,16237
+113,2,molecular dynamics,113_2,Hall,Lisa,NA,hall.1004@osu.edu,NA,hall.1004,16237
+113,3,electrolytes,113_3,Hall,Lisa,NA,hall.1004@osu.edu,NA,hall.1004,16237
+114,1,water quality,114_1,Halloran,Kent,NA,halloran.21@osu.edu,NA,halloran.21,34859
+114,2,green infrastructure,114_2,Halloran,Kent,NA,halloran.21@osu.edu,NA,halloran.21,34859
+114,3,stormwater,114_3,Halloran,Kent,NA,halloran.21@osu.edu,NA,halloran.21,34859
+114,4,aquatic environment,114_4,Halloran,Kent,NA,halloran.21@osu.edu,NA,halloran.21,34859
+114,5,potable water wastewater,114_5,Halloran,Kent,NA,halloran.21@osu.edu,NA,halloran.21,34859
+115,1,algae,115_1,Hamel,Patrice,NA,hamel.16@osu.edu,NA,hamel.16,4789
+115,2,photosynthesis respiration,115_2,Hamel,Patrice,NA,hamel.16@osu.edu,NA,hamel.16,4789
+115,3,mitochondria chloroplasts,115_3,Hamel,Patrice,NA,hamel.16@osu.edu,NA,hamel.16,4789
+115,4,triacylglyceride,115_4,Hamel,Patrice,NA,hamel.16@osu.edu,NA,hamel.16,4789
+115,5,hydrogen,115_5,Hamel,Patrice,NA,hamel.16@osu.edu,NA,hamel.16,4789
+116,1,policy,116_1,Hamilton,Matt,NA,hamilton.1323@osu.edu,y,hamilton.1323,26230
+116,2,collaborative institutions,116_2,Hamilton,Matt,NA,hamilton.1323@osu.edu,y,hamilton.1323,26230
+116,3,networks,116_3,Hamilton,Matt,NA,hamilton.1323@osu.edu,y,hamilton.1323,26230
+116,4,hazards,116_4,Hamilton,Matt,NA,hamilton.1323@osu.edu,y,hamilton.1323,26230
+116,5,adaptation,116_5,Hamilton,Matt,NA,hamilton.1323@osu.edu,y,hamilton.1323,26230
+117,1,climate adaptation,117_1,Hattey,Jeff,NA,hattey.3@osu.edu,NA,hattey.3,15069
+117,2,soil resilience,117_2,Hattey,Jeff,NA,hattey.3@osu.edu,NA,hattey.3,15069
+117,3,soil restoration,117_3,Hattey,Jeff,NA,hattey.3@osu.edu,NA,hattey.3,15069
+117,4,waste management,117_4,Hattey,Jeff,NA,hattey.3@osu.edu,NA,hattey.3,15069
+117,5,phosphorus management,117_5,Hattey,Jeff,NA,hattey.3@osu.edu,NA,hattey.3,15069
+118,1,sustainable food system,118_1,Heldman,Dennis,R,heldman.20@osu.edu,NA,heldman.20,16670
+118,2,energy efficiency,118_2,Heldman,Dennis,R,heldman.20@osu.edu,NA,heldman.20,16670
+118,3,fresh water conservation,118_3,Heldman,Dennis,R,heldman.20@osu.edu,NA,heldman.20,16670
+118,4,food waste,118_4,Heldman,Dennis,R,heldman.20@osu.edu,NA,heldman.20,16670
+119,1,polymers,119_1,Helfer,Carin,NA,helfer.12@osu.edu,NA,helfer.12,27353
+119,2,natural rubber,119_2,Helfer,Carin,NA,helfer.12@osu.edu,NA,helfer.12,27353
+119,3,rubbers,119_3,Helfer,Carin,NA,helfer.12@osu.edu,NA,helfer.12,27353
+119,4,elastomers,119_4,Helfer,Carin,NA,helfer.12@osu.edu,NA,helfer.12,27353
+120,1,social justice,120_1,Hesford,Wendy,S.,hesford.1@osu.edu,NA,hesford.1,1142
+120,2,human rights,120_2,Hesford,Wendy,S.,hesford.1@osu.edu,NA,hesford.1,1142
+121,1,resilient regional economies,121_1,Hill,Edward,(Ned),Hill.1973@osu.edu,NA,Hill.1973,20792
+121,2,energy policy,121_2,Hill,Edward,(Ned),Hill.1973@osu.edu,NA,Hill.1973,20792
+121,3,manufactuirng policy,121_3,Hill,Edward,(Ned),Hill.1973@osu.edu,NA,Hill.1973,20792
+121,4,economic community development,121_4,Hill,Edward,(Ned),Hill.1973@osu.edu,NA,Hill.1973,20792
+121,5,urban regional labor economics,121_5,Hill,Edward,(Ned),Hill.1973@osu.edu,NA,Hill.1973,20792
+122,1,forest ecology,122_1,Hix,David,M.,hix.6@osu.edu,NA,hix.6,36681
+122,2,forest ecosystems,122_2,Hix,David,M.,hix.6@osu.edu,NA,hix.6,36681
+122,3,silviculture,122_3,Hix,David,M.,hix.6@osu.edu,NA,hix.6,36681
+122,4,forest succession,122_4,Hix,David,M.,hix.6@osu.edu,NA,hix.6,36681
+122,5,dendrology,122_5,Hix,David,M.,hix.6@osu.edu,NA,hix.6,36681
+123,1,carbon dioxide capture,123_1,Ho,Winston,NA,ho.192@osu.edu,NA,ho.192,1621
+123,2,hydrogen purification,123_2,Ho,Winston,NA,ho.192@osu.edu,NA,ho.192,1621
+123,3,water desalinaiton purification,123_3,Ho,Winston,NA,ho.192@osu.edu,NA,ho.192,1621
+123,4,carbon dioxide utilization,123_4,Ho,Winston,NA,ho.192@osu.edu,NA,ho.192,1621
+123,5,heavy metals removal recovery,123_5,Ho,Winston,NA,ho.192@osu.edu,NA,ho.192,1621
+124,1,food,124_1,Hogan,Mike,NA,hogan.1@osu.edu,NA,hogan.1,35459
+124,2,sustainable agriculture,124_2,Hogan,Mike,NA,hogan.1@osu.edu,NA,hogan.1,35459
+125,1,chemical chemical stressors,125_1,Hood,Darryl,B.,hood.188@osu.edu,NA,hood.188,18187
+125,2,exposome,125_2,Hood,Darryl,B.,hood.188@osu.edu,NA,hood.188,18187
+125,3,social ecological,125_3,Hood,Darryl,B.,hood.188@osu.edu,NA,hood.188,18187
+125,4,pm2.5,125_4,Hood,Darryl,B.,hood.188@osu.edu,NA,hood.188,18187
+125,5,cumulative risk,125_5,Hood,Darryl,B.,hood.188@osu.edu,NA,hood.188,18187
+126,1,spaceflight,126_1,Horack,John,M.,horack.1@osu.edu,y,horack.1,22225
+126,2,aviation aerospace,126_2,Horack,John,M.,horack.1@osu.edu,y,horack.1,22225
+126,3,astrophysics,126_3,Horack,John,M.,horack.1@osu.edu,y,horack.1,22225
+126,4,satellite remote sensing,126_4,Horack,John,M.,horack.1@osu.edu,y,horack.1,22225
+126,5,energy,126_5,Horack,John,M.,horack.1@osu.edu,y,horack.1,22225
+127,1,climate change,127_1,Howat,Ian M.,NA,howat.4@osu.edu,NA,howat.4,6986
+127,2,sea level rise,127_2,Howat,Ian M.,NA,howat.4@osu.edu,NA,howat.4,6986
+127,3,cryosphere,127_3,Howat,Ian M.,NA,howat.4@osu.edu,NA,howat.4,6986
+127,4,earth sciences,127_4,Howat,Ian M.,NA,howat.4@osu.edu,NA,howat.4,6986
+127,5,remote sensing,127_5,Howat,Ian M.,NA,howat.4@osu.edu,NA,howat.4,6986
+128,1,agroecosystem science,128_1,Hoy,Casey,NA,hoy.1@osu.edu,NA,hoy.1,35624
+128,2,sustainable agriculture,128_2,Hoy,Casey,NA,hoy.1@osu.edu,NA,hoy.1,35624
+128,3,food systems,128_3,Hoy,Casey,NA,hoy.1@osu.edu,NA,hoy.1,35624
+128,4,resilience,128_4,Hoy,Casey,NA,hoy.1@osu.edu,NA,hoy.1,35624
+128,5,social justice,128_5,Hoy,Casey,NA,hoy.1@osu.edu,NA,hoy.1,35624
+129,1,vernacular ecologies,129_1,Hufford,Mary,NA,hufford.77@osu.edu,NA,hufford.77,30137
+129,2,narrative ecology,129_2,Hufford,Mary,NA,hufford.77@osu.edu,NA,hufford.77,30137
+129,3,timber forest products,129_3,Hufford,Mary,NA,hufford.77@osu.edu,NA,hufford.77,30137
+129,4,mixed mesophytic forest,129_4,Hufford,Mary,NA,hufford.77@osu.edu,NA,hufford.77,30137
+129,5,central appalachia,129_5,Hufford,Mary,NA,hufford.77@osu.edu,NA,hufford.77,30137
+130,1,water treatment,130_1,Hull,Natalie,NA,hull.305@osu.edu,y,hull.305,26413
+130,2,microbiome,130_2,Hull,Natalie,NA,hull.305@osu.edu,y,hull.305,26413
+130,3,water quality,130_3,Hull,Natalie,NA,hull.305@osu.edu,y,hull.305,26413
+130,4,environmental microbiology,130_4,Hull,Natalie,NA,hull.305@osu.edu,y,hull.305,26413
+130,5,public health,130_5,Hull,Natalie,NA,hull.305@osu.edu,y,hull.305,26413
+131,1,water dynamics,131_1,Ibaraki,Motomu,NA,Ibaraki.1@osu.edu,NA,Ibaraki.1,38589
+131,2,hydrology,131_2,Ibaraki,Motomu,NA,Ibaraki.1@osu.edu,NA,Ibaraki.1,38589
+131,3,public health,131_3,Ibaraki,Motomu,NA,Ibaraki.1@osu.edu,NA,Ibaraki.1,38589
+131,4,water quality,131_4,Ibaraki,Motomu,NA,Ibaraki.1@osu.edu,NA,Ibaraki.1,38589
+131,5,groundwater,131_5,Ibaraki,Motomu,NA,Ibaraki.1@osu.edu,NA,Ibaraki.1,38589
+132,1,microgrids,132_1,Illindala,Mahesh,NA,illindala.1@osu.edu,NA,illindala.1,15208
+132,2,energy storage,132_2,Illindala,Mahesh,NA,illindala.1@osu.edu,NA,illindala.1,15208
+132,3,power systems,132_3,Illindala,Mahesh,NA,illindala.1@osu.edu,NA,illindala.1,15208
+132,4,distributed energy resources,132_4,Illindala,Mahesh,NA,illindala.1@osu.edu,NA,illindala.1,15208
+132,5,renewable energy,132_5,Illindala,Mahesh,NA,illindala.1@osu.edu,NA,illindala.1,15208
+133,1,community development,133_1,Inwood,Shoshanah,NA,inwood.2@osu.edu,NA,inwood.2,834
+133,2,economic development,133_2,Inwood,Shoshanah,NA,inwood.2@osu.edu,NA,inwood.2,834
+133,3,gender,133_3,Inwood,Shoshanah,NA,inwood.2@osu.edu,NA,inwood.2,834
+133,4,food agriculture systems,133_4,Inwood,Shoshanah,NA,inwood.2@osu.edu,NA,inwood.2,834
+133,5,social sustainability,133_5,Inwood,Shoshanah,NA,inwood.2@osu.edu,NA,inwood.2,834
+134,1,land change,134_1,Irwin,Elena,NA,irwin.78@osu.edu,NA,irwin.78,39728
+134,2,coupled human natural systems,134_2,Irwin,Elena,NA,irwin.78@osu.edu,NA,irwin.78,39728
+134,3,sustainable urban systems,134_3,Irwin,Elena,NA,irwin.78@osu.edu,NA,irwin.78,39728
+134,4,water quality,134_4,Irwin,Elena,NA,irwin.78@osu.edu,NA,irwin.78,39728
+134,5,sustainability assessment,134_5,Irwin,Elena,NA,irwin.78@osu.edu,NA,irwin.78,39728
+135,1,climate smart agriculture,135_1,Islam,Khandakar Rafiq,NA,islam.27@osu.edu,NA,islam.27,1411
+135,2,soil quality,135_2,Islam,Khandakar Rafiq,NA,islam.27@osu.edu,NA,islam.27,1411
+135,3,water quality,135_3,Islam,Khandakar Rafiq,NA,islam.27@osu.edu,NA,islam.27,1411
+135,4,marginal lands renewable energy,135_4,Islam,Khandakar Rafiq,NA,islam.27@osu.edu,NA,islam.27,1411
+135,5,plant growth inducer,135_5,Islam,Khandakar Rafiq,NA,islam.27@osu.edu,NA,islam.27,1411
+136,1,sustainable agriculture,136_1,Jackson-Smith,Douglas,NA,jackson-smith.1@osu.edu,NA,jackson-smith.1,22031
+136,2,participatory approaches,136_2,Jackson-Smith,Douglas,NA,jackson-smith.1@osu.edu,NA,jackson-smith.1,22031
+136,3,rural sociology,136_3,Jackson-Smith,Douglas,NA,jackson-smith.1@osu.edu,NA,jackson-smith.1,22031
+136,4,water quality,136_4,Jackson-Smith,Douglas,NA,jackson-smith.1@osu.edu,NA,jackson-smith.1,22031
+136,5,livestock,136_5,Jackson-Smith,Douglas,NA,jackson-smith.1@osu.edu,NA,jackson-smith.1,22031
+137,1,energy impacts,137_1,Jacquet,Jeffrey,NA,jacquet.8@osu.edu,NA,jacquet.8,22032
+137,2,energy transition,137_2,Jacquet,Jeffrey,NA,jacquet.8@osu.edu,NA,jacquet.8,22032
+137,3,energy development,137_3,Jacquet,Jeffrey,NA,jacquet.8@osu.edu,NA,jacquet.8,22032
+137,4,energy social science,137_4,Jacquet,Jeffrey,NA,jacquet.8@osu.edu,NA,jacquet.8,22032
+138,1,biodiversity,138_1,Jarzyna,Marta,A.,Jarzyna.1@osu.edu,NA,Jarzyna.1,26193
+138,2,macroecology,138_2,Jarzyna,Marta,A.,Jarzyna.1@osu.edu,NA,Jarzyna.1,26193
+138,3,global change,138_3,Jarzyna,Marta,A.,Jarzyna.1@osu.edu,NA,Jarzyna.1,26193
+138,4,ecosystem functions services,138_4,Jarzyna,Marta,A.,Jarzyna.1@osu.edu,NA,Jarzyna.1,26193
+139,1,community development,139_1,Jenkins,Craig,NA,jenkins.12@osu.edu,NA,jenkins.12,34254
+139,2,social justice,139_2,Jenkins,Craig,NA,jenkins.12@osu.edu,NA,jenkins.12,34254
+139,3,disaster preparedness,139_3,Jenkins,Craig,NA,jenkins.12@osu.edu,NA,jenkins.12,34254
+139,4,disaster recovery,139_4,Jenkins,Craig,NA,jenkins.12@osu.edu,NA,jenkins.12,34254
+140,1,remote sensing,140_1,Johnson,Joel,T.,johnson.1374@osu.edu,NA,johnson.1374,38307
+140,2,climate change,140_2,Johnson,Joel,T.,johnson.1374@osu.edu,NA,johnson.1374,38307
+140,3,earth science,140_3,Johnson,Joel,T.,johnson.1374@osu.edu,NA,johnson.1374,38307
+141,1,language change,141_1,Joseph,Brian,D,joseph.1@osu.edu,NA,joseph.1,34215
+141,2,language contact,141_2,Joseph,Brian,D,joseph.1@osu.edu,NA,joseph.1,34215
+141,3,language sustainbility,141_3,Joseph,Brian,D,joseph.1@osu.edu,NA,joseph.1,34215
+141,4,language endangerment,141_4,Joseph,Brian,D,joseph.1@osu.edu,NA,joseph.1,34215
+142,1,experimental behavioral economics,142_1,Kagel,John,NA,kagel.4@osu.edu,NA,kagel.4,40234
+142,2,auction design evaluation,142_2,Kagel,John,NA,kagel.4@osu.edu,NA,kagel.4,40234
+142,3,strategic interactions agents,142_3,Kagel,John,NA,kagel.4@osu.edu,NA,kagel.4,40234
+143,1,agricultural conservation,143_1,Kalcic,Margaret,NA,kalcic.4@osu.edu,NA,kalcic.4,7214
+143,2,water quality,143_2,Kalcic,Margaret,NA,kalcic.4@osu.edu,NA,kalcic.4,7214
+143,3,watershed hydrology,143_3,Kalcic,Margaret,NA,kalcic.4@osu.edu,NA,kalcic.4,7214
+143,4,watershed management,143_4,Kalcic,Margaret,NA,kalcic.4@osu.edu,NA,kalcic.4,7214
+144,1,wildlife,144_1,Karns,Gabriel,NA,karns.36@osu.edu,NA,karns.36,17703
+144,2,land change,144_2,Karns,Gabriel,NA,karns.36@osu.edu,NA,karns.36,17703
+144,3,wildlife habitat,144_3,Karns,Gabriel,NA,karns.36@osu.edu,NA,karns.36,17703
+144,4,energy environment,144_4,Karns,Gabriel,NA,karns.36@osu.edu,NA,karns.36,17703
+144,5,ecological justice,144_5,Karns,Gabriel,NA,karns.36@osu.edu,NA,karns.36,17703
+145,1,agrobiodiversity,145_1,Kawa,Nicholas,NA,kawa.5@osu.edu,NA,kawa.5,21537
+145,2,waste management,145_2,Kawa,Nicholas,NA,kawa.5@osu.edu,NA,kawa.5,21537
+145,3,anthropogenic soils,145_3,Kawa,Nicholas,NA,kawa.5@osu.edu,NA,kawa.5,21537
+145,4,smallholder agriculture,145_4,Kawa,Nicholas,NA,kawa.5@osu.edu,NA,kawa.5,21537
+145,5,anthropocene,145_5,Kawa,Nicholas,NA,kawa.5@osu.edu,NA,kawa.5,21537
+147,1,ecosystem services,147_1,Khanal,Sami,NA,khanal.3@osu.edu,NA,khanal.3,10813
+147,2,climate adaptation,147_2,Khanal,Sami,NA,khanal.3@osu.edu,NA,khanal.3,10813
+147,3,land change,147_3,Khanal,Sami,NA,khanal.3@osu.edu,NA,khanal.3,10813
+147,4,renewable energy,147_4,Khanal,Sami,NA,khanal.3@osu.edu,NA,khanal.3,10813
+147,5,water quality,147_5,Khanal,Sami,NA,khanal.3@osu.edu,NA,khanal.3,10813
+148,1,energy storage,148_1,Kim,Jung-Hyun,NA,kim.6776@osu.edu,NA,kim.6776,22570
+148,2,energy conversion,148_2,Kim,Jung-Hyun,NA,kim.6776@osu.edu,NA,kim.6776,22570
+148,3,lithium ion battery,148_3,Kim,Jung-Hyun,NA,kim.6776@osu.edu,NA,kim.6776,22570
+148,4,solid oxide fuel cell,148_4,Kim,Jung-Hyun,NA,kim.6776@osu.edu,NA,kim.6776,22570
+148,5,solid battery,148_5,Kim,Jung-Hyun,NA,kim.6776@osu.edu,NA,kim.6776,22570
+149,1,food security,149_1,Kleinhenz,Matthew D.,NA,Kleinhenz.1@osu.edu,NA,Kleinhenz.1,35707
+149,2,climate adaptation,149_2,Kleinhenz,Matthew D.,NA,Kleinhenz.1@osu.edu,NA,Kleinhenz.1,35707
+149,3,natural resource efficiency protection,149_3,Kleinhenz,Matthew D.,NA,Kleinhenz.1@osu.edu,NA,Kleinhenz.1,35707
+149,4,farm design management,149_4,Kleinhenz,Matthew D.,NA,Kleinhenz.1@osu.edu,NA,Kleinhenz.1,35707
+149,5,human ecosystem services,149_5,Kleinhenz,Matthew D.,NA,Kleinhenz.1@osu.edu,NA,Kleinhenz.1,35707
+150,1,social inequality,150_1,Kleit,Rachel,Garshick,kleit.1@osu.edu,NA,kleit.1,16451
+150,2,affordable housing,150_2,Kleit,Rachel,Garshick,kleit.1@osu.edu,NA,kleit.1,16451
+150,3,social justice,150_3,Kleit,Rachel,Garshick,kleit.1@osu.edu,NA,kleit.1,16451
+150,4,poverty alleviation,150_4,Kleit,Rachel,Garshick,kleit.1@osu.edu,NA,kleit.1,16451
+150,5,housing stability,150_5,Kleit,Rachel,Garshick,kleit.1@osu.edu,NA,kleit.1,16451
+151,1,supply chain,151_1,Knemeyer,A.,Michael,knemeyer.4@osu.edu,NA,knemeyer.4,2413
+151,2,logistics,151_2,Knemeyer,A.,Michael,knemeyer.4@osu.edu,NA,knemeyer.4,2413
+151,3,sustainability risk,151_3,Knemeyer,A.,Michael,knemeyer.4@osu.edu,NA,knemeyer.4,2413
+151,4,customer perceptions,151_4,Knemeyer,A.,Michael,knemeyer.4@osu.edu,NA,knemeyer.4,2413
+153,1,computational modeling,153_1,Kubatko,Ethan,J,kubatko.3@osu.edu,NA,kubatko.3,10850
+153,2,hazard mitigation,153_2,Kubatko,Ethan,J,kubatko.3@osu.edu,NA,kubatko.3,10850
+153,3,performance computing,153_3,Kubatko,Ethan,J,kubatko.3@osu.edu,NA,kubatko.3,10850
+153,4,hurricane storm surge,153_4,Kubatko,Ethan,J,kubatko.3@osu.edu,NA,kubatko.3,10850
+153,5,finite element methods,153_5,Kubatko,Ethan,J,kubatko.3@osu.edu,NA,kubatko.3,10850
+154,1,uncertainty quantification,154_1,Kumar,Mrinal,NA,kumar.672@osu.edu,NA,kumar.672,22428
+154,2,optimization,154_2,Kumar,Mrinal,NA,kumar.672@osu.edu,NA,kumar.672,22428
+154,3,foreascting,154_3,Kumar,Mrinal,NA,kumar.672@osu.edu,NA,kumar.672,22428
+154,4,control,154_4,Kumar,Mrinal,NA,kumar.672@osu.edu,NA,kumar.672,22428
+154,5,planning,154_5,Kumar,Mrinal,NA,kumar.672@osu.edu,NA,kumar.672,22428
+155,1,nutrients,155_1,LaBarge,Greg,NA,labarge.1@osu.edu,NA,labarge.1,35549
+155,2,soil erosion,155_2,LaBarge,Greg,NA,labarge.1@osu.edu,NA,labarge.1,35549
+155,3,water quality,155_3,LaBarge,Greg,NA,labarge.1@osu.edu,NA,labarge.1,35549
+156,1,soil carbon sequestration,156_1,Lal,Rattan,NA,Lal.1@osu.edu,NA,Lal.1,35589
+156,2,food security,156_2,Lal,Rattan,NA,Lal.1@osu.edu,NA,Lal.1,35589
+156,3,sustainable soil management,156_3,Lal,Rattan,NA,Lal.1@osu.edu,NA,Lal.1,35589
+156,4,climate resilient agro ecosystems,156_4,Lal,Rattan,NA,Lal.1@osu.edu,NA,Lal.1,35589
+156,5,soil degradation restoration,156_5,Lal,Rattan,NA,Lal.1@osu.edu,NA,Lal.1,35589
+157,1,toxicology,157_1,Lanno,Roman,NA,lanno.1@osu.edu,NA,lanno.1,1193
+157,2,ecology,157_2,Lanno,Roman,NA,lanno.1@osu.edu,NA,lanno.1,1193
+157,3,metals,157_3,Lanno,Roman,NA,lanno.1@osu.edu,NA,lanno.1,1193
+157,4,risk assessment,157_4,Lanno,Roman,NA,lanno.1@osu.edu,NA,lanno.1,1193
+157,5,environmental impacts energy production,157_5,Lanno,Roman,NA,lanno.1@osu.edu,NA,lanno.1,1193
+158,1,sustainable urban design,158_1,Lara,Jesus,J.,lara.13@osu.edu,NA,lara.13,6503
+158,2,community development,158_2,Lara,Jesus,J.,lara.13@osu.edu,NA,lara.13,6503
+158,3,resilient communites,158_3,Lara,Jesus,J.,lara.13@osu.edu,NA,lara.13,6503
+158,4,sociocultural factors design,158_4,Lara,Jesus,J.,lara.13@osu.edu,NA,lara.13,6503
+158,5,responsive adaptive urban environments,158_5,Lara,Jesus,J.,lara.13@osu.edu,NA,lara.13,6503
+159,1,nutrition,159_1,Larsen,Clark,Spencer,Larsen.53@osu.edu,NA,Larsen.53,884
+159,2,health,159_2,Larsen,Clark,Spencer,Larsen.53@osu.edu,NA,Larsen.53,884
+159,3,adaptation,159_3,Larsen,Clark,Spencer,Larsen.53@osu.edu,NA,Larsen.53,884
+159,4,bioarchaeology,159_4,Larsen,Clark,Spencer,Larsen.53@osu.edu,NA,Larsen.53,884
+159,5,biological anthropology,159_5,Larsen,Clark,Spencer,Larsen.53@osu.edu,NA,Larsen.53,884
+160,1,sustainable mobility,160_1,Le,Huyen,T.K.,le.253@osu.edu,y,le.253,17511
+160,2,sustainable behavior,160_2,Le,Huyen,T.K.,le.253@osu.edu,y,le.253,17511
+160,3,health,160_3,Le,Huyen,T.K.,le.253@osu.edu,y,le.253,17511
+160,4,exposure assessment,160_4,Le,Huyen,T.K.,le.253@osu.edu,y,le.253,17511
+160,5,ict,160_5,Le,Huyen,T.K.,le.253@osu.edu,y,le.253,17511
+161,1,harmful algal bloom,161_1,Lee,Jiyoung,NA,lee.3598@osu.edu,NA,lee.3598,11223
+161,2,cyanotoxin,161_2,Lee,Jiyoung,NA,lee.3598@osu.edu,NA,lee.3598,11223
+161,3,cyanobacteria,161_3,Lee,Jiyoung,NA,lee.3598@osu.edu,NA,lee.3598,11223
+161,4,antibiotic resistance,161_4,Lee,Jiyoung,NA,lee.3598@osu.edu,NA,lee.3598,11223
+161,5,microbiome,161_5,Lee,Jiyoung,NA,lee.3598@osu.edu,NA,lee.3598,11223
+162,1,human nature relationships,162_1,Lekies,Kristi,NA,lekies.1@osu.edu,NA,lekies.1,5779
+162,2,youth environment,162_2,Lekies,Kristi,NA,lekies.1@osu.edu,NA,lekies.1,5779
+162,3,childhood nature experiences,162_3,Lekies,Kristi,NA,lekies.1@osu.edu,NA,lekies.1,5779
+162,4,program evaluation,162_4,Lekies,Kristi,NA,lekies.1@osu.edu,NA,lekies.1,5779
+162,5,environmental education,162_5,Lekies,Kristi,NA,lekies.1@osu.edu,NA,lekies.1,5779
+163,1,water quality,163_1,Lenhart,John,J.,lenhart.49@osu.edu,NA,lenhart.49,2160
+163,2,resource recovery,163_2,Lenhart,John,J.,lenhart.49@osu.edu,NA,lenhart.49,2160
+163,3,environmental engineering,163_3,Lenhart,John,J.,lenhart.49@osu.edu,NA,lenhart.49,2160
+163,4,water chemistry,163_4,Lenhart,John,J.,lenhart.49@osu.edu,NA,lenhart.49,2160
+163,5,nanotechnology,163_5,Lenhart,John,J.,lenhart.49@osu.edu,NA,lenhart.49,2160
+164,1,ecosystem health,164_1,Leonard-Pingel,Jill,NA,leonard-pingel.1@osu.edu,NA,leonard-pingel.1,23593
+164,2,conservation paleobiology,164_2,Leonard-Pingel,Jill,NA,leonard-pingel.1@osu.edu,NA,leonard-pingel.1,23593
+164,3,nutrient pollution,164_3,Leonard-Pingel,Jill,NA,leonard-pingel.1@osu.edu,NA,leonard-pingel.1,23593
+164,4,lacustrine studies,164_4,Leonard-Pingel,Jill,NA,leonard-pingel.1@osu.edu,NA,leonard-pingel.1,23593
+164,5,coral reefs,164_5,Leonard-Pingel,Jill,NA,leonard-pingel.1@osu.edu,NA,leonard-pingel.1,23593
+165,2,welfare,165_2,Lin,Eden,NA,lin.2659@osu.edu,Y,lin.2659,21915
+165,3,quality life,165_3,Lin,Eden,NA,lin.2659@osu.edu,Y,lin.2659,21915
+165,4,ethics,165_4,Lin,Eden,NA,lin.2659@osu.edu,Y,lin.2659,21915
+166,1,landscape architecture,166_1,Lipschitz,Forbes,NA,Lipschitz.4@osu.edu,NA,Lipschitz.4,22340
+166,2,climate adaptation,166_2,Lipschitz,Forbes,NA,Lipschitz.4@osu.edu,NA,Lipschitz.4,22340
+166,3,resilient design,166_3,Lipschitz,Forbes,NA,Lipschitz.4@osu.edu,NA,Lipschitz.4,22340
+166,4,water quality,166_4,Lipschitz,Forbes,NA,Lipschitz.4@osu.edu,NA,Lipschitz.4,22340
+166,5,habitat,166_5,Lipschitz,Forbes,NA,Lipschitz.4@osu.edu,NA,Lipschitz.4,22340
+167,1,remote sensing,167_1,Liu,Desheng,NA,liu.738@osu.edu,NA,liu.738,5457
+167,2,land change,167_2,Liu,Desheng,NA,liu.738@osu.edu,NA,liu.738,5457
+167,3,water quality,167_3,Liu,Desheng,NA,liu.738@osu.edu,NA,liu.738,5457
+167,4,ecosystem service,167_4,Liu,Desheng,NA,liu.738@osu.edu,NA,liu.738,5457
+167,5,climate change,167_5,Liu,Desheng,NA,liu.738@osu.edu,NA,liu.738,5457
+168,1,sustainable communities,168_1,Lobao,Linda,NA,lobao.1@osu.edu,NA,lobao.1,35256
+168,2,social justice,168_2,Lobao,Linda,NA,lobao.1@osu.edu,NA,lobao.1,35256
+168,3,community poverty inequality,168_3,Lobao,Linda,NA,lobao.1@osu.edu,NA,lobao.1,35256
+168,4,local government,168_4,Lobao,Linda,NA,lobao.1@osu.edu,NA,lobao.1,35256
+168,5,rural communities,168_5,Lobao,Linda,NA,lobao.1@osu.edu,NA,lobao.1,35256
+169,1,econommic development,169_1,Lucente,Joe,NA,lucente.6@osu.edu,NA,lucente.6,785
+169,2,land,169_2,Lucente,Joe,NA,lucente.6@osu.edu,NA,lucente.6,785
+169,3,community resiliency,169_3,Lucente,Joe,NA,lucente.6@osu.edu,NA,lucente.6,785
+170,1,fisheries,170_1,Ludsin,Stuart,NA,ludsin.1@osu.edu,NA,ludsin.1,36668
+170,2,climate change,170_2,Ludsin,Stuart,NA,ludsin.1@osu.edu,NA,ludsin.1,36668
+170,3,nutrient pollution,170_3,Ludsin,Stuart,NA,ludsin.1@osu.edu,NA,ludsin.1,36668
+170,4,ecology,170_4,Ludsin,Stuart,NA,ludsin.1@osu.edu,NA,ludsin.1,36668
+170,5,harmful algal blooms,170_5,Ludsin,Stuart,NA,ludsin.1@osu.edu,NA,ludsin.1,36668
+171,1,energy efficient materials,171_1,Luo,Alan,A.,luo.445@osu.edu,NA,luo.445,17950
+171,2,low carbon manufacturing,171_2,Luo,Alan,A.,luo.445@osu.edu,NA,luo.445,17950
+171,3,lightweight materials structures,171_3,Luo,Alan,A.,luo.445@osu.edu,NA,luo.445,17950
+171,4,energy efficient transportation,171_4,Luo,Alan,A.,luo.445@osu.edu,NA,luo.445,17950
+171,5,sustainable manufacturing,171_5,Luo,Alan,A.,luo.445@osu.edu,NA,luo.445,17950
+172,1,water quality,172_1,Lyon,Steve,NA,lyon.248@osu.edu,NA,lyon.248,28498
+172,2,climate adaptation,172_2,Lyon,Steve,NA,lyon.248@osu.edu,NA,lyon.248,28498
+172,3,nature based solutions,172_3,Lyon,Steve,NA,lyon.248@osu.edu,NA,lyon.248,28498
+172,4,water resources,172_4,Lyon,Steve,NA,lyon.248@osu.edu,NA,lyon.248,28498
+172,5,capacity building,172_5,Lyon,Steve,NA,lyon.248@osu.edu,NA,lyon.248,28498
+173,1,water quality,173_1,Lyons,W,Berry,lyons.142@osu.edu,NA,lyons.142,40473
+173,2,climate change,173_2,Lyons,W,Berry,lyons.142@osu.edu,NA,lyons.142,40473
+173,3,polar systems,173_3,Lyons,W,Berry,lyons.142@osu.edu,NA,lyons.142,40473
+173,4,urbanization effects biogeochemical cycles,173_4,Lyons,W,Berry,lyons.142@osu.edu,NA,lyons.142,40473
+173,5,soil erosion soil quality,173_5,Lyons,W,Berry,lyons.142@osu.edu,NA,lyons.142,40473
+174,1,wastewater treatment,174_1,Mancl,Karen,NA,mancl.1@osu.edu,NA,mancl.1,35281
+174,2,wastewater reuse,174_2,Mancl,Karen,NA,mancl.1@osu.edu,NA,mancl.1,35281
+174,3,water quality,174_3,Mancl,Karen,NA,mancl.1@osu.edu,NA,mancl.1,35281
+174,4,rural infrastructure,174_4,Mancl,Karen,NA,mancl.1@osu.edu,NA,mancl.1,35281
+174,5,china,174_5,Mancl,Karen,NA,mancl.1@osu.edu,NA,mancl.1,35281
+175,1,environmental health,175_1,Mansfield,Becky,NA,mansfield.32@osu.edu,NA,mansfield.32,1140
+175,2,chemical hazards,175_2,Mansfield,Becky,NA,mansfield.32@osu.edu,NA,mansfield.32,1140
+175,3,political ecology,175_3,Mansfield,Becky,NA,mansfield.32@osu.edu,NA,mansfield.32,1140
+175,4,environmental justice,175_4,Mansfield,Becky,NA,mansfield.32@osu.edu,NA,mansfield.32,1140
+175,5,anthropocene,175_5,Mansfield,Becky,NA,mansfield.32@osu.edu,NA,mansfield.32,1140
+176,1,climate change,176_1,Mark,Bryan,NA,mark.9@osu.edu,NA,mark.9,2844
+176,2,mountain environments,176_2,Mark,Bryan,NA,mark.9@osu.edu,NA,mark.9,2844
+176,3,mapping,176_3,Mark,Bryan,NA,mark.9@osu.edu,NA,mark.9,2844
+176,4,glaciers,176_4,Mark,Bryan,NA,mark.9@osu.edu,NA,mark.9,2844
+176,5,water,176_5,Mark,Bryan,NA,mark.9@osu.edu,NA,mark.9,2844
+178,1,land change,178_1,Martin,Kenneth,E,martin.1540@osu.edu,NA,martin.1540,4110
+178,2,renewable energy,178_2,Martin,Kenneth,E,martin.1540@osu.edu,NA,martin.1540,4110
+179,1,structural health monitoring,179_1,Massari,Anthony,NA,massari.8@osu.edu,NA,massari.8,24206
+179,2,resilient infrastructure,179_2,Massari,Anthony,NA,massari.8@osu.edu,NA,massari.8,24206
+179,3,earthquake engineering,179_3,Massari,Anthony,NA,massari.8@osu.edu,NA,massari.8,24206
+179,4,building design,179_4,Massari,Anthony,NA,massari.8@osu.edu,NA,massari.8,24206
+180,1,landscape ecology,180_1,Matthews,Stephen,NA,matthews.204@osu.edu,NA,matthews.204,3004
+180,2,climate change,180_2,Matthews,Stephen,NA,matthews.204@osu.edu,NA,matthews.204,3004
+180,3,land change,180_3,Matthews,Stephen,NA,matthews.204@osu.edu,NA,matthews.204,3004
+180,4,forest wildlife,180_4,Matthews,Stephen,NA,matthews.204@osu.edu,NA,matthews.204,3004
+181,1,air quality,181_1,May,Andy,NA,may.561@osu.edu,NA,may.561,19824
+181,2,atmospheric aerosols,181_2,May,Andy,NA,may.561@osu.edu,NA,may.561,19824
+181,3,atmospheric chemistry,181_3,May,Andy,NA,may.561@osu.edu,NA,may.561,19824
+182,1,renewable energy,182_1,McComb,David,W,mccomb.29@osu.edu,NA,mccomb.29,15300
+182,2,materials energy,182_2,McComb,David,W,mccomb.29@osu.edu,NA,mccomb.29,15300
+182,3,electron microscopy,182_3,McComb,David,W,mccomb.29@osu.edu,NA,mccomb.29,15300
+182,4,materials characterization,182_4,McComb,David,W,mccomb.29@osu.edu,NA,mccomb.29,15300
+183,1,transportation systems,183_1,McCord,Mark,R.,mccord.2@osu.edu,NA,mccord.2,34798
+183,2,liviing laboratory,183_2,McCord,Mark,R.,mccord.2@osu.edu,NA,mccord.2,34798
+183,3,automatically sensed data,183_3,McCord,Mark,R.,mccord.2@osu.edu,NA,mccord.2,34798
+183,4,transit mobility,183_4,McCord,Mark,R.,mccord.2@osu.edu,NA,mccord.2,34798
+183,5,multi attribute evaluation,183_5,McCord,Mark,R.,mccord.2@osu.edu,NA,mccord.2,34798
+184,1,archaeology,184_1,McCorriston,Joy,NA,mccorriston.1@osu.edu,NA,mccorriston.1,40158
+184,2,human ecosystem dynamics,184_2,McCorriston,Joy,NA,mccorriston.1@osu.edu,NA,mccorriston.1,40158
+184,3,land change,184_3,McCorriston,Joy,NA,mccorriston.1@osu.edu,NA,mccorriston.1,40158
+184,4,social decision,184_4,McCorriston,Joy,NA,mccorriston.1@osu.edu,NA,mccorriston.1,40158
+185,1,sustainability issues operations management,185_1,McKie,Erin,NA,mckie.5@osu.edu,NA,mckie.5,23341
+185,2,material reuse recovery,185_2,McKie,Erin,NA,mckie.5@osu.edu,NA,mckie.5,23341
+185,3,environmental regulations,185_3,McKie,Erin,NA,mckie.5@osu.edu,NA,mckie.5,23341
+185,4,circular economy,185_4,McKie,Erin,NA,mckie.5@osu.edu,NA,mckie.5,23341
+185,5,energy management technologies,185_5,McKie,Erin,NA,mckie.5@osu.edu,NA,mckie.5,23341
+186,1,ethics,186_1,McPherson,Tristram,NA,mcpherson.164@osu.edu,NA,mcpherson.164,31698
+186,2,climate change,186_2,McPherson,Tristram,NA,mcpherson.164@osu.edu,NA,mcpherson.164,31698
+186,3,animals,186_3,McPherson,Tristram,NA,mcpherson.164@osu.edu,NA,mcpherson.164,31698
+186,4,justice,186_4,McPherson,Tristram,NA,mcpherson.164@osu.edu,NA,mcpherson.164,31698
+187,1,woodland owner behavior,187_1,Mehmood,Sayeed,NA,mehmood.9@osu.edu,NA,mehmood.9,23942
+187,2,ecosystem services,187_2,Mehmood,Sayeed,NA,mehmood.9@osu.edu,NA,mehmood.9,23942
+187,3,community economic development,187_3,Mehmood,Sayeed,NA,mehmood.9@osu.edu,NA,mehmood.9,23942
+187,4,policy analysis,187_4,Mehmood,Sayeed,NA,mehmood.9@osu.edu,NA,mehmood.9,23942
+187,5,sustainable resource management,187_5,Mehmood,Sayeed,NA,mehmood.9@osu.edu,NA,mehmood.9,23942
+188,1,climate adaptation,188_1,Mercer,Kristin,NA,mercer.97@osu.edu,NA,mercer.97,4839
+188,2,experiential learning,188_2,Mercer,Kristin,NA,mercer.97@osu.edu,NA,mercer.97,4839
+188,3,sustainable agriculture,188_3,Mercer,Kristin,NA,mercer.97@osu.edu,NA,mercer.97,4839
+188,4,crop diversity,188_4,Mercer,Kristin,NA,mercer.97@osu.edu,NA,mercer.97,4839
+188,5,plant ecology evolution,188_5,Mercer,Kristin,NA,mercer.97@osu.edu,NA,mercer.97,4839
+189,1,art ecologies,189_1,Mercil,Michael,NA,mercil.1@osu.edu,NA,mercil.1,37902
+189,2,agricultural transformations,189_2,Mercil,Michael,NA,mercil.1@osu.edu,NA,mercil.1,37902
+189,3,nature cultures,189_3,Mercil,Michael,NA,mercil.1@osu.edu,NA,mercil.1,37902
+189,4,ecosystems awareness,189_4,Mercil,Michael,NA,mercil.1@osu.edu,NA,mercil.1,37902
+189,5,social justice,189_5,Mercil,Michael,NA,mercil.1@osu.edu,NA,mercil.1,37902
+190,1,natural world german literatures cultures ideas,190_1,Mergenthaler,May,NA,mergenthaler.4@osu.edu,NA,mergenthaler.4,6139
+190,2,ecopoetry green literature,190_2,Mergenthaler,May,NA,mergenthaler.4@osu.edu,NA,mergenthaler.4,6139
+190,3,environmental sustainable aesthetics,190_3,Mergenthaler,May,NA,mergenthaler.4@osu.edu,NA,mergenthaler.4,6139
+190,4,relationships scientific cultural concepts nature,190_4,Mergenthaler,May,NA,mergenthaler.4@osu.edu,NA,mergenthaler.4,6139
+190,5,history theory critique environmental humanities ecocriticism,190_5,Mergenthaler,May,NA,mergenthaler.4@osu.edu,NA,mergenthaler.4,6139
+191,1,solar energy,191_1,Michel,Frederick,NA,michel.36@osu.edu,NA,michel.36,39815
+191,2,composting,191_2,Michel,Frederick,NA,michel.36@osu.edu,NA,michel.36,39815
+191,3,renewable energy,191_3,Michel,Frederick,NA,michel.36@osu.edu,NA,michel.36,39815
+191,4,organics recycling,191_4,Michel,Frederick,NA,michel.36@osu.edu,NA,michel.36,39815
+191,5,sustainable mobility,191_5,Michel,Frederick,NA,michel.36@osu.edu,NA,michel.36,39815
+192,1,automotive,192_1,Midlam-Mohler,Shawn,NA,midlam-mohler.1@osu.edu,NA,midlam-mohler.1,40225
+192,2,autonomous,192_2,Midlam-Mohler,Shawn,NA,midlam-mohler.1@osu.edu,NA,midlam-mohler.1,40225
+192,3,engineering,192_3,Midlam-Mohler,Shawn,NA,midlam-mohler.1@osu.edu,NA,midlam-mohler.1,40225
+192,4,modeling,192_4,Midlam-Mohler,Shawn,NA,midlam-mohler.1@osu.edu,NA,midlam-mohler.1,40225
+192,5,simulation,192_5,Midlam-Mohler,Shawn,NA,midlam-mohler.1@osu.edu,NA,midlam-mohler.1,40225
+193,1,sustainable mobility,193_1,Miller,Harvey,NA,miller.81@osu.edu,NA,miller.81,35639
+193,2,social justice,193_2,Miller,Harvey,NA,miller.81@osu.edu,NA,miller.81,35639
+193,3,mobility health,193_3,Miller,Harvey,NA,miller.81@osu.edu,NA,miller.81,35639
+193,4,geographic information science,193_4,Miller,Harvey,NA,miller.81@osu.edu,NA,miller.81,35639
+194,1,sustainable economic systems,194_1,Miranda,Mario,NA,miranda.4@osu.edu,NA,miranda.4,35879
+194,2,international economic development,194_2,Miranda,Mario,NA,miranda.4@osu.edu,NA,miranda.4,35879
+195,1,impact evaluation,195_1,Miteva,Daniela,A.,miteva.2@osu.edu,Y,miteva.2,32331
+195,2,market valuation,195_2,Miteva,Daniela,A.,miteva.2@osu.edu,Y,miteva.2,32331
+195,3,ecosystem services,195_3,Miteva,Daniela,A.,miteva.2@osu.edu,Y,miteva.2,32331
+195,4,landuse change,195_4,Miteva,Daniela,A.,miteva.2@osu.edu,Y,miteva.2,32331
+196,1,earth system modeling,196_1,Montenegro,Alvaro,NA,montenegro.8@osu.edu,NA,montenegro.8,16616
+196,2,land change,196_2,Montenegro,Alvaro,NA,montenegro.8@osu.edu,NA,montenegro.8,16616
+196,3,climate impacts,196_3,Montenegro,Alvaro,NA,montenegro.8@osu.edu,NA,montenegro.8,16616
+196,4,climate mitigation geoengineering,196_4,Montenegro,Alvaro,NA,montenegro.8@osu.edu,NA,montenegro.8,16616
+197,1,ecosystem services,197_1,Moore,Richard,H,moore.11@osu.edu,NA,moore.11,NA
+197,2,water quality,197_2,Moore,Richard,H,moore.11@osu.edu,NA,moore.11,NA
+197,3,carbon nutrient capture cycling,197_3,Moore,Richard,H,moore.11@osu.edu,NA,moore.11,NA
+197,4,land land tenure,197_4,Moore,Richard,H,moore.11@osu.edu,NA,moore.11,NA
+197,5,climate adaptation,197_5,Moore,Richard,H,moore.11@osu.edu,NA,moore.11,NA
+198,1,carbon sequestration,198_1,Moortgat,Joachim,NA,moortgat.1@osu.edu,NA,moortgat.1,18062
+198,2,conventional unconventional energy resources,198_2,Moortgat,Joachim,NA,moortgat.1@osu.edu,NA,moortgat.1,18062
+198,3,geothermal energy,198_3,Moortgat,Joachim,NA,moortgat.1@osu.edu,NA,moortgat.1,18062
+198,4,groundwater quality,198_4,Moortgat,Joachim,NA,moortgat.1@osu.edu,NA,moortgat.1,18062
+198,5,subsurface contaminations including nuclear waste,198_5,Moortgat,Joachim,NA,moortgat.1@osu.edu,NA,moortgat.1,18062
+199,1,ethnography,199_1,Moritz,Mark,NA,moritz.42@osu.edu,NA,moritz.42,5351
+199,2,complex systems,199_2,Moritz,Mark,NA,moritz.42@osu.edu,NA,moritz.42,5351
+199,3,pastoralism,199_3,Moritz,Mark,NA,moritz.42@osu.edu,NA,moritz.42,5351
+199,4,common pool resources,199_4,Moritz,Mark,NA,moritz.42@osu.edu,NA,moritz.42,5351
+199,5,sustainability,199_5,Moritz,Mark,NA,moritz.42@osu.edu,NA,moritz.42,5351
+200,1,paleoclimate reconstruction,200_1,Mosley-Thompson,Ellen,NA,thompson.4@osu.edu,NA,thompson.4,33784
+200,2,ice cores,200_2,Mosley-Thompson,Ellen,NA,thompson.4@osu.edu,NA,thompson.4,33784
+200,3,climate variability,200_3,Mosley-Thompson,Ellen,NA,thompson.4@osu.edu,NA,thompson.4,33784
+200,4,climate change,200_4,Mosley-Thompson,Ellen,NA,thompson.4@osu.edu,NA,thompson.4,33784
+200,5,polar regions,200_5,Mosley-Thompson,Ellen,NA,thompson.4@osu.edu,NA,thompson.4,33784
+201,1,renewable energy,201_1,Moss,Myra,NA,moss.63@osu.edu,NA,moss.63,36077
+201,2,sustainable resilient communities,201_2,Moss,Myra,NA,moss.63@osu.edu,NA,moss.63,36077
+201,3,shale oil gas development,201_3,Moss,Myra,NA,moss.63@osu.edu,NA,moss.63,36077
+201,4,community engagement,201_4,Moss,Myra,NA,moss.63@osu.edu,NA,moss.63,36077
+201,5,social license operate,201_5,Moss,Myra,NA,moss.63@osu.edu,NA,moss.63,36077
+202,1,land,202_1,Munroe,Darla,NA,Munroe.9@osu.edu,NA,Munroe.9,3186
+202,2,forest,202_2,Munroe,Darla,NA,Munroe.9@osu.edu,NA,Munroe.9,3186
+202,3,globalization,202_3,Munroe,Darla,NA,Munroe.9@osu.edu,NA,Munroe.9,3186
+202,4,regional economy,202_4,Munroe,Darla,NA,Munroe.9@osu.edu,NA,Munroe.9,3186
+203,1,sustainable synthesis,203_1,Nagib,David,NA,nagib.1@osu.edu,NA,nagib.1,19605
+203,2,post synthetic conversion,203_2,Nagib,David,NA,nagib.1@osu.edu,NA,nagib.1,19605
+203,3,chemical upgrading,203_3,Nagib,David,NA,nagib.1@osu.edu,NA,nagib.1,19605
+203,4,radical catalysis,203_4,Nagib,David,NA,nagib.1@osu.edu,NA,nagib.1,19605
+203,5,organic chemistry,203_5,Nagib,David,NA,nagib.1@osu.edu,NA,nagib.1,19605
+204,1,design social impact,204_1,Nini,Paul,J.,nini.1@osu.edu,NA,nini.1,36802
+204,2,design sustainabilty,204_2,Nini,Paul,J.,nini.1@osu.edu,NA,nini.1,36802
+205,1,infrastructure,205_1,Otter,Chris,NA,otter.4@osu.edu,NA,otter.4,6218
+205,2,food systems,205_2,Otter,Chris,NA,otter.4@osu.edu,NA,otter.4,6218
+205,3,technosphere,205_3,Otter,Chris,NA,otter.4@osu.edu,NA,otter.4,6218
+205,4,urbanization,205_4,Otter,Chris,NA,otter.4@osu.edu,NA,otter.4,6218
+206,1,catalysis electrocatalysis electrocatalytic ammonia production,206_1,Ozkan,Umit,NA,ozkan.1@osu.edu,NA,ozkan.1,35009
+206,2,renewable energy,206_2,Ozkan,Umit,NA,ozkan.1@osu.edu,NA,ozkan.1,35009
+206,3,fuel cells distributed energy,206_3,Ozkan,Umit,NA,ozkan.1@osu.edu,NA,ozkan.1,35009
+206,4,water quality treatment,206_4,Ozkan,Umit,NA,ozkan.1@osu.edu,NA,ozkan.1,35009
+207,1,pesticide application,207_1,Ozkan,Erdal,NA,ozkan.2@osu.edu,NA,ozkan.2,35209
+207,2,spraying equipment,207_2,Ozkan,Erdal,NA,ozkan.2@osu.edu,NA,ozkan.2,35209
+207,3,reducing pesticide waste,207_3,Ozkan,Erdal,NA,ozkan.2@osu.edu,NA,ozkan.2,35209
+207,4,spray drift,207_4,Ozkan,Erdal,NA,ozkan.2@osu.edu,NA,ozkan.2,35209
+207,5,sustainable pesticides,207_5,Ozkan,Erdal,NA,ozkan.2@osu.edu,NA,ozkan.2,35209
+208,1,habitability,208_1,Panero,Wendy R.,NA,panero.1@osu.edu,NA,panero.1,3769
+208,2,mineral physics,208_2,Panero,Wendy R.,NA,panero.1@osu.edu,NA,panero.1,3769
+209,1,crisis informatics,209_1,Parthasarathy,Srinivasan,NA,parthasarathy.2@osu.edu,NA,parthasarathy.2,217
+209,2,energy conscious computing,209_2,Parthasarathy,Srinivasan,NA,parthasarathy.2@osu.edu,NA,parthasarathy.2,217
+209,3,flood mapping,209_3,Parthasarathy,Srinivasan,NA,parthasarathy.2@osu.edu,NA,parthasarathy.2,217
+209,4,sustainable smart cities,209_4,Parthasarathy,Srinivasan,NA,parthasarathy.2@osu.edu,NA,parthasarathy.2,217
+211,1,food packaging,211_1,Pascall,Melvin,NA,pascall.1@osu.edu,NA,pascall.1,38301
+211,2,edible films coatings,211_2,Pascall,Melvin,NA,pascall.1@osu.edu,NA,pascall.1,38301
+211,3,material characterization,211_3,Pascall,Melvin,NA,pascall.1@osu.edu,NA,pascall.1,38301
+211,4,food shelf life,211_4,Pascall,Melvin,NA,pascall.1@osu.edu,NA,pascall.1,38301
+211,5,biodegradable polymers,211_5,Pascall,Melvin,NA,pascall.1@osu.edu,NA,pascall.1,38301
+212,1,renewable energy,212_1,Paulson,Joel,NA,paulson.82@osu.edu,Y,paulson.82,27255
+212,2,carbon capture sequestration,212_2,Paulson,Joel,NA,paulson.82@osu.edu,Y,paulson.82,27255
+212,3,smart buildings,212_3,Paulson,Joel,NA,paulson.82@osu.edu,Y,paulson.82,27255
+213,1,horizontal drilling,213_1,Penrose,Chris,NA,penrose.1@osu.edu,NA,penrose.1,35413
+213,2,landowner issues,213_2,Penrose,Chris,NA,penrose.1@osu.edu,NA,penrose.1,35413
+213,3,community impacts,213_3,Penrose,Chris,NA,penrose.1@osu.edu,NA,penrose.1,35413
+214,1,landscape connectivity,214_1,Peterman,Bill,NA,Peterman.73@osu.edu,NA,Peterman.73,20706
+214,2,spatial population dynamics,214_2,Peterman,Bill,NA,Peterman.73@osu.edu,NA,Peterman.73,20706
+214,3,movement ecology,214_3,Peterman,Bill,NA,Peterman.73@osu.edu,NA,Peterman.73,20706
+214,4,landscape ecology,214_4,Peterman,Bill,NA,Peterman.73@osu.edu,NA,Peterman.73,20706
+214,5,landscape genetics,214_5,Peterman,Bill,NA,Peterman.73@osu.edu,NA,Peterman.73,20706
+215,1,water quality,215_1,Pintor,Lauren,NA,pintor.6@osu.edu,NA,pintor.6,15426
+215,2,invasive species,215_2,Pintor,Lauren,NA,pintor.6@osu.edu,NA,pintor.6,15426
+216,1,agricultural economics,216_1,Plakias,Zoe,NA,plakias.2@osu.edu,NA,plakias.2,22350
+216,2,food systems,216_2,Plakias,Zoe,NA,plakias.2@osu.edu,NA,plakias.2,22350
+216,3,agricultural policy,216_3,Plakias,Zoe,NA,plakias.2@osu.edu,NA,plakias.2,22350
+216,4,farm policy,216_4,Plakias,Zoe,NA,plakias.2@osu.edu,NA,plakias.2,22350
+216,5,food policy,216_5,Plakias,Zoe,NA,plakias.2@osu.edu,NA,plakias.2,22350
+217,1,recycling,217_1,Posner,Marc,NA,posner.1@osu.edu,NA,posner.1,35369
+217,2,product synergy,217_2,Posner,Marc,NA,posner.1@osu.edu,NA,posner.1,35369
+218,1,manufacturing,218_1,Pourboghrat,Farhang,NA,pourboghrat.2@osu.edu,NA,pourboghrat.2,20931
+218,2,lightweight materials,218_2,Pourboghrat,Farhang,NA,pourboghrat.2@osu.edu,NA,pourboghrat.2,20931
+218,3,integrated computational materials engineering icme,218_3,Pourboghrat,Farhang,NA,pourboghrat.2@osu.edu,NA,pourboghrat.2,20931
+219,1,extreme events,219_1,Pradel,Daniel,NA,pradel.1@osu.edu,NA,pradel.1,22500
+219,2,earthquakes,219_2,Pradel,Daniel,NA,pradel.1@osu.edu,NA,pradel.1,22500
+219,3,hurricanes,219_3,Pradel,Daniel,NA,pradel.1@osu.edu,NA,pradel.1,22500
+219,4,landslides,219_4,Pradel,Daniel,NA,pradel.1@osu.edu,NA,pradel.1,22500
+219,5,dams levees,219_5,Pradel,Daniel,NA,pradel.1@osu.edu,NA,pradel.1,22500
+220,1,social innovation,220_1,Proulx,Sebastien,NA,proulx.12@osu.edu,NA,proulx.12,32786
+220,2,circular economy,220_2,Proulx,Sebastien,NA,proulx.12@osu.edu,NA,proulx.12,32786
+220,3,resilient communities,220_3,Proulx,Sebastien,NA,proulx.12@osu.edu,NA,proulx.12,32786
+220,4,foresight,220_4,Proulx,Sebastien,NA,proulx.12@osu.edu,NA,proulx.12,32786
+220,5,social responsabilities,220_5,Proulx,Sebastien,NA,proulx.12@osu.edu,NA,proulx.12,32786
+221,1,green polymer chemistry engineering,221_1,Puskas,Judit,E.,puskas.19@osu.edu,Y,puskas.19,26952
+221,2,renewable monomers,221_2,Puskas,Judit,E.,puskas.19@osu.edu,Y,puskas.19,26952
+221,3,natural rubber biosynthesis,221_3,Puskas,Judit,E.,puskas.19@osu.edu,Y,puskas.19,26952
+221,4,rubber technology,221_4,Puskas,Judit,E.,puskas.19@osu.edu,Y,puskas.19,26952
+221,5,integration breast cancer diagnosis treatment reconstruction,221_5,Puskas,Judit,E.,puskas.19@osu.edu,Y,puskas.19,26952
+222,1,computer vision image processing smart city applications,222_1,Qin,Rongjun,NA,qin.324@osu.edu,NA,qin.324,31795
+222,2,remote sensing urban natural environment,222_2,Qin,Rongjun,NA,qin.324@osu.edu,NA,qin.324,31795
+222,3,land land cover change,222_3,Qin,Rongjun,NA,qin.324@osu.edu,NA,qin.324,31795
+222,4,ecological environmental system monitoring,222_4,Qin,Rongjun,NA,qin.324@osu.edu,NA,qin.324,31795
+222,5,resilient coupled human natural system,222_5,Qin,Rongjun,NA,qin.324@osu.edu,NA,qin.324,31795
+223,1,sustainable energy,223_1,Qin,Yue,NA,qin.548@osu.edu,Y,qin.548,33374
+223,2,food energy water nexus,223_2,Qin,Yue,NA,qin.548@osu.edu,Y,qin.548,33374
+223,3,air quality human health,223_3,Qin,Yue,NA,qin.548@osu.edu,Y,qin.548,33374
+223,4,integrated assessment,223_4,Qin,Yue,NA,qin.548@osu.edu,Y,qin.548,33374
+223,5,lifecycle assessment,223_5,Qin,Yue,NA,qin.548@osu.edu,Y,qin.548,33374
+224,1,climate,224_1,Quiring,Steven,NA,quiring.10@osu.edu,NA,quiring.10,22415
+224,2,hydroclimate,224_2,Quiring,Steven,NA,quiring.10@osu.edu,NA,quiring.10,22415
+224,3,data analytics,224_3,Quiring,Steven,NA,quiring.10@osu.edu,NA,quiring.10,22415
+224,4,electrical infrastructure,224_4,Quiring,Steven,NA,quiring.10@osu.edu,NA,quiring.10,22415
+224,5,climate change,224_5,Quiring,Steven,NA,quiring.10@osu.edu,NA,quiring.10,22415
+225,1,organic synthesis,225_1,RajanBabu,T.V.,(Babu),rajanbabu.1@osu.edu,NA,rajanbabu.1,33730
+225,2,selective catalysis,225_2,RajanBabu,T.V.,(Babu),rajanbabu.1@osu.edu,NA,rajanbabu.1,33730
+225,3,green chemistry,225_3,RajanBabu,T.V.,(Babu),rajanbabu.1@osu.edu,NA,rajanbabu.1,33730
+225,4,molecule activation,225_4,RajanBabu,T.V.,(Babu),rajanbabu.1@osu.edu,NA,rajanbabu.1,33730
+225,5,renewable resources,225_5,RajanBabu,T.V.,(Babu),rajanbabu.1@osu.edu,NA,rajanbabu.1,33730
+226,1,resilient communities,226_1,Rakowski,Cathy,A.,rakowski.1@osu.edu,NA,rakowski.1,NA
+226,2,immigrants refugees,226_2,Rakowski,Cathy,A.,rakowski.1@osu.edu,NA,rakowski.1,NA
+226,3,urban farming agriculture,226_3,Rakowski,Cathy,A.,rakowski.1@osu.edu,NA,rakowski.1,NA
+226,4,culturally relevant food,226_4,Rakowski,Cathy,A.,rakowski.1@osu.edu,NA,rakowski.1,NA
+227,1,sustainability criteria,227_1,Randall,Alan,NA,randall.3@osu.edu,NA,randall.3,35170
+227,2,benefits costs wellbeing,227_2,Randall,Alan,NA,randall.3@osu.edu,NA,randall.3,35170
+227,3,environmental risk,227_3,Randall,Alan,NA,randall.3@osu.edu,NA,randall.3,35170
+227,4,integrated assessment modeling,227_4,Randall,Alan,NA,randall.3@osu.edu,NA,randall.3,35170
+227,5,environmental ethics,227_5,Randall,Alan,NA,randall.3@osu.edu,NA,randall.3,35170
+228,1,economic environmental sociology,228_1,Rea,Chris,NA,rea.115@osu.edu,Y,rea.115,25558
+228,2,social movements,228_2,Rea,Chris,NA,rea.115@osu.edu,Y,rea.115,25558
+228,3,organizations,228_3,Rea,Chris,NA,rea.115@osu.edu,Y,rea.115,25558
+228,4,land conservation,228_4,Rea,Chris,NA,rea.115@osu.edu,Y,rea.115,25558
+228,5,environmental regulation,228_5,Rea,Chris,NA,rea.115@osu.edu,Y,rea.115,25558
+229,1,green products,229_1,Reczek,Rebecca,Walker,reczek.3@osu.edu,NA,reczek.3,12122
+229,2,sustainable products,229_2,Reczek,Rebecca,Walker,reczek.3@osu.edu,NA,reczek.3,12122
+229,3,consumer psychology driving sustainable consumption,229_3,Reczek,Rebecca,Walker,reczek.3@osu.edu,NA,reczek.3,12122
+229,4,barriers sustainable consumption,229_4,Reczek,Rebecca,Walker,reczek.3@osu.edu,NA,reczek.3,12122
+229,5,sustainable consumer behavior,229_5,Reczek,Rebecca,Walker,reczek.3@osu.edu,NA,reczek.3,12122
+230,1,sustainable mobility,230_1,Rizzoni,Giorgio,NA,rizzoni.1@osu.edu,NA,rizzoni.1,36455
+230,2,electric hybrid vehicles,230_2,Rizzoni,Giorgio,NA,rizzoni.1@osu.edu,NA,rizzoni.1,36455
+230,3,electrochemical energy storage systems,230_3,Rizzoni,Giorgio,NA,rizzoni.1@osu.edu,NA,rizzoni.1,36455
+230,4,modeling analysis energy systems,230_4,Rizzoni,Giorgio,NA,rizzoni.1@osu.edu,NA,rizzoni.1,36455
+230,5,emissions mobile sources,230_5,Rizzoni,Giorgio,NA,rizzoni.1@osu.edu,NA,rizzoni.1,36455
+231,1,community resiliency,231_1,Rodriguez,Mary,T.,rodriguez.746@osu.edu,NA,rodriguez.746,20764
+231,2,food security,231_2,Rodriguez,Mary,T.,rodriguez.746@osu.edu,NA,rodriguez.746,20764
+231,3,gender,231_3,Rodriguez,Mary,T.,rodriguez.746@osu.edu,NA,rodriguez.746,20764
+232,1,food waste,232_1,Roe,Brian,E.,roe.30@osu.edu,NA,roe.30,39665
+232,2,nutrient management,232_2,Roe,Brian,E.,roe.30@osu.edu,NA,roe.30,39665
+232,3,public policy,232_3,Roe,Brian,E.,roe.30@osu.edu,NA,roe.30,39665
+232,4,product labeling,232_4,Roe,Brian,E.,roe.30@osu.edu,NA,roe.30,39665
+232,5,local agriculture,232_5,Roe,Brian,E.,roe.30@osu.edu,NA,roe.30,39665
+233,1,distributed solar energy systems,233_1,Romich,Eric,NA,romich.2@osu.edu,NA,romich.2,10410
+233,2,peak electric demand,233_2,Romich,Eric,NA,romich.2@osu.edu,NA,romich.2,10410
+233,3,scale solar energy development,233_3,Romich,Eric,NA,romich.2@osu.edu,NA,romich.2,10410
+234,1,climate change,234_1,Saltzman,Matthew,R.,saltzman.11@osu.edu,NA,saltzman.11,232
+234,2,sediment beaches,234_2,Saltzman,Matthew,R.,saltzman.11@osu.edu,NA,saltzman.11,232
+234,3,carbon cycle,234_3,Saltzman,Matthew,R.,saltzman.11@osu.edu,NA,saltzman.11,232
+234,4,phosphorus cycling,234_4,Saltzman,Matthew,R.,saltzman.11@osu.edu,NA,saltzman.11,232
+234,5,resilient marine ecosystems,234_5,Saltzman,Matthew,R.,saltzman.11@osu.edu,NA,saltzman.11,232
+235,1,groundwater,235_1,Sawyer,Audrey,NA,sawyer.143@osu.edu,NA,sawyer.143,19597
+235,2,nutrients,235_2,Sawyer,Audrey,NA,sawyer.143@osu.edu,NA,sawyer.143,19597
+235,3,lake erie,235_3,Sawyer,Audrey,NA,sawyer.143@osu.edu,NA,sawyer.143,19597
+235,4,rivers,235_4,Sawyer,Audrey,NA,sawyer.143@osu.edu,NA,sawyer.143,19597
+235,5,models,235_5,Sawyer,Audrey,NA,sawyer.143@osu.edu,NA,sawyer.143,19597
+236,1,hazards,236_1,Sawyer,Derek,NA,sawyer.144@osu.edu,NA,sawyer.144,19662
+236,2,coastal sustainability,236_2,Sawyer,Derek,NA,sawyer.144@osu.edu,NA,sawyer.144,19662
+236,3,ocean,236_3,Sawyer,Derek,NA,sawyer.144@osu.edu,NA,sawyer.144,19662
+236,4,landslides tsunami storms earthquakes,236_4,Sawyer,Derek,NA,sawyer.144@osu.edu,NA,sawyer.144,19662
+236,5,energy,236_5,Sawyer,Derek,NA,sawyer.144@osu.edu,NA,sawyer.144,19662
+237,1,groundwater sustainability,237_1,Schwartz,Frank,W.,schwartz.11@osu.edu,NA,schwartz.11,35984
+237,2,groundwater management,237_2,Schwartz,Frank,W.,schwartz.11@osu.edu,NA,schwartz.11,35984
+237,3,groundwater asia,237_3,Schwartz,Frank,W.,schwartz.11@osu.edu,NA,schwartz.11,35984
+237,4,water health,237_4,Schwartz,Frank,W.,schwartz.11@osu.edu,NA,schwartz.11,35984
+237,5,societal collapse,237_5,Schwartz,Frank,W.,schwartz.11@osu.edu,NA,schwartz.11,35984
+238,1,catalysis,238_1,Sevov,Christo,NA,sevov.1@osu.edu,Y,sevov.1,23431
+238,2,electrochemistry,238_2,Sevov,Christo,NA,sevov.1@osu.edu,Y,sevov.1,23431
+238,3,energy storage batteries,238_3,Sevov,Christo,NA,sevov.1@osu.edu,Y,sevov.1,23431
+238,4,organic synthesis,238_4,Sevov,Christo,NA,sevov.1@osu.edu,Y,sevov.1,23431
+238,5,organometallic chemistry,238_5,Sevov,Christo,NA,sevov.1@osu.edu,Y,sevov.1,23431
+239,1,sustainable construction materials,239_1,Sezen,Halil,NA,sezen.1@osu.edu,NA,sezen.1,1977
+239,2,green buildings,239_2,Sezen,Halil,NA,sezen.1@osu.edu,NA,sezen.1,1977
+239,3,resilient infrastructure,239_3,Sezen,Halil,NA,sezen.1@osu.edu,NA,sezen.1,1977
+239,4,disaster resilience,239_4,Sezen,Halil,NA,sezen.1@osu.edu,NA,sezen.1,1977
+239,5,life cycle cost assessment,239_5,Sezen,Halil,NA,sezen.1@osu.edu,NA,sezen.1,1977
+240,1,hydrogen,240_1,Shafaat,Hannah,NA,Shafaat.1@osu.edu,NA,Shafaat.1,17916
+240,2,co2 fixation,240_2,Shafaat,Hannah,NA,Shafaat.1@osu.edu,NA,Shafaat.1,17916
+240,3,metals,240_3,Shafaat,Hannah,NA,Shafaat.1@osu.edu,NA,Shafaat.1,17916
+240,4,protein,240_4,Shafaat,Hannah,NA,Shafaat.1@osu.edu,NA,Shafaat.1,17916
+240,5,electrochemistry,240_5,Shafaat,Hannah,NA,Shafaat.1@osu.edu,NA,Shafaat.1,17916
+241,1,resilient infrastructure,241_1,Shafieezadeh,Abdollah,NA,Shafieezadeh.1@osu.edu,NA,Shafieezadeh.1,16624
+241,2,risk foreascting mitigation,241_2,Shafieezadeh,Abdollah,NA,Shafieezadeh.1@osu.edu,NA,Shafieezadeh.1,16624
+241,3,uncertainty quantification,241_3,Shafieezadeh,Abdollah,NA,Shafieezadeh.1@osu.edu,NA,Shafieezadeh.1,16624
+241,4,sustainable infrastructure,241_4,Shafieezadeh,Abdollah,NA,Shafieezadeh.1@osu.edu,NA,Shafieezadeh.1,16624
+241,5,extreme hazards,241_5,Shafieezadeh,Abdollah,NA,Shafieezadeh.1@osu.edu,NA,Shafieezadeh.1,16624
+242,1,feedstock logistics,242_1,Shah,Ajay,NA,shah.971@osu.edu,NA,shah.971,19074
+242,2,process modelling,242_2,Shah,Ajay,NA,shah.971@osu.edu,NA,shah.971,19074
+242,3,techno economic analysis,242_3,Shah,Ajay,NA,shah.971@osu.edu,NA,shah.971,19074
+242,4,life cycle assessment,242_4,Shah,Ajay,NA,shah.971@osu.edu,NA,shah.971,19074
+242,5,international development,242_5,Shah,Ajay,NA,shah.971@osu.edu,NA,shah.971,19074
+243,1,community adaptation,243_1,Sharp,Jeff,NA,sharp.123@osu.edu,NA,sharp.123,39477
+243,2,local foods,243_2,Sharp,Jeff,NA,sharp.123@osu.edu,NA,sharp.123,39477
+243,3,rural urban interface,243_3,Sharp,Jeff,NA,sharp.123@osu.edu,NA,sharp.123,39477
+243,4,agriculture,243_4,Sharp,Jeff,NA,sharp.123@osu.edu,NA,sharp.123,39477
+243,5,rural,243_5,Sharp,Jeff,NA,sharp.123@osu.edu,NA,sharp.123,39477
+244,1,decision,244_1,Shoots-Reinhard,Brittany,NA,shoots-reinhard.1@osu.edu,NA,shoots-reinhard.1,5408
+244,2,communication,244_2,Shoots-Reinhard,Brittany,NA,shoots-reinhard.1@osu.edu,NA,shoots-reinhard.1,5408
+244,3,persuasion,244_3,Shoots-Reinhard,Brittany,NA,shoots-reinhard.1@osu.edu,NA,shoots-reinhard.1,5408
+244,4,behavior,244_4,Shoots-Reinhard,Brittany,NA,shoots-reinhard.1@osu.edu,NA,shoots-reinhard.1,5408
+245,1,climate change,245_1,Shum,C.K.,NA,shum.3@osu.edu,NA,shum.3,39036
+245,2,coastal vulnerability,245_2,Shum,C.K.,NA,shum.3@osu.edu,NA,shum.3,39036
+245,3,sea level,245_3,Shum,C.K.,NA,shum.3@osu.edu,NA,shum.3,39036
+245,4,land water quality public health,245_4,Shum,C.K.,NA,shum.3@osu.edu,NA,shum.3,39036
+245,5,smart climate agriculture,245_5,Shum,C.K.,NA,shum.3@osu.edu,NA,shum.3,39036
+246,1,behavior change,246_1,Sintov,Nicole,NA,sintov.2@osu.edu,Y,sintov.2,22762
+246,2,decision,246_2,Sintov,Nicole,NA,sintov.2@osu.edu,Y,sintov.2,22762
+246,3,identity,246_3,Sintov,Nicole,NA,sintov.2@osu.edu,Y,sintov.2,22762
+246,4,smart cities,246_4,Sintov,Nicole,NA,sintov.2@osu.edu,Y,sintov.2,22762
+246,5,technology adoption,246_5,Sintov,Nicole,NA,sintov.2@osu.edu,Y,sintov.2,22762
+247,1,renewable energy,247_1,Sioshansi,Ramteen,NA,sioshansi.1@osu.edu,NA,sioshansi.1,11082
+247,2,distributed energy,247_2,Sioshansi,Ramteen,NA,sioshansi.1@osu.edu,NA,sioshansi.1,11082
+248,1,sustainable soil land management,248_1,Slater,Brian,NA,slater.39@osu.edu,NA,slater.39,38871
+248,2,soil resilience,248_2,Slater,Brian,NA,slater.39@osu.edu,NA,slater.39,38871
+248,3,wastewater treatment soils,248_3,Slater,Brian,NA,slater.39@osu.edu,NA,slater.39,38871
+248,4,urban soils,248_4,Slater,Brian,NA,slater.39@osu.edu,NA,slater.39,38871
+248,5,sustainable agriculture,248_5,Slater,Brian,NA,slater.39@osu.edu,NA,slater.39,38871
+249,1,sustainable development engineering,249_1,Sours,Patrick,NA,sours.17@osu.edu,NA,sours.17,15387
+249,2,water treatment,249_2,Sours,Patrick,NA,sours.17@osu.edu,NA,sours.17,15387
+249,3,community development,249_3,Sours,Patrick,NA,sours.17@osu.edu,NA,sours.17,15387
+249,4,water distribution,249_4,Sours,Patrick,NA,sours.17@osu.edu,NA,sours.17,15387
+250,1,corrosion,250_1,Sridhar,Narasi,NA,sridhar.13@osu.edu,NA,sridhar.13,6692
+250,2,materials,250_2,Sridhar,Narasi,NA,sridhar.13@osu.edu,NA,sridhar.13,6692
+250,3,risk assessment,250_3,Sridhar,Narasi,NA,sridhar.13@osu.edu,NA,sridhar.13,6692
+250,4,aging systems,250_4,Sridhar,Narasi,NA,sridhar.13@osu.edu,NA,sridhar.13,6692
+250,5,co2 utilization,250_5,Sridhar,Narasi,NA,sridhar.13@osu.edu,NA,sridhar.13,6692
+252,1,green buildings,252_1,Stockar,Stephanie,NA,stockar.1@osu.edu,NA,stockar.1,11264
+252,2,energy efficiency,252_2,Stockar,Stephanie,NA,stockar.1@osu.edu,NA,stockar.1,11264
+252,3,vehicles,252_3,Stockar,Stephanie,NA,stockar.1@osu.edu,NA,stockar.1,11264
+252,4,distributed energy,252_4,Stockar,Stephanie,NA,stockar.1@osu.edu,NA,stockar.1,11264
+252,5,renewable energy sources,252_5,Stockar,Stephanie,NA,stockar.1@osu.edu,NA,stockar.1,11264
+253,1,pollination,253_1,Strange,James,P.,strange.54@osu.edu,NA,strange.54,28826
+253,2,landscapes,253_2,Strange,James,P.,strange.54@osu.edu,NA,strange.54,28826
+253,3,ecosystem services,253_3,Strange,James,P.,strange.54@osu.edu,NA,strange.54,28826
+253,4,species conservation,253_4,Strange,James,P.,strange.54@osu.edu,NA,strange.54,28826
+254,1,virome,254_1,Sullivan,Matthew,NA,sullivan.948@osu.edu,NA,sullivan.948,20293
+254,2,microbiome,254_2,Sullivan,Matthew,NA,sullivan.948@osu.edu,NA,sullivan.948,20293
+254,3,bioinformatics,254_3,Sullivan,Matthew,NA,sullivan.948@osu.edu,NA,sullivan.948,20293
+254,4,phage,254_4,Sullivan,Matthew,NA,sullivan.948@osu.edu,NA,sullivan.948,20293
+254,5,ecology,254_5,Sullivan,Matthew,NA,sullivan.948@osu.edu,NA,sullivan.948,20293
+255,1,batteries,255_1,Sundaresan,Vishnu,NA,sundaresan.19@osu.edu,NA,sundaresan.19,16218
+255,2,energy storage,255_2,Sundaresan,Vishnu,NA,sundaresan.19@osu.edu,NA,sundaresan.19,16218
+255,3,carbon capture biomolecules,255_3,Sundaresan,Vishnu,NA,sundaresan.19@osu.edu,NA,sundaresan.19,16218
+256,1,soil health,256_1,Sundermeier,Alan,NA,sundermeier.5@osu.edu,NA,sundermeier.5,NA
+256,2,water quality,256_2,Sundermeier,Alan,NA,sundermeier.5@osu.edu,NA,sundermeier.5,NA
+256,3,sustainable cropping systems,256_3,Sundermeier,Alan,NA,sundermeier.5@osu.edu,NA,sundermeier.5,NA
+256,4,organic,256_4,Sundermeier,Alan,NA,sundermeier.5@osu.edu,NA,sundermeier.5,NA
+256,5,cover crops,256_5,Sundermeier,Alan,NA,sundermeier.5@osu.edu,NA,sundermeier.5,NA
+257,1,green chemistry,257_1,Thomas,Christine,M.,thomas.3877@osu.edu,Y,thomas.3877,24099
+257,2,sustainable chemical processes,257_2,Thomas,Christine,M.,thomas.3877@osu.edu,Y,thomas.3877,24099
+257,3,catalysis,257_3,Thomas,Christine,M.,thomas.3877@osu.edu,Y,thomas.3877,24099
+258,1,climate change environmental politics,258_1,Thompson,Alexander,NA,thompson.1191@osu.edu,NA,thompson.1191,1082
+258,2,international climate agreements,258_2,Thompson,Alexander,NA,thompson.1191@osu.edu,NA,thompson.1191,1082
+258,3,climate negotiations climate change diplomacy,258_3,Thompson,Alexander,NA,thompson.1191@osu.edu,NA,thompson.1191,1082
+258,4,climate finance,258_4,Thompson,Alexander,NA,thompson.1191@osu.edu,NA,thompson.1191,1082
+258,5,climate policy,258_5,Thompson,Alexander,NA,thompson.1191@osu.edu,NA,thompson.1191,1082
+259,1,global climate science,259_1,Thompson,Lonnie,Gene,Thompson.3@osu.edu,NA,Thompson.3,33703
+259,2,monitoring glacier loss,259_2,Thompson,Lonnie,Gene,Thompson.3@osu.edu,NA,Thompson.3,33703
+259,3,development international collaboration,259_3,Thompson,Lonnie,Gene,Thompson.3@osu.edu,NA,Thompson.3,33703
+259,4,glacier loss impacts water resources,259_4,Thompson,Lonnie,Gene,Thompson.3@osu.edu,NA,Thompson.3,33703
+259,5,human behavior,259_5,Thompson,Lonnie,Gene,Thompson.3@osu.edu,NA,Thompson.3,33703
+260,1,wildland fire,260_1,Toman,Eric,NA,toman.10@osu.edu,NA,toman.10,11153
+260,2,natural hazards,260_2,Toman,Eric,NA,toman.10@osu.edu,NA,toman.10,11153
+260,3,climate adaptation,260_3,Toman,Eric,NA,toman.10@osu.edu,NA,toman.10,11153
+260,4,coupled human natural systems,260_4,Toman,Eric,NA,toman.10@osu.edu,NA,toman.10,11153
+260,5,social change,260_5,Toman,Eric,NA,toman.10@osu.edu,NA,toman.10,11153
+261,1,water quality,261_1,Toman,Elizabeth,Myers,toman.11@osu.edu,NA,toman.11,11963
+261,2,sustainable road design,261_2,Toman,Elizabeth,Myers,toman.11@osu.edu,NA,toman.11,11963
+261,3,low volume roads,261_3,Toman,Elizabeth,Myers,toman.11@osu.edu,NA,toman.11,11963
+261,4,ecological engineering,261_4,Toman,Elizabeth,Myers,toman.11@osu.edu,NA,toman.11,11963
+261,5,transportation engineering,261_5,Toman,Elizabeth,Myers,toman.11@osu.edu,NA,toman.11,11963
+262,1,ethics,262_1,Turner,Piers,Norris,turner.894@osu.edu,NA,turner.894,12417
+262,3,distributive justice,262_3,Turner,Piers,Norris,turner.894@osu.edu,NA,turner.894,12417
+262,4,social justice,262_4,Turner,Piers,Norris,turner.894@osu.edu,NA,turner.894,12417
+262,5,intergenerational justice,262_5,Turner,Piers,Norris,turner.894@osu.edu,NA,turner.894,12417
+263,1,solar energy,263_1,Turro,Claudia,NA,Turro.1@osu.edu,NA,Turro.1,38418
+263,2,photocatalyst,263_2,Turro,Claudia,NA,Turro.1@osu.edu,NA,Turro.1,38418
+263,3,charge transfer,263_3,Turro,Claudia,NA,Turro.1@osu.edu,NA,Turro.1,38418
+263,4,sensitizer,263_4,Turro,Claudia,NA,Turro.1@osu.edu,NA,Turro.1,38418
+263,5,electrocatalyst,263_5,Turro,Claudia,NA,Turro.1@osu.edu,NA,Turro.1,38418
+264,1,metabolic engineering,264_1,Ujor,Victor,NA,ujor.1@osu.edu,NA,ujor.1,14850
+264,2,bioconversion,264_2,Ujor,Victor,NA,ujor.1@osu.edu,NA,ujor.1,14850
+264,3,water recovery,264_3,Ujor,Victor,NA,ujor.1@osu.edu,NA,ujor.1,14850
+264,4,biofuels,264_4,Ujor,Victor,NA,ujor.1@osu.edu,NA,ujor.1,14850
+264,5,bio chemicals,264_5,Ujor,Victor,NA,ujor.1@osu.edu,NA,ujor.1,14850
+265,1,urban food systems planning,265_1,Usher,Kareem,M.,usher.21@osu.edu,NA,usher.21,19804
+265,2,social justice,265_2,Usher,Kareem,M.,usher.21@osu.edu,NA,usher.21,19804
+265,3,food access,265_3,Usher,Kareem,M.,usher.21@osu.edu,NA,usher.21,19804
+265,4,community development,265_4,Usher,Kareem,M.,usher.21@osu.edu,NA,usher.21,19804
+265,5,food energy water nexus,265_5,Usher,Kareem,M.,usher.21@osu.edu,NA,usher.21,19804
+266,1,bioplastics,266_1,Vodovotz,Yael,NA,vodovotz.1@osu.edu,NA,vodovotz.1,115
+266,2,food packaging,266_2,Vodovotz,Yael,NA,vodovotz.1@osu.edu,NA,vodovotz.1,115
+266,3,biobased polymers,266_3,Vodovotz,Yael,NA,vodovotz.1@osu.edu,NA,vodovotz.1,115
+266,4,material properties,266_4,Vodovotz,Yael,NA,vodovotz.1@osu.edu,NA,vodovotz.1,115
+267,1,public policy,267_1,Wagner,Caroline,S.,wagner.911@osu.edu,NA,wagner.911,15027
+267,2,international cooperation,267_2,Wagner,Caroline,S.,wagner.911@osu.edu,NA,wagner.911,15027
+267,3,sdgs united nations,267_3,Wagner,Caroline,S.,wagner.911@osu.edu,NA,wagner.911,15027
+267,4,evaluation,267_4,Wagner,Caroline,S.,wagner.911@osu.edu,NA,wagner.911,15027
+267,5,science technology,267_5,Wagner,Caroline,S.,wagner.911@osu.edu,NA,wagner.911,15027
+268,1,sustainable energy,268_1,Wang,Xiaoguang,(William),wang.12206@osu.edu,Y,wang.12206,33101
+268,2,polymers,268_2,Wang,Xiaoguang,(William),wang.12206@osu.edu,Y,wang.12206,33101
+268,3,liquid crystals,268_3,Wang,Xiaoguang,(William),wang.12206@osu.edu,Y,wang.12206,33101
+268,4,colloidal interfacial phenomena,268_4,Wang,Xiaoguang,(William),wang.12206@osu.edu,Y,wang.12206,33101
+268,5,molecular assembly,268_5,Wang,Xiaoguang,(William),wang.12206@osu.edu,Y,wang.12206,33101
+269,1,chemical vapor deposition,269_1,Wang,Xiaoxue,NA,wang.12262@osu.edu,Y,wang.12262,33208
+269,2,soft materials,269_2,Wang,Xiaoxue,NA,wang.12262@osu.edu,Y,wang.12262,33208
+269,3,soft electronics,269_3,Wang,Xiaoxue,NA,wang.12262@osu.edu,Y,wang.12262,33208
+269,4,sensors,269_4,Wang,Xiaoxue,NA,wang.12262@osu.edu,Y,wang.12262,33208
+269,5,machine learning,269_5,Wang,Xiaoxue,NA,wang.12262@osu.edu,Y,wang.12262,33208
+270,1,weather,270_1,Wang,Sheng-Hung,NA,wang.446@osu.edu,NA,wang.446,40267
+270,2,climate,270_2,Wang,Sheng-Hung,NA,wang.446@osu.edu,NA,wang.446,40267
+270,3,polar,270_3,Wang,Sheng-Hung,NA,wang.446@osu.edu,NA,wang.446,40267
+270,4,modeling,270_4,Wang,Sheng-Hung,NA,wang.446@osu.edu,NA,wang.446,40267
+271,1,water quality,271_1,Weavers,Linda,K,weavers.1@osu.edu,NA,weavers.1,39255
+271,2,water treatment,271_2,Weavers,Linda,K,weavers.1@osu.edu,NA,weavers.1,39255
+271,3,emerging contaminants,271_3,Weavers,Linda,K,weavers.1@osu.edu,NA,weavers.1,39255
+271,4,harmful algal blooms,271_4,Weavers,Linda,K,weavers.1@osu.edu,NA,weavers.1,39255
+271,5,pfas,271_5,Weavers,Linda,K,weavers.1@osu.edu,NA,weavers.1,39255
+272,1,human behavior,272_1,Wegener,Duane,T.,wegener.1@osu.edu,NA,wegener.1,36118
+272,2,persuasion,272_2,Wegener,Duane,T.,wegener.1@osu.edu,NA,wegener.1,36118
+272,3,attitude change,272_3,Wegener,Duane,T.,wegener.1@osu.edu,NA,wegener.1,36118
+272,4,behavior change,272_4,Wegener,Duane,T.,wegener.1@osu.edu,NA,wegener.1,36118
+272,5,decision,272_5,Wegener,Duane,T.,wegener.1@osu.edu,NA,wegener.1,36118
+273,1,qmra,273_1,Weir,Mark,H.,weir.95@osu.edu,Y,weir.95,22440
+273,2,system modeling,273_2,Weir,Mark,H.,weir.95@osu.edu,Y,weir.95,22440
+273,3,environmental health sciences,273_3,Weir,Mark,H.,weir.95@osu.edu,Y,weir.95,22440
+273,4,environmental engineering,273_4,Weir,Mark,H.,weir.95@osu.edu,Y,weir.95,22440
+273,5,uncertainty modeling,273_5,Weir,Mark,H.,weir.95@osu.edu,Y,weir.95,22440
+274,1,smart communities,274_1,Weisenberger,Jan,NA,weisenberger.21@osu.edu,NA,weisenberger.21,36622
+274,2,mobility,274_2,Weisenberger,Jan,NA,weisenberger.21@osu.edu,NA,weisenberger.21,36622
+275,1,geochemistry,275_1,Welch,Susan,NA,welch.318@osu.edu,NA,welch.318,7135
+275,2,carbon capture sequestration,275_2,Welch,Susan,NA,welch.318@osu.edu,NA,welch.318,7135
+275,3,water quality,275_3,Welch,Susan,NA,welch.318@osu.edu,NA,welch.318,7135
+275,4,environmental chemistry,275_4,Welch,Susan,NA,welch.318@osu.edu,NA,welch.318,7135
+276,1,environmental history,276_1,White,Sam,NA,white.2426@osu.edu,NA,white.2426,17949
+276,2,climate reconstruction,276_2,White,Sam,NA,white.2426@osu.edu,NA,white.2426,17949
+276,3,climate adaptation,276_3,White,Sam,NA,white.2426@osu.edu,NA,white.2426,17949
+277,1,forest carbon capture sequestration,277_1,Williams,Roger,A.,williams.1577@osu.edu,NA,williams.1577,34231
+277,2,forest fires,277_2,Williams,Roger,A.,williams.1577@osu.edu,NA,williams.1577,34231
+277,3,sustainable forest management,277_3,Williams,Roger,A.,williams.1577@osu.edu,NA,williams.1577,34231
+277,4,china's forests,277_4,Williams,Roger,A.,williams.1577@osu.edu,NA,williams.1577,34231
+277,5,forest biodiversity,277_5,Williams,Roger,A.,williams.1577@osu.edu,NA,williams.1577,34231
+278,1,environmental justice,278_1,Willow,Anna,NA,willow.1@osu.edu,NA,willow.1,12318
+278,2,activism,278_2,Willow,Anna,NA,willow.1@osu.edu,NA,willow.1,12318
+278,3,indigenous land based cultures,278_3,Willow,Anna,NA,willow.1@osu.edu,NA,willow.1,12318
+278,4,shale energy,278_4,Willow,Anna,NA,willow.1@osu.edu,NA,willow.1,12318
+279,1,climate change,279_1,Wilson,Aaron,B.,wilson.1010@osu.edu,NA,wilson.1010,8688
+279,2,climate adaptation,279_2,Wilson,Aaron,B.,wilson.1010@osu.edu,NA,wilson.1010,8688
+279,3,resilient agriculture,279_3,Wilson,Aaron,B.,wilson.1010@osu.edu,NA,wilson.1010,8688
+279,4,polar climate change,279_4,Wilson,Aaron,B.,wilson.1010@osu.edu,NA,wilson.1010,8688
+280,1,decision,280_1,Wilson,Robyn,S.,wilson.1376@osu.edu,NA,wilson.1376,1772
+280,2,risk communication,280_2,Wilson,Robyn,S.,wilson.1376@osu.edu,NA,wilson.1376,1772
+280,3,climate adaptation,280_3,Wilson,Robyn,S.,wilson.1376@osu.edu,NA,wilson.1376,1772
+280,4,wildfire,280_4,Wilson,Robyn,S.,wilson.1376@osu.edu,NA,wilson.1376,1772
+280,5,water quality,280_5,Wilson,Robyn,S.,wilson.1376@osu.edu,NA,wilson.1376,1772
+281,1,electronic devices,281_1,Windl,Wolfgang E.,NA,Windl.1@osu.edu,NA,Windl.1,1227
+281,2,renewable energy,281_2,Windl,Wolfgang E.,NA,Windl.1@osu.edu,NA,Windl.1,1227
+281,3,materials photovoltaics,281_3,Windl,Wolfgang E.,NA,Windl.1@osu.edu,NA,Windl.1,1227
+281,4,nuclear energy nuclear waste management,281_4,Windl,Wolfgang E.,NA,Windl.1@osu.edu,NA,Windl.1,1227
+281,5,design materials,281_5,Windl,Wolfgang E.,NA,Windl.1@osu.edu,NA,Windl.1,1227
+282,1,green infrastructure,282_1,Winston,Ryan,NA,winston.201@osu.edu,Y,winston.201,21607
+282,2,water quality,282_2,Winston,Ryan,NA,winston.201@osu.edu,Y,winston.201,21607
+282,3,stormwater management,282_3,Winston,Ryan,NA,winston.201@osu.edu,Y,winston.201,21607
+282,4,climate change,282_4,Winston,Ryan,NA,winston.201@osu.edu,Y,winston.201,21607
+282,5,ecosystem services,282_5,Winston,Ryan,NA,winston.201@osu.edu,Y,winston.201,21607
+283,1,controlled release,283_1,Winter,Jessica,NA,winter.63@osu.edu,NA,winter.63,5236
+283,2,polymers,283_2,Winter,Jessica,NA,winter.63@osu.edu,NA,winter.63,5236
+284,1,drainage,284_1,Witter,John,NA,witter.7@osu.edu,NA,witter.7,39647
+284,2,restoration,284_2,Witter,John,NA,witter.7@osu.edu,NA,witter.7,39647
+284,3,agriculture,284_3,Witter,John,NA,witter.7@osu.edu,NA,witter.7,39647
+284,4,stream,284_4,Witter,John,NA,witter.7@osu.edu,NA,witter.7,39647
+284,5,wateer,284_5,Witter,John,NA,witter.7@osu.edu,NA,witter.7,39647
+285,1,batteries,285_1,Wu,Yiying,NA,wu.531@osu.edu,NA,wu.531,4244
+285,2,sustainable mobility,285_2,Wu,Yiying,NA,wu.531@osu.edu,NA,wu.531,4244
+285,3,distributed energy,285_3,Wu,Yiying,NA,wu.531@osu.edu,NA,wu.531,4244
+285,4,co2 conversion,285_4,Wu,Yiying,NA,wu.531@osu.edu,NA,wu.531,4244
+285,5,waste plastic treatment,285_5,Wu,Yiying,NA,wu.531@osu.edu,NA,wu.531,4244
+286,1,plant disease resistance,286_1,Xia,Ye,NA,xia.374@osu.edu,NA,xia.374,20801
+286,2,plant pathogen interaction,286_2,Xia,Ye,NA,xia.374@osu.edu,NA,xia.374,20801
+286,3,plant microbiome,286_3,Xia,Ye,NA,xia.374@osu.edu,NA,xia.374,20801
+286,4,sustainable agricultural practices,286_4,Xia,Ye,NA,xia.374@osu.edu,NA,xia.374,20801
+286,5,sustainable plant growth health,286_5,Xia,Ye,NA,xia.374@osu.edu,NA,xia.374,20801
+287,1,food waste reduction,287_1,Xia,Cathy,NA,xia.52@osu.edu,NA,xia.52,11289
+287,2,supply chain management,287_2,Xia,Cathy,NA,xia.52@osu.edu,NA,xia.52,11289
+287,3,sustainable mobility,287_3,Xia,Cathy,NA,xia.52@osu.edu,NA,xia.52,11289
+287,4,smart transportation,287_4,Xia,Cathy,NA,xia.52@osu.edu,NA,xia.52,11289
+287,5,cyber security,287_5,Xia,Cathy,NA,xia.52@osu.edu,NA,xia.52,11289
+288,1,renewable energy,288_1,Yang,Shang-Tian,NA,yang.15@osu.edu,NA,yang.15,35162
+288,2,biofuel,288_2,Yang,Shang-Tian,NA,yang.15@osu.edu,NA,yang.15,35162
+288,3,bioprocess engineering,288_3,Yang,Shang-Tian,NA,yang.15@osu.edu,NA,yang.15,35162
+288,4,metabolic engineering,288_4,Yang,Shang-Tian,NA,yang.15@osu.edu,NA,yang.15,35162
+288,5,co2 utilization,288_5,Yang,Shang-Tian,NA,yang.15@osu.edu,NA,yang.15,35162
+289,1,energy sustainable wireless communications,289_1,Yener,Aylin,NA,yener.5@osu.edu,NA,yener.5,29255
+289,2,energy sharing trading,289_2,Yener,Aylin,NA,yener.5@osu.edu,NA,yener.5,29255
+289,3,smart grid,289_3,Yener,Aylin,NA,yener.5@osu.edu,NA,yener.5,29255
+289,4,cyber security digital trust,289_4,Yener,Aylin,NA,yener.5@osu.edu,NA,yener.5,29255
+289,5,information security privacy smart communities,289_5,Yener,Aylin,NA,yener.5@osu.edu,NA,yener.5,29255
+290,1,green economy,290_1,Yi,Hongtao,NA,yi.201@osu.edu,NA,yi.201,16282
+290,2,renewable energy,290_2,Yi,Hongtao,NA,yi.201@osu.edu,NA,yi.201,16282
+290,3,climate policy,290_3,Yi,Hongtao,NA,yi.201@osu.edu,NA,yi.201,16282
+290,4,environmental policy,290_4,Yi,Hongtao,NA,yi.201@osu.edu,NA,yi.201,16282
+290,5,energy policy,290_5,Yi,Hongtao,NA,yi.201@osu.edu,NA,yi.201,16282
+291,1,machine learning,291_1,Yilmaz,Alper,NA,yilmaz.15@osu.edu,NA,yilmaz.15,5400
+291,2,deep learning,291_2,Yilmaz,Alper,NA,yilmaz.15@osu.edu,NA,yilmaz.15,5400
+291,3,convolutional neural networks,291_3,Yilmaz,Alper,NA,yilmaz.15@osu.edu,NA,yilmaz.15,5400
+291,4,data mining,291_4,Yilmaz,Alper,NA,yilmaz.15@osu.edu,NA,yilmaz.15,5400
+292,1,energy systems,292_1,Yurkovich,Benjamin (BJ),NA,yurkovich.7@osu.edu,NA,yurkovich.7,2328
+292,2,machine learning,292_2,Yurkovich,Benjamin (BJ),NA,yurkovich.7@osu.edu,NA,yurkovich.7,2328
+292,3,artificial intelligence,292_3,Yurkovich,Benjamin (BJ),NA,yurkovich.7@osu.edu,NA,yurkovich.7,2328
+292,4,blockchain,292_4,Yurkovich,Benjamin (BJ),NA,yurkovich.7@osu.edu,NA,yurkovich.7,2328
+292,5,smart city,292_5,Yurkovich,Benjamin (BJ),NA,yurkovich.7@osu.edu,NA,yurkovich.7,2328
+293,1,sustainable battery,293_1,Zhang,Shiyu,NA,zhang.8941@osu.edu,NA,zhang.8941,23651
+293,2,catalysis,293_2,Zhang,Shiyu,NA,zhang.8941@osu.edu,NA,zhang.8941,23651
+294,1,land change,294_1,Zhao,Kaiguang,NA,zhao.1423@osu.edu,NA,zhao.1423,19081
+294,2,ecosystem services,294_2,Zhao,Kaiguang,NA,zhao.1423@osu.edu,NA,zhao.1423,19081
+294,3,climate adaptation,294_3,Zhao,Kaiguang,NA,zhao.1423@osu.edu,NA,zhao.1423,19081
+294,4,water quality,294_4,Zhao,Kaiguang,NA,zhao.1423@osu.edu,NA,zhao.1423,19081
+294,5,carbon capture sequestration,294_5,Zhao,Kaiguang,NA,zhao.1423@osu.edu,NA,zhao.1423,19081
+295,1,renewable energy,295_1,Zhao,Renee,NA,zhao.2885@osu.edu,NA,zhao.2885,33167
+295,2,airbone wind energy systems,295_2,Zhao,Renee,NA,zhao.2885@osu.edu,NA,zhao.2885,33167
+295,3,anti biofouling,295_3,Zhao,Renee,NA,zhao.2885@osu.edu,NA,zhao.2885,33167
+295,4,water quality,295_4,Zhao,Renee,NA,zhao.2885@osu.edu,NA,zhao.2885,33167
+296,1,agronomic crops,296_1,Zoller,Chris,NA,zoller.1@osu.edu,NA,zoller.1,36075
+296,2,energy monitoring,296_2,Zoller,Chris,NA,zoller.1@osu.edu,NA,zoller.1,36075
+296,3,farm management,296_3,Zoller,Chris,NA,zoller.1@osu.edu,NA,zoller.1,36075
