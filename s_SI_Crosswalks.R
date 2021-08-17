@@ -108,45 +108,11 @@ for (i in 1:length(SI_match)){
 }
 
 ### Note: Read in current salaries data from OSU HR
-salaries.dt <- fread(input = here("Data", "OSU_FY2020_Salaries.csv"))
-name_v      <- str_trim(str_replace(salaries.dt$NAME, ",", ", "))
-salaries.df <- salaries.dt                              %>%
-  .[, NAME := name_v]                                   %>%
-  setnames(c("LAST_NAME", "FIRST_NAME", "MIDDLE_NAME"),
-           c("Last Name", "First Name", "Middle Name")) %>%
-  .[POSITION_GROUP == "University"]                     %>%
-  as.data.frame()                                       %>%
-  rowwise()                                             %>%
-  mutate(Last_Name_e = str_replace_all(str_to_lower(str_replace_all(`Last Name`,
-                                                                    " ",
-                                                                    "")),
-                                       pattern     = "[:punct:]",
-                                       replacement = ""))     %>%
-  mutate(Name_fl   = str_trim(str_c(`First Name`,
-                                    `Last Name`,
-                                    sep = " ")))              %>%
-  mutate(Name_fl   = str_replace_all(Name_fl,
-                                     "  ",
-                                     " "))                    %>%
-  mutate(Name_fl   = str_replace_all(Name_fl,
-                                     "[:punct:]",
-                                     ""))                     %>%
-  mutate(Name_fl   = str_to_lower(Name_fl))                   %>%
-  rename(Sal_ID    = IDENTIFIER)                              %>%
-  mutate(Name_fml  = str_trim(str_c(`First Name`,
-                                    " ",
-                                    `Middle Name`,
-                                    " ",
-                                    `Last Name`)))            %>%
-  mutate(Name_fml   = str_replace_all(Name_fml,
-                                     "  ",
-                                     " "))                    %>%
-  mutate(Name_fml   = str_replace_all(Name_fml,
-                                     "[:punct:]",
-                                     ""))                     %>%
-  mutate(Name_fml   = str_to_lower(Name_fml)) 
+#source(here("s_OSU_Salaries.R"))
+salaries.df <- read_csv(here("Data", "OSU_FY2020_Sal_Edits.csv"))
 sal_trim.df <- salaries.df %>%
-  .[, c("Sal_ID", "Name_fl", "First Name", "Last Name", "VP_COLLEGE", "DEPARTMENT")]
+  .[, c("Sal_ID", "Name_fl", "Name_fm", "Name_fml", "First Name", "Last Name", "Last_Name_e",
+        "Last_Name_ls", "VP_COLLEGE", "DEPARTMENT")]
 
   # Note: Fuzzy matching of names to authors dataset; confirm with colleges
 f_mergesort <- function(id1, tolerance){
@@ -247,6 +213,136 @@ write_csv(correct.df,
           here("Data", "SI_FacAffiliates_Sal.csv"))
 
 ################################################################################
+### Note: Proposals dataset; authors to proposals
+################################################################################
+
+### Note: Read in data
+prop_raw.dt <- fread(here("Data", "RDO_Proposals_2013-2020.csv")) %>%
+  .[`Proposal ID`!=""]
+prop.dt     <- prop_raw.dt %>%
+  .[,c(1,3:4)]
+
+### Note: Grab unique proposal ID's
+prop_id.v <- unique(prop.dt)
+
+### Note: for each row, create observed authors
+### Note: Creating coinvestigators variables
+coI_v    <- prop.dt$`Co-I`
+coI_c    <- str_count(coI_v, ";")
+coI_l    <- str_locate_all(coI_v, ";")
+
+# Note: Check max 
+max.l <- 0
+for (k in 1:length(coI_l)){
+  if (max.l < dim(coI_l[[k]])[1]){
+    max.l <- dim(coI_l[[k]])[1]
+  }
+}
+
+# Identify max number of co_I and pairs (for later)
+n       <- 0
+count_v <- vector("numeric",
+                  length = length(coI_v))
+for (i in 1:length(coI_l)){
+  m <- dim(coI_l[[i]])[1]
+  if (m>n){
+    n <- m
+  }
+  if (coI_v[i] == ""){
+    count_t <- 0
+  }else if(coI_v[i] != "" & coI_c[i] == 0){
+    count_t <- 1
+  }else if(coI_v[i] != "" & coI_c[i] > 0){
+    count_t <- factorial(m+1)/((factorial(1))*(factorial((m))))
+  }
+  count_v[i] <- count_t
+}
+
+coI_mat <- matrix(data = "",
+                  nrow = length(coI_v),
+                  ncol = n+1)
+
+for (i in 1:length(coI_v)){
+  if (coI_c[i]==0){
+    coI_mat[i, 1] <- coI_v[i]
+  } else {
+    for (j in 0:coI_c[i]){
+      if (j == 0){
+        coI_mat[i,j+1] <- str_sub(coI_v[i],
+                                  start = 0,
+                                  end   = coI_l[[i]][j+1,1]-1) 
+      } else if (j==coI_c[i]) {
+        coI_mat[i,j+1] <- str_sub(coI_v[i],
+                                  start = coI_l[[i]][j,1]+1)
+      } else {
+        coI_mat[i,j+1] <- str_sub(coI_v[i], 
+                                  start = coI_l[[i]][j,1]+1,
+                                  end   = coI_l[[i]][j+1,1]-1)
+      }
+    }
+  }
+}
+
+# Create investigators dataset
+prop_inv.dt <- prop.dt %>%
+  .[,c("Proposal ID", "PI Name")]
+for (i in 1:(n+1)){
+  tempname <- paste0("CoI_", i)
+  prop_inv.dt <- prop_inv.dt      %>%
+    .[, tempvar := coI_mat[,i]]   %>%
+    setnames(old = c("tempvar"),
+             new = c(tempname))
+}
+
+prop_inv.dt.m <- prop_inv.dt                       %>%
+  setnames(.,
+           old = c("PI Name"),
+           new = c("CoI_0"))                       %>%
+  melt(id.vars       = c("Proposal ID"),
+       measure       = patterns("^CoI_"),
+       variable.name = c("Investigator_Type"),
+       value.name    = c("Name"))                  %>%
+  .[,':=' (PI = if_else(Investigator_Type == "CoI_0",
+                        1,
+                        0))]                       %>%
+  .[, !c("Investigator_Type")]                     %>%
+  .[Name != ""]                                    %>%
+  .[,Name := str_trim(Name)]                       %>%
+  .[,Name := str_replace_all(Name,
+                             pattern = ",",
+                             replacement = ", ")]  %>%
+  .[,Name := str_replace_all(Name,
+                             pattern = "  ",
+                             replacement = " ")]   %>%
+  .[str_detect(Name, ","),]                        %>%
+  unique()
+
+# Note: Create fml version of Name
+comma.l <- str_locate_all(prop_inv.dt.m$Name,
+                          ",")
+comma.v <- unlist(comma.l) %>%
+  matrix(ncol = 2,
+         byrow = T)
+prop_inv.dt.m <- prop_inv.dt.m %>%
+  .[,comma_loc := comma.v[,1]]     %>%
+  .[,Name_fm := str_trim(str_sub(Name,
+                                 start = comma_loc + 1))] %>%
+  .[,Name_l := str_trim(str_sub(Name,
+                                end = comma_loc - 1))]    %>%
+  .[,Name_fml := str_c(Name_fm,
+                       " ",
+                       Name_l)]                           %>%
+  .[,Name_fml := str_to_lower(Name_fml)]                  %>%
+  .[,Name_fml := str_replace_all(Name_fml,
+                                 "[:punct:]",
+                                 "")]                     %>%
+  .[,!c("comma_loc")]
+
+fwrite(prop_inv.dt.m,
+       here("Data", "Proposals_Authors.csv"))
+
+
+################################################################################
 ### Note: Awards dataset; authors to proposals
 ################################################################################
 
@@ -345,6 +441,9 @@ awards_inv.dt.m <- awards_inv.dt                   %>%
   .[,Name := str_replace_all(Name,
                              pattern = ",",
                              replacement = ", ")]  %>%
+  .[,Name := str_replace_all(Name,
+                             pattern = "  ",
+                             replacement = " ")]   %>%
   .[str_detect(Name, ","),]                        %>%
   unique()
 
@@ -363,17 +462,41 @@ awards_inv.dt.m <- awards_inv.dt.m %>%
   .[,Name_fml := str_c(Name_fm,
                        " ",
                        Name_l)]                           %>%
+  .[,Name_fml := str_replace_all(Name_fml,
+                                 "[:punct:]",
+                                 "")]                     %>%
   .[,Name_fml := str_to_lower(Name_fml)]
 
 fwrite(awards_inv.dt.m,
        here("Awards_Authors.csv"))
 
+### Note: Filtering authors related to tagged proposals
+propids     <- fread(here("Data", "Awards_ClimateRelated.csv"))
+id.v        <- propids$ProposalID
+authors_cli <- awards_auth.dt %>%
+  .[`Award ID` %in% id.v,]
+fwrite(authors_cli,
+       here("Data", "Awards_ClimateAuthors.csv"))
+
 ################################################################################
-### Note: Awards dataset; unique authors
+### Note: Awards dataset; unique authors connected to proposal ID's, 
+###       salaries data, 
 ################################################################################
 
+### Note: Create unique awards authors dt
+awards_auth.dt   <- fread(here("Data", "Awards_Authors.csv"))
+awards_auth_u.dt <- awards_auth.dt %>%
+  .[,.(Name, Name_fm, Name_fml)]   %>%
+  unique()                         %>%
+  .[order(Name),]                  %>%
+  .[,Award_AuthID := rownames(.)]  %>%
+  .[,Name_fm := str_to_lower(str_replace_all(Name_fm,
+                                             "[:punct:]",
+                                             ""))]
+
+### Note: Unique authors in awards to salaries
 f_mergesort <- function(id1, tolerance){
-  temp.df  <- awards_inv.dt.m[id1, ]
+  temp.df  <- awards_auth_u.dt[id1, ]
   temp2.df <- salaries.df
   temp.m  <- stringdist(temp.df$Name_fml,
                         temp2.df$Name_fml,
@@ -385,7 +508,7 @@ f_mergesort <- function(id1, tolerance){
     A_id.v  <- temp.df$Name_fml[1]
     Sal_id.v  <- NA
   }else{
-    if (min_s < tolerance){
+    if (min_s <= tolerance){
       A_id.v   <- temp.df$Name_fml[1]
       Sal_id.v    <- temp2.df$Sal_ID[col_s]
     }else{
@@ -393,10 +516,412 @@ f_mergesort <- function(id1, tolerance){
       Sal_id.v    <- NA
     }
   }
-  output <- list(A_id.v, Sal_id.v)
+  output <- list(A_id.v, Sal_id.v, min_s)
   return(output)
 }
 
-id1       <- 1:dim(awards_inv.dt.m)[1]
-tolerance <- rep(id1,
-                 times = length(id1)) 
+id1       <- 1:dim(awards_auth_u.dt)[1]
+tolerance <- rep(0.5,
+                 times = length(id1))
+inp <- list(id1, tolerance)
+out1   <- pmap(inp, f_mergesort) %>%
+  purrr::transpose(.)
+out.df <- data.frame("Name_fml" = unlist(out1[[1]]),
+                     "Sal_ID" = unlist(out1[[2]]),
+                     "Min_s" = unlist(out1[[3]]))
+
+awards_m.df <- awards_auth_u.dt                                  %>%
+  rowwise()                                                      %>%
+  mutate(`Last Name` = str_trim(str_to_lower(str_sub(Name,
+                                            end = str_locate(Name,
+                                                             ",")[1,1]-1)))) %>%
+  mutate(`Last Name` = str_replace_all(`Last Name`,
+                                       "[:punct:]",
+                                       ""))                                  %>%          
+  ungroup()                                                                  %>%
+  left_join(out.df,
+            by = "Name_fml")                                                 %>%
+  left_join(sal_trim.df,
+            by = "Sal_ID",
+            suffix = c("", ".sal"))
+
+# Note: Pull out missing matches
+wrong.df <- awards_m.df %>%
+  filter(is.na(Sal_ID))
+
+# Note: Check merges; filter if last names don't match. filter those less than 0.3
+#       match score and remove from wrong.df
+test <- awards_m.df %>%
+  filter(`Last Name` != `Last_Name_ls`) %>%
+  filter(Min_s > 0.3)
+
+wrong.df <- wrong.df %>%
+  bind_rows(test)
+
+# Note: Check merges: filter if first names don't match
+test <- awards_m.df                     %>%
+  anti_join(wrong.df,
+            by = "Award_AuthID")        %>%
+  filter(Name_fm != Name_fm.sal)        %>%
+  filter(Min_s > (1/3))
+
+wrong.df <- wrong.df %>%
+  bind_rows(test)
+
+correct.df <- awards_m.df %>%
+  anti_join(wrong.df,
+            by = "Award_AuthID")
+
+### Note: From wrong.df, figure out which have last name merges in the sal data
+wrongfix.df <- wrong.df %>%
+  .[,c(1:5)]            %>%
+  left_join(sal_trim.df,
+            by     = c("Last Name" = "Last_Name_e"),
+            suffix = c("", ".sal"))
+
+### Note: Unique authors in awards to salaries
+f_mergesort2 <- function(id1, tolerance){
+  temp.df  <- wrongfix.df[wrongfix.df$Award_AuthID == id1, ]
+  temp.m  <- stringdist(unique(temp.df$Name_fm),
+                        temp.df$Name_fm.sal,
+                        method = "jaccard",
+                        q = 2)
+  min_s   <- min(temp.m)
+  col_s   <- match(min_s, temp.m)
+  if (is.na(min_s)){
+    A_id.v  <- temp.df$Name_fml[1]
+    Sal_id.v  <- NA
+  }else{
+    if (min_s <= tolerance){
+      A_id.v   <- temp.df$Name_fml[1]
+      Sal_id.v    <- temp.df$Sal_ID[col_s]
+    }else{
+      A_id.v   <- temp.df$Name_fml[1]
+      Sal_id.v    <- NA
+    }
+  }
+  output <- list(A_id.v, Sal_id.v, min_s)
+  return(output)
+}
+id1       <- unique(wrongfix.df$Award_AuthID)
+tolerance <- rep((0.25),
+                 times = length(id1))
+inp <- list(id1, tolerance)
+out1   <- pmap(inp, f_mergesort2) %>%
+  purrr::transpose(.)
+out.df <- data.frame("Name_fml" = unlist(out1[[1]]),
+                     "Sal_ID" = unlist(out1[[2]]),
+                     "Min_s" = unlist(out1[[3]]))
+
+  # Note: Turns out none of the last name merges ended up being close enough on 
+  #       first names to add correct matches. Letting current corrects ride.
+wrong.df <- wrong.df[,c(1:6,15:16)] %>%
+  mutate(Sal_ID = NA)               %>%
+  mutate_at(.vars = c("VP_COLLEGE",
+                      "DEPARTMENT"),
+            .funs = ~ NA_character_)
+awards_pm.df <- bind_rows(correct.df, wrong.df)
+write_csv(awards_pm.df[,c(1:6, 15:16)],
+          here("Data", "Awards_UniqueAuthors.csv"))
+
+################################################################################
+### Note: Proposals dataset; unique authors connected to proposal ID's, 
+###       salaries data, 
+################################################################################
+
+### Note: Create unique awards authors dt
+prop_auth.dt   <- fread(here("Data", "Proposals_Authors.csv"))
+prop_auth_u.dt <- prop_auth.dt     %>%
+  .[,.(Name, Name_fm, Name_l, Name_fml)]   %>%
+  unique()                                 %>%
+  .[order(Name),]                          %>%
+  .[,Prop_AuthID := rownames(.)]           %>%
+  .[,Name_fm := str_to_lower(str_replace_all(Name_fm,
+                                             "[:punct:]",
+                                             ""))] %>%
+  .[,Name_l := str_to_lower(str_replace_all(Name_l,
+                                            "[:punct:]",
+                                            ""))]
+
+### Note: Unique authors in proposals to salaries
+f_mergesort <- function(id1, tolerance){
+  temp.df  <- prop_auth_u.dt[id1, ]
+  temp2.df <- salaries.df
+  temp.m  <- stringdist(temp.df$Name_fml,
+                        temp2.df$Name_fml,
+                        method = "jaccard",
+                        q = 2)
+  min_s   <- min(temp.m)
+  col_s   <- match(min_s, temp.m)
+  if (is.na(min_s)){
+    A_id.v  <- temp.df$Name_fml[1]
+    Sal_id.v  <- NA
+  }else{
+    if (min_s <= tolerance){
+      A_id.v   <- temp.df$Name_fml[1]
+      Sal_id.v    <- temp2.df$Sal_ID[col_s]
+    }else{
+      A_id.v   <- temp.df$Name_fml[1]
+      Sal_id.v    <- NA
+    }
+  }
+  output <- list(A_id.v, Sal_id.v, min_s)
+  return(output)
+}
+
+id1       <- 1:dim(prop_auth_u.dt)[1]
+tolerance <- rep(0.5,
+                 times = length(id1))
+inp <- list(id1, tolerance)
+out1   <- pmap(inp, f_mergesort) %>%
+  purrr::transpose(.)
+out.df <- data.frame("Name_fml" = unlist(out1[[1]]),
+                     "Sal_ID" = unlist(out1[[2]]),
+                     "Min_s" = unlist(out1[[3]]))
+
+### Note: Bind other datasets to matching results
+prop_m.df <- prop_auth_u.dt                                      %>%
+  left_join(out.df,
+            by = "Name_fml")                                     %>%
+  left_join(sal_trim.df,
+            by = "Sal_ID",
+            suffix = c("", ".sal"))
+
+# Note: Pull out missing matches
+wrong.df <- prop_m.df %>%
+  filter(is.na(Sal_ID))
+
+# Note: Check merges; filter if last names don't match. filter those less than 0.3
+#       match score and remove from wrong.df
+test <- prop_m.df %>%
+  filter(Name_l != `Last_Name_ls`) %>%
+  filter(Min_s > 0.3)
+
+wrong.df <- wrong.df %>%
+  bind_rows(test)
+
+# Note: Check merges: filter if first names don't match
+test <- prop_m.df                     %>%
+  anti_join(wrong.df,
+            by = "Prop_AuthID")        %>%
+  filter(Name_fm != Name_fm.sal)        %>%
+  filter(Min_s > (1/3))
+
+wrong.df <- wrong.df %>%
+  bind_rows(test)
+
+correct.df <- prop_m.df %>%
+  anti_join(wrong.df,
+            by = "Prop_AuthID")
+
+### Note: From wrong.df, figure out which have last name merges in the sal data
+wrongfix.df <- wrong.df %>%
+  .[,c(1:5)]            %>%
+  left_join(sal_trim.df,
+            by     = c("Name_l" = "Last_Name_e"),
+            suffix = c("", ".sal"))
+
+### Note: Unique authors in awards to salaries
+f_mergesort2 <- function(id1, tolerance){
+  temp.df  <- wrongfix.df[wrongfix.df$Prop_AuthID == id1, ]
+  temp.m  <- stringdist(unique(temp.df$Name_fm),
+                        temp.df$Name_fm.sal,
+                        method = "jaccard",
+                        q = 2)
+  min_s   <- min(temp.m)
+  col_s   <- match(min_s, temp.m)
+  if (is.na(min_s)){
+    A_id.v  <- temp.df$Name_fml[1]
+    Sal_id.v  <- NA
+  }else{
+    if (min_s <= tolerance){
+      A_id.v   <- temp.df$Name_fml[1]
+      Sal_id.v    <- temp.df$Sal_ID[col_s]
+    }else{
+      A_id.v   <- temp.df$Name_fml[1]
+      Sal_id.v    <- NA
+    }
+  }
+  output <- list(A_id.v, Sal_id.v, min_s)
+  return(output)
+}
+id1       <- unique(wrongfix.df$Prop_AuthID)
+tolerance <- rep((0.34),
+                 times = length(id1))
+inp <- list(id1, tolerance)
+out1   <- pmap(inp, f_mergesort2) %>%
+  purrr::transpose(.)
+out.df <- data.frame("Name_fml" = unlist(out1[[1]]),
+                     "Sal_ID" = unlist(out1[[2]]),
+                     "Min_s" = unlist(out1[[3]]))   %>%
+  filter(Min_s < 0.34)                              %>%
+  left_join(prop_m.df[,c(1:5)],
+            by = "Name_fml")                        %>%
+  left_join(sal_trim.df,
+            by = "Sal_ID",
+            suffix = c("", ".sal"))                 %>%
+  filter(Name_fml != 'jin zhao')
+wrongfix.df <- data.frame("Name"        = out.df$Name,
+                          "Name_fm"     = out.df$Name_fm,
+                          "Name_l"      = out.df$Name_l,
+                          "Name_fml"    = out.df$Name_fml,
+                          "Prop_AuthID" = out.df$Prop_AuthID,
+                          "Sal_ID"      = out.df$Sal_ID,
+                          "VP_COLLEGE"  = out.df$VP_COLLEGE,
+                          "DEPARTMENT"  = out.df$DEPARTMENT)
+  # Note: Finish merging correct, wrong, and corrected
+wrong.df <- wrong.df[,c(1:6,15:16)]            %>%
+  mutate(Sal_ID = NA_real_)                    %>%
+  mutate_at(.vars = c("VP_COLLEGE",
+                      "DEPARTMENT"),
+            .funs = ~ NA_character_)           %>%
+  anti_join(wrongfix.df,
+            by = "Prop_AuthID")
+prop_pm.df <- bind_rows(correct.df, wrong.df, wrongfix.df)
+write_csv(prop_pm.df[,c(1:6, 15:16)],
+          here("Data", "Proposals_UniqueAuthors.csv"))
+
+################################################################################
+##### Note: Merging Proposal Authors to Awards Authors
+################################################################################
+
+awards_pm.dt <- fread(here("Data", "Awards_UniqueAuthors.csv")) %>%
+  .[,c(1:6)]                                                    %>%
+  unique()
+prop_pm.dt   <- fread(here("Data", "Proposals_UniqueAuthors.csv")) %>%
+  .[,c(1:6)]                                                       %>%
+  unique()
+
+### Note: Check for repeated entries; grab error merges
+a_check <- awards_pm.dt %>%
+  .[,count := .N, by = .(Sal_ID)] %>%
+  .[count > 1]                    %>%
+  .[!is.na(Sal_ID)]
+  # Note: Change mistaken 
+mistake.v <- c(1257, 3739, 3473, 3720, 2265)
+a_check <- a_check                                                 %>%
+  .[Award_AuthID %in% mistake.v, Sal_ID := NA_integer_]            %>%
+  .[!is.na(Sal_ID),Award_AuthID := min(Award_AuthID), by = Sal_ID] %>%
+  .[,.(Name, Award_AuthID, Sal_ID)]
+
+awards_pm.dt <- awards_pm.dt                                  %>%
+  merge.data.table(a_check,
+                   by = "Name",
+                   suffixes = c("", ".new"),
+                   all.x = TRUE)                              %>%
+  .[count > 1 & count < 10, Award_AuthID := Award_AuthID.new] %>%
+  .[,!c("count", "Award_AuthID.new", "Sal_ID.new")]
+
+fwrite(awards_pm.dt,
+       here("Data", "Awards_UniqueAuthors_cor.csv"))
+
+### Note: Check for repeated entries in prop data; grab error merges
+p_check <- prop_pm.dt %>%
+  .[,count := .N, by = .(Sal_ID)] %>%
+  .[count > 1]                    %>%
+  .[!is.na(Sal_ID)]
+# Note: Change mistaken 
+mistake.v <- c(819, 836, 1782, 2240, 3303, 4909, 5281, 5309)
+p_check <- p_check                                                 %>%
+  .[Prop_AuthID %in% mistake.v, Sal_ID := NA_integer_]             %>%
+  .[!is.na(Sal_ID),Prop_AuthID := min(Prop_AuthID), by = Sal_ID]   %>%
+  .[,.(Name, Prop_AuthID, Sal_ID)]
+
+prop_pm.dt <- prop_pm.dt                                      %>%
+  merge.data.table(p_check,
+                   by = "Name",
+                   suffixes = c("", ".new"),
+                   all.x = TRUE)                              %>%
+  .[count > 1 & count < 10, Prop_AuthID := Prop_AuthID.new]   %>%
+  .[,!c("count", "Prop_AuthID.new", "Sal_ID.new")]
+
+fwrite(prop_pm.dt,
+       here("Data", "Proposals_UniqueAuthors_cor.csv"))
+
+### Note: Merge the two datasets by salary identifier
+awards_pm_trim.dt <- awards_pm.dt %>%
+  .[,.(Award_AuthID, Sal_ID)]     %>%
+  unique()
+prop_pm_trim.dt   <- prop_pm.dt   %>%
+  .[,.(Prop_AuthID, Sal_ID)]      %>%
+  unique()
+
+  # Note: Split non identified and identified entries
+a_pm_nm <- awards_pm_trim.dt     %>%
+  .[is.na(Sal_ID)]               %>%
+  .[,Prop_AuthID := NA_integer_] %>%
+  merge.data.table(a_auth_u.dt,
+                   by = "Award_AuthID",
+                   suffixes = c("", ".d")) %>%
+  .[,!c("Sal_ID.d")]
+a_pm_m.dt <- awards_pm_trim.dt %>%
+  .[!is.na(Sal_ID)]
+
+p_pm_nm   <- prop_pm_trim.dt %>%
+  .[is.na(Sal_ID)]           %>%
+  .[,Award_AuthID := NA_integer_] %>%
+  merge.data.table(p_auth_u.dt,
+                   by = "Prop_AuthID",
+                   suffixes = c("", ".d")) %>%
+  .[,!c("Sal_ID.d")]
+p_pm_m.dt <- prop_pm_trim.dt %>%
+  .[!is.na(Sal_ID)]
+
+### Note: Merge the two non-matches by name
+f_mergesort <- function(id1, tolerance){
+  temp.df  <- a_pm_nm[id1, ]
+  temp2.df <- p_pm_nm
+  temp.m  <- stringdist(temp.df$Name_fml,
+                        temp2.df$Name_fml,
+                        method = "jaccard",
+                        q = 2)
+  min_s   <- min(temp.m)
+  col_s   <- match(min_s, temp.m)
+  if (is.na(min_s)){
+    A_id.v  <- temp.df$Award_AuthID[1]
+    Sal_id.v  <- NA
+  }else{
+    if (min_s <= tolerance){
+      A_id.v   <- temp.df$Award_AuthID[1]
+      Sal_id.v <- temp2.df$Prop_AuthID[col_s]
+    }else{
+      A_id.v   <- temp.df$Award_AuthID[1]
+      Sal_id.v    <- NA
+    }
+  }
+  output <- list(A_id.v, Sal_id.v, min_s)
+  return(output)
+}
+
+id1       <- 1:dim(a_pm_nm)[1]
+tolerance <- rep(0.33,
+                 times = length(id1))
+inp <- list(id1, tolerance)
+out1   <- pmap(inp, f_mergesort) %>%
+  purrr::transpose(.)
+out.df <- data.frame("Award_AuthID" = unlist(out1[[1]]),
+                     "Prop_AuthID" = unlist(out1[[2]]))
+
+### Note: Awards positive merges and filtered sal merges
+out_a.df <- out.df %>%
+  filter(!is.na(Prop_AuthID)) %>%
+  mutate(Sal_ID = NA_integer_)
+out_na.df <- out.df %>%
+  filter(is.na(Prop_AuthID)) %>%
+  mutate(Sal_ID = NA_integer_)
+
+out_np.df <- p_pm_nm %>%
+  filter(!(Prop_AuthID %in% out_a.df$Prop_AuthID)) %>%
+  .[,c("Prop_AuthID", "Sal_ID", "Award_AuthID")]
+
+  
+### Note: Attempt to match awards and proposals w/ non salary authors
+pm_m.dt <- merge.data.table(a_pm_m.dt,
+                            p_pm_m.dt,
+                            by  = "Sal_ID",
+                            all = TRUE)
+inp1 <- list(out_a.df, out_na.df, out_np.df, pm_m.dt)
+full.dt <-  rbindlist(inp1,
+                      use.names = TRUE)
+fwrite(full.dt,
+       here("Data", "RDO_Crosswalk.csv"))
