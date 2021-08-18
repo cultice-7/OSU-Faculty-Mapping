@@ -72,3 +72,99 @@ prop_m.dt <- p_auth.dt %>%
   .[order(Name, `Proposal ID`)]              
 fwrite(prop_m.dt,
        here("Data", "RDO_SelectedPropAuthors.csv"))
+
+### Addendum: Pull authors from separate list
+other_auth.dt <- fread(here("Data", "RDO_SelectedAwardAuthors.csv")) %>%
+  .[`PI Count` == 0]                                                 %>%
+  .[,':=' (Name_fl = str_c(`First Name`, " ", `Last Name`))]         %>%
+  .[,':=' (Name_fl = str_to_lower(str_replace_all(Name_fl,
+                                                  "[:punct:]",
+                                                  "")))]             %>%
+  .[,':=' (Name_fl  = str_replace_all(Name_fl,
+                                       "  ",
+                                       " "))]                        %>%
+  .[,':=' (Name_l   = str_to_lower(str_replace_all(`Last Name`,
+                                                   "[:punct:]",
+                                                   "")))]            %>%
+  .[,':=' (Name_l   = str_replace_all(Name_l,
+                                      "  ",
+                                      " "))]                         %>%
+  .[,c("Name", "Home College", "Name_fl", "Name_l")]
+
+  # Note: Merge names to proposals data
+f_mergesort <- function(id1, tolerance){
+  temp.df  <- other_auth.dt[id1, ]
+  temp2.df <- p_auth_u.dt
+  temp.m   <- stringdist(temp.df$Name_fl,
+                         temp2.df$Name_fml,
+                         method = "jaccard",
+                         q = 2)
+  min_s   <- min(temp.m)
+  col_s   <- match(min_s, temp.m)
+  if (is.na(min_s)){
+    A_id.v  <- temp.df$Name_fl[1]
+    Sal_id.v  <- NA
+  }else{
+    if (min_s <= tolerance){
+      A_id.v   <- temp.df$Name_fl[1]
+      Sal_id.v    <- temp2.df$Prop_AuthID[col_s]
+    }else{
+      A_id.v   <- temp.df$Name_fl[1]
+      Sal_id.v    <- NA
+    }
+  }
+  output <- list(A_id.v, Sal_id.v, min_s)
+  return(output)
+}
+
+id1       <- 1:dim(other_auth.dt)[1]
+tolerance <- rep(0.34,
+                 times = length(id1))
+inp <- list(id1, tolerance)
+out1   <- pmap(inp, f_mergesort) %>%
+  purrr::transpose(.)
+out.df <- data.frame("Name_fl" = unlist(out1[[1]]),
+                     "Prop_AuthID" = unlist(out1[[2]]),
+                     "Min_s" = unlist(out1[[3]])) %>%
+  left_join(other_auth.dt,
+            by = "Name_fl")
+mis.df <- out.df %>%
+  filter(is.na(Prop_AuthID)) %>%
+  left_join(p_auth_u.dt,
+            by = "Name_l")
+
+rep.v <- c(219, NA_integer_, 578, NA_integer_,
+           NA_integer_, NA_integer_, NA_integer_, NA_integer_,
+           5305, NA_integer_, 383, NA_integer_, NA_integer_,
+           NA_integer_, 1419, NA_integer_, 1570,
+           528, 1804, 1911, NA_integer_,
+           NA_integer_, NA_integer_, NA_integer_, 3443,
+           NA_integer_, NA_integer_, 4195, NA_integer_,
+           NA_integer_, NA_integer_, NA_integer_, 5073)
+mis2.df <- mis.df[,1:3] %>%
+  rename(Prop_AuthID = Prop_AuthID.x) %>%
+  unique()                            %>%
+  mutate(Prop_AuthID = rep.v)         %>%
+  left_join(p_auth_u.dt,
+            by = "Prop_AuthID")
+
+newout.df <- out.df %>%
+  filter(!(Name_fl %in% mis.df$Name_fl)) %>%
+  bind_rows(mis2.df)
+  
+
+newprop.dt <- p_auth.dt                                                 %>%
+  .[Name_fml %in% newout.df$Name_fml,]                                  %>%
+  merge.data.table(p_auth_u.dt[,c("Name_fml", "Prop_AuthID", "Sal_ID")],
+                   by = "Name_fml",
+                   suffixes = c("", ".d"))                              %>%
+  merge.data.table(sal.dt,
+                   by = "Sal_ID",
+                   suffixes = c("", ".d"))                              %>%
+  .[,c("Name_fml", "Proposal ID", "Name", "PI", "VP_COLLEGE",
+       "DEPARTMENT",	"ORGANIZATION",	"TITLE",	"FTE", "ANNUAL_BASE_SALARY",
+       "SplitAppt")]
+
+out.dt <- rbind(prop_m.dt, newprop.dt)
+fwrite(out.dt,
+       here("Data", "RDO_SelectedPropAuthors.csv"))
