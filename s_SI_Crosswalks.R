@@ -925,3 +925,150 @@ full.dt <-  rbindlist(inp1,
                       use.names = TRUE)
 fwrite(full.dt,
        here("Data", "RDO_Crosswalk.csv"))
+
+################################################################################
+### Note: Energy Faculty walks
+################################################################################
+### Note: Load Salaries DT
+sal.dt      <- fread(here("Data", "OSU_FY2020_Sal_Edits.csv"))              %>%
+  .[,tempmax := max(FTE), by = c("Sal_ID")]                                 %>%
+  .[FTE == tempmax]                                                         %>%
+  .[,SplitAppt := .N-1, by = "Sal_ID"]                                      %>%
+  setnames(c("Last_Name_e"),
+           c("Name_l"))
+sal_trim.dt <- sal.dt %>%
+  .[,c("NAME", "Sal_ID", "Name_fl", "Name_fml", "Name_l")]
+### Note: Functions
+s_locate <- function(x){
+  str_sub(x, 
+          end = str_locate(x,
+                           "\\.")[1,1]-1)
+}
+
+### Note: Create cleaned energy faculty master
+energy.dt <- fread(here("Data", "SI_EnergyFaculty_List.csv"),
+                   header = TRUE)                              %>%
+  .[1:288,1:7]                                                 %>%
+  .[order(name)]                                               %>%
+  .[email == "shelton.1", email := "sheldon.1"]                %>%
+  .[,':=' (VP_COLLEGE = "",
+           Eng_ID     = row.names(.),
+           Name_fl   = str_to_lower(str_replace_all(name,
+                                                     "[:punct:]",
+                                                     "")))]    %>%
+  .[, ':=' (Name_fl  = str_replace_all(Name_fl,
+                                        "  ",
+                                        " "))]                 %>%
+  .[, Name_l := apply(.SD, 1, s_locate), .SDcols = c("email")] %>%
+  .[name != "Allen Klaiber"]
+
+
+# Note: Replace specific names for consistency
+col_rename <- matrix(data = c("Arts & Sciences\nEngineering", "Arts & Sciences",
+                              "Art & Sciences", "Arts & Sciences",
+                              "Byrd Polar", "Arts & Sciences",
+                              "Fisher College of Business", "Fisher",
+                              "Public Affairs", "John Glenn",
+                              "Business", "Fisher"),
+                     ncol = 2,
+                     byrow = T)
+for (i in 1:dim(col_rename)[1]){
+  energy.dt <- energy.dt[college == col_rename[i,1], college := col_rename[i,2]]
+}  
+
+### Note: Create harmonized college names with salary database
+cols_sal <- unique(sal.dt$VP_COLLEGE)
+cols_si  <- unique(energy.dt$college)
+test <- stringdistmatrix(cols_si, cols_sal,
+                         method = "jaccard",
+                         q = 2)
+match_v <- vector(mode   = "character",
+                  length = length(cols_si))
+for (i in 1:length(cols_si)){
+  test_v <- match(min(test[i,],
+                      na.rm = TRUE),
+                  test[i,])
+  match_v[i] <- cols_sal[test_v]
+}
+testmat <- matrix(data  = c(cols_si, match_v),
+                  ncol  = 2,
+                  byrow = F)
+
+for (i in 1:dim(testmat)[1]){
+  energy.dt <- energy.dt[college == testmat[i,1], VP_COLLEGE := testmat[i,2]]
+}
+
+### Note: Matching Process from energy to salaries
+f_mergesort <- function(id1, tolerance){
+  temp.df  <- energy.dt[id1, ]
+  temp2.df <- sal.dt
+  temp.m   <- stringdist(temp.df$Name_fl,
+                         temp2.df$Name_fl,
+                         method = "jaccard",
+                         q = 2)
+  min_s   <- min(temp.m)
+  col_s   <- match(min_s, temp.m)
+  if (is.na(min_s)){
+    A_id.v  <- temp.df$Name_fl[1]
+    Sal_id.v  <- NA
+  }else{
+    if (min_s <= tolerance){
+      A_id.v   <- temp.df$Name_fl[1]
+      Sal_id.v    <- temp2.df$Sal_ID[col_s]
+    }else{
+      A_id.v   <- temp.df$Name_fl[1]
+      Sal_id.v    <- NA
+    }
+  }
+  output <- list(A_id.v, Sal_id.v, min_s)
+  return(output)
+}
+
+id1       <- 1:dim(energy.dt)[1]
+tolerance <- rep(0.34,
+                 times = length(id1))
+inp <- list(id1, tolerance)
+out1   <- pmap(inp, f_mergesort) %>%
+  purrr::transpose(.)
+out.df <- data.frame("Name_fl" = unlist(out1[[1]]),
+                     "Sal_ID" = unlist(out1[[2]]),
+                     "Min_s" = unlist(out1[[3]]))
+
+### Note: Bind other datasets to matching results
+energy_m.dt <- energy.dt                                     %>%
+  merge.data.table(out.df,
+                   by = "Name_fl")                           %>%
+  merge.data.table(sal_trim.dt,
+                   by = "Sal_ID",
+                   suffixes = c("", ".sal"),
+                   all.x = TRUE)                             %>%
+  unique()                                                   %>%
+  .[name == "Joyce Chen", Sal_ID := 5253]
+
+# Note: Pull out missing matches
+wrong.df <- energy_m.dt %>%
+  .[is.na(Sal_ID)]
+
+# Note: Check merges; filter if last names don't match. filter those less than 0.3
+#       match score and remove from wrong.df
+test <- energy_m.dt %>%
+  .[!is.na(Sal_ID)]         %>%
+  .[Name_l != `Name_l.sal`] %>%
+  .[Min_s > 0.3]            %>%
+  .[Name_fl != "antonio j conejo"]
+wrong.df <- wrong.df %>%
+  rbind(test)
+
+# Note: Check merges: filter if first names don't match
+test <- prop_m.df                   %>%
+  anti_join(wrong.df,
+            by = "Prop_AuthID")   %>%
+  filter(Name_fm != Name_fm.sal)      %>%
+  filter(Min_s > (1/3))
+
+wrong.df <- wrong.df %>%
+  bind_rows(test)
+
+correct.df <- prop_m.df %>%
+  anti_join(wrong.df,
+            by = "Prop_AuthID")
