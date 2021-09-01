@@ -1,330 +1,328 @@
-name,position,email,college,department,energy dimension,"research interests, notes",
-Alexander Thompson,Associate Professor,thompson.1191,Arts & Sciences,Political Science,"Economics, Business, and Policy",international environmental politics,
-Allen Klaiber,Professor,klaiber.16,"Food, Agricultural and Environmental Sciences","Agriculture, Environmental & Development Economics","Economics, Business, and Policy","Economic, Legal and Policy",
-Brent Laboiteaux Sohngen,Professor,sohngen.1,"Food, Agricultural and Environmental Sciences","Agriculture, Environmental & Development Economics","Economics, Business, and Policy",energy policy,
-Christian Blanco,Assistant Professor,blanco.58,Fisher College of Business,Management Sciences,"Economics, Business, and Policy",energy production & technology management,
-Cinnamon Carlarne,Professor,carlarne.1,Law,Administration,"Economics, Business, and Policy",energy law,
-Edward Hill,Professor,hill.1973,Public Affairs,Public Affairs,"Economics, Business, and Policy","Factors that affect the competitive position of the Ohio’s manufacturing sector, workforce policy and business strategy, as well as state and local economic development strategy and urban public policy",
-Elena Irwin,Professor,irwin.78,"Food, Agricultural and Environmental Sciences","Agriculture, Environmental & Development Economics","Economics, Business, and Policy",sustainability economics,
-Erin McKie,Assistant Professor,mckie.5,Fisher College of Business,Management Sciences,"Economics, Business, and Policy",sustainability; environmental regulations; circular economy,
-H. Allen Klaiber,Associate Professor,klaiber.16,"Food, Agricultural and Environmental Sciences","Agriculture, Environmental & Development Economics","Economics, Business, and Policy",environmental economics; applied econometrics wrt shale exploration,
-Hongtao Yi,Associate Professor,yi.201,Public Affairs,Public Affairs,"Economics, Business, and Policy",energy & environmental policy & governance,
-Ian Sheldon,Professor,shelton.1,"Food, Agricultural and Environmental Sciences","Agriculture, Environmental & Development Economics","Economics, Business, and Policy",Energy Economics,
-Joyce Chen,Associate Professor,chen.1276,"Food, Agricultural and Environmental Sciences","Agriculture, Environmental & Development Economics","Economics, Business, and Policy","economics, climate change, migration, agriculture",
-Lee Potter,Professor,potter.36,Engineering,Electrical & Computer,"Economics, Business, and Policy",Energy Policy,
-Linnette Goard,Faculty Emeritus,goard.1,"Food, Agricultural and Environmental Sciences",Extension,"Economics, Business, and Policy",Energy Economics,
-Neil Drobny,Senior Lecturer,drobny.3,Fisher College of Business,Management & Human Resources,"Economics, Business, and Policy","Energy and sustainability industry; program director for Environment, Economics, Development & Sustainability  program in Food, Agricultural and Environmental Sciences",
-Noah Dormady,Associate Professor,dormady.1,Public Affairs,,"Economics, Business, and Policy",energy & environmental policy,
-Ramiro Berardo,Associate Professor,berardo.3,"Food, Agricultural and Environmental Sciences",School of Environment and Natural Resources,"Economics, Business, and Policy",environmental policy; water & climate governance,
-Sathya Gopalakrishnan,Associate Professor,gopalakrishnan.27,"Food, Agricultural and Environmental Sciences","Agriculture, Environmental & Development Economics","Economics, Business, and Policy",shale energy economics,
-Sherman Hanna,"Chair, Consumer Science",hanna.1,Education & Human Ecology,Human Sciences,"Economics, Business, and Policy",energy economics,
-Tim Haab,Chair,haab.1,"Food, Agricultural and Environmental Sciences","Agriculture, Environmental & Development Economics","Economics, Business, and Policy",econometrics/environmental economics,
-Yongyang Cai,Associate Professor,cai.619,"Food, Agricultural and Environmental Sciences","Agriculture, Environmental & Development Economics","Economics, Business, and Policy",energy & environmental economics,
+name,position,email,college,department,energy dimension,"research interests, notes"
+Alexander Thompson,Associate Professor,thompson.1191,Arts & Sciences,Political Science,"Economics, Business, and Policy",international environmental politics
+Allen Klaiber,Professor,klaiber.16,"Food, Agricultural and Environmental Sciences","Agriculture, Environmental & Development Economics","Economics, Business, and Policy","Economic, Legal and Policy"
+Brent Laboiteaux Sohngen,Professor,sohngen.1,"Food, Agricultural and Environmental Sciences","Agriculture, Environmental & Development Economics","Economics, Business, and Policy",energy policy
+Christian Blanco,Assistant Professor,blanco.58,Fisher College of Business,Management Sciences,"Economics, Business, and Policy",energy production & technology management
+Cinnamon Carlarne,Professor,carlarne.1,Law,Administration,"Economics, Business, and Policy",energy law
+Edward Hill,Professor,hill.1973,Public Affairs,Public Affairs,"Economics, Business, and Policy","Factors that affect the competitive position of the Ohio’s manufacturing sector, workforce policy and business strategy, as well as state and local economic development strategy and urban public policy"
+Elena Irwin,Professor,irwin.78,"Food, Agricultural and Environmental Sciences","Agriculture, Environmental & Development Economics","Economics, Business, and Policy",sustainability economics
+Erin McKie,Assistant Professor,mckie.5,Fisher College of Business,Management Sciences,"Economics, Business, and Policy",sustainability; environmental regulations; circular economy
+H. Allen Klaiber,Associate Professor,klaiber.16,"Food, Agricultural and Environmental Sciences","Agriculture, Environmental & Development Economics","Economics, Business, and Policy",environmental economics; applied econometrics wrt shale exploration
+Hongtao Yi,Associate Professor,yi.201,Public Affairs,Public Affairs,"Economics, Business, and Policy",energy & environmental policy & governance
+Ian Sheldon,Professor,shelton.1,"Food, Agricultural and Environmental Sciences","Agriculture, Environmental & Development Economics","Economics, Business, and Policy",Energy Economics
+Joyce Chen,Associate Professor,chen.1276,"Food, Agricultural and Environmental Sciences","Agriculture, Environmental & Development Economics","Economics, Business, and Policy","economics, climate change, migration, agriculture"
+Lee Potter,Professor,potter.36,Engineering,Electrical & Computer,"Economics, Business, and Policy",Energy Policy
+Linnette Goard,Faculty Emeritus,goard.1,"Food, Agricultural and Environmental Sciences",Extension,"Economics, Business, and Policy",Energy Economics
+Neil Drobny,Senior Lecturer,drobny.3,Fisher College of Business,Management & Human Resources,"Economics, Business, and Policy","Energy and sustainability industry; program director for Environment, Economics, Development & Sustainability  program in Food, Agricultural and Environmental Sciences"
+Noah Dormady,Associate Professor,dormady.1,Public Affairs,,"Economics, Business, and Policy",energy & environmental policy
+Ramiro Berardo,Associate Professor,berardo.3,"Food, Agricultural and Environmental Sciences",School of Environment and Natural Resources,"Economics, Business, and Policy",environmental policy; water & climate governance
+Sathya Gopalakrishnan,Associate Professor,gopalakrishnan.27,"Food, Agricultural and Environmental Sciences","Agriculture, Environmental & Development Economics","Economics, Business, and Policy",shale energy economics
+Sherman Hanna,"Chair, Consumer Science",hanna.1,Education & Human Ecology,Human Sciences,"Economics, Business, and Policy",energy economics
+Tim Haab,Chair,haab.1,"Food, Agricultural and Environmental Sciences","Agriculture, Environmental & Development Economics","Economics, Business, and Policy",econometrics/environmental economics
+Yongyang Cai,Associate Professor,cai.619,"Food, Agricultural and Environmental Sciences","Agriculture, Environmental & Development Economics","Economics, Business, and Policy",energy & environmental economics
 Paul Dubetz,Adjunct Assistant Professor,dubetz.2,Engineering,Chemical & Biomolecular,"Economics, Business, and Policy
-Energy Technologies","operation & commercial roles in oil & gas exploration, production operations, natural gas marketing, LNG, oil supply, trading & logistics, and corporate finance",
+Energy Technologies","operation & commercial roles in oil & gas exploration, production operations, natural gas marketing, LNG, oil supply, trading & logistics, and corporate finance"
 Eric Romich,Associate Professor,romich.2,"Food, Agricultural and Environmental Sciences",Extension,"Economics, Business, and Policy
-Human Behavior & Well-Being",energy economics,
+Human Behavior & Well-Being",energy economics
 Myra Moss,Associate Professor,moss.63,"Food, Agricultural and Environmental Sciences",Extension,"Economics, Business, and Policy
-Human Behavior & Well-Being","economic development, community planning, capacity building for individuals and communities; Muskingum County extension educator ",
+Human Behavior & Well-Being","economic development, community planning, capacity building for individuals and communities; Muskingum County extension educator "
 Nancy Bowen-Ellzey,Associate Professor,bowen-ellzey.1,"Food, Agricultural and Environmental Sciences",Community Development,"Economics, Business, and Policy
-Human Behavior & Well-Being",renewable energy development,
+Human Behavior & Well-Being",renewable energy development
 Peggy Hall,Associate Professor,hall.673,"Food, Agricultural and Environmental Sciences",Extension,"Economics, Business, and Policy
-Human Behavior & Well-Being",extension educator; agriculture & resource law,
-Ann Cook,Associate Professor,cook.1129,Arts & Sciences,Earth Sciences,Energy Resources,"Gas hydrates, geophysics, carbon sequestration, petroleum industry, shale gas",
-Ashley Griffith,Associate Professor,griffith.233,Arts & Sciences,Earth Sciences,Energy Resources,"structural geology, rock mechanics",
-Aylin Yener,Chair,yener.5,Engineering,Electrical & Computer,Energy Resources,Biomass/Biofuels,
-Birgit Alber,Associate Professor,alber.8,Arts & Sciences,Microbiology,Energy Resources,Molecular basis by which small inorganic molecules are converted to biomass by bacteria,
-Carolin Fink,Assistant Professor,fink.242,Engineering,Materials Science,Energy Resources,"Welding metallurgy and weldability of nickel-base alloys, stainless steels and HSLA steels; material degradation and weld cracking phenomena; metallurgy and microstructural evolution in dissimilar materials joining and additive manufacturing; filler metal development for nuclear energy nickel base alloys ",
-Christopher Weait,Faculty Emeritus,weait.1,Arts & Sciences,Music,Energy Resources,Fossil Fuels,
-David Barker,Professor,barker.169,"Food, Agricultural and Environmental Sciences",Agricultural Technical Institute,Energy Resources,"Feedstock production/genetics, switchgrass production,  biomass conversion",
-David Cole,Professor,cole.618,Arts & Sciences,Earth Sciences,Energy Resources,Fundamental investigations of low to high temperature mineral-fluid (gas) interactions,
-David Elliot,Faculty Emeritus,elliot.1,Arts & Sciences,Earth Sciences,Energy Resources,Geothermal,
+Human Behavior & Well-Being",extension educator; agriculture & resource law
+Ann Cook,Associate Professor,cook.1129,Arts & Sciences,Earth Sciences,Energy Resources,"Gas hydrates, geophysics, carbon sequestration, petroleum industry, shale gas"
+Ashley Griffith,Associate Professor,griffith.233,Arts & Sciences,Earth Sciences,Energy Resources,"structural geology, rock mechanics"
+Aylin Yener,Chair,yener.5,Engineering,Electrical & Computer,Energy Resources,Biomass/Biofuels
+Birgit Alber,Associate Professor,alber.8,Arts & Sciences,Microbiology,Energy Resources,Molecular basis by which small inorganic molecules are converted to biomass by bacteria
+Carolin Fink,Assistant Professor,fink.242,Engineering,Materials Science,Energy Resources,"Welding metallurgy and weldability of nickel-base alloys, stainless steels and HSLA steels; material degradation and weld cracking phenomena; metallurgy and microstructural evolution in dissimilar materials joining and additive manufacturing; filler metal development for nuclear energy nickel base alloys "
+Christopher Weait,Faculty Emeritus,weait.1,Arts & Sciences,Music,Energy Resources,Fossil Fuels
+David Barker,Professor,barker.169,"Food, Agricultural and Environmental Sciences",Agricultural Technical Institute,Energy Resources,"Feedstock production/genetics, switchgrass production,  biomass conversion"
+David Cole,Professor,cole.618,Arts & Sciences,Earth Sciences,Energy Resources,Fundamental investigations of low to high temperature mineral-fluid (gas) interactions
+David Elliot,Faculty Emeritus,elliot.1,Arts & Sciences,Earth Sciences,Energy Resources,Geothermal
 David Nagib,Assistant Professor,nagib.1,Arts & Sciences,Chemistry & Biochemistry,Energy Resources,"Design and development of new synthetic chemistry to facilitate diverse applications, including:
 â€¢	Upgrading and conversion of biofuels or petroleum feedstocks
 â€¢	Post-synthetic C-H functionalization of commodity chemicals
 â€¢	Chemical adhesion of biorubber to biodegradable materials
 â€¢	Chemical degradation of recyclable plastics
 â€¢	Free radical capture and conversion of carbon dioxide (CO2)
-â€¢	Radical ASCcades for sustainable synthesis of pharmaceuticals",
-Derek Sawyer,Assistant Professor,sawyer.144,Arts & Sciences,Earth Sciences,Energy Resources,geophysics; petroleum geology; geohazards; stratigraphy,
-Franklin Schwartz,Professor,schwartz.11,Arts & Sciences,Earth Sciences,Energy Resources,hydroclimatology; energy infrastructure; contaminant hydrogeology,
-Hongping Zhao,Associate Professor,zhao.2592,Engineering,Electrical & Computer,Energy Resources,Mei ,
-Ilham El-Monier,Assistant Professor of Practice,el-monier.1,Engineering,Chemical & Biomolecular,Energy Resources,fluid mechanics & petrophysics; fracturing; reservoir engineering,
-James Lee,Faculty Emeritus,lee.31,Engineering,Chemical & Biomolecular,Energy Resources,Wind Energy,
-Jay Hollick,"Professor, Director (CAPS)",hollick.3,Arts & Sciences,Molecular Genetics,Energy Resources,"Director, CAPS; epigenetic mechanisms of gene control, chromosome structure and function",
-Joachim Moortgat,Assistant Professor,moortgat.1,Arts & Sciences,Earth Sciences,Energy Resources,carbon sequestration; energy resources; geothermal energy; groundwater quality,
-John Newton Reeve,Faculty Emeritus,reeve.2,Arts & Sciences,Microbiology,Energy Resources,Biomass/Biofuels,
-John Olesik,Staff Research Scientist,olesik.2,Arts & Sciences,Earth Sciences,Energy Resources,Nuclear Energy,
-Jon Parquette,Professor,parquette.1,Arts & Sciences,Chemistry & Biochemistry,Energy Resources,Novel Materials,
-Joseph Krzycki,Professor,krzycki.1,Arts & Sciences,Microbiology,Energy Resources,Biomass/Biofuels,
-Jovica Badjic,Professor,badjic.1,Arts & Sciences,Chemistry & Biochemistry,Energy Resources,"Supramolecular chemistry, physical organic chemistry, organic synthesis.  Contact Badjic for energy research info.",
-Julie Sheets,Senior Lecturer,sheets.2,Arts & Sciences,Earth Sciences,Energy Resources,mineralogy; gemology,
-Kenneth Saint Martin,"Professor, Associate Director",martin.1540,"Food, Agricultural and Environmental Sciences",Extension,Energy Resources,Biomass/Biofuels,
-Loren Babcock,Professor,babcock.5,Arts & Sciences,Earth Sciences,Energy Resources,paleontology; sedimentary geology,
-Matthew Saltzman,Professor & School Director,saltzman.11,Arts & Sciences,Earth Sciences,Energy Resources,climate change; carbon cycle,
-Mei Zhaung,Professor,zhuang.15,Engineering,Mechanical & Aerospace,Energy Resources,Wind Energy,
-Michael Barton,Professor,barton.2,Arts & Sciences,Earth Sciences,Energy Resources,"Geothermal energy; generation, movement and evolution of magma within the Earth using techniques from petrology, thermodynamics, geochemistry and geophysics",
-Michael Bevis,Professor,bevis.6,Arts & Sciences,Earth Sciences,Energy Resources,"geodesy, geodynamics; geophysics; climate change",
-Ralph von Frese,Faculty Emeritus,von-frese.3,Arts & Sciences,Earth Sciences,Energy Resources,Fossil Fuels,
-Richard Carl Pratt,Faculty Emeritus,pratt.3,"Food, Agricultural and Environmental Sciences",Horticulture and Crop Science,Energy Resources,Biomass/Biofuels,
-Russell Pitzer,Faculty Emeritus,pitzer.3,Arts & Sciences,Chemistry & Biochemistry,Energy Resources,Nuclear Energy,
-Sabine Jeschonnek,Professor,jeschonnek.1,Lima,Lima Regional Campus,Energy Resources,Nuclear Energy ,
-Tom Darrah,Associate Professor,darrah.24,Arts & Sciences,Earth Sciences,Energy Resources,"geochemistry, noble gases, energy",
-Ulrich Heinz,Distinquished Faculty,heinz.9,Arts & Sciences,Physics,Energy Resources,Theoretical nuclear physics,
-Venkat Gopalan,Professor,gopalan.5,Arts & Sciences,Chemistry & Biochemistry,Energy Resources,Biomass/Biofuels,
-Wesley Green,Faculty Emeritus,greene.2,"Food, Agricultural and Environmental Sciences",Agricultural Technical Institute,Energy Resources,Renewable Energy,
-Abdollah Shafieezadeh,Assistant Professor,shafieezadeh.1,Engineering,"Civil, Environmental & Geodetic Engineering",Energy Systems Management,transportation infrastructure,
-Abhisek Gupta,Assistant Professor,gupta.706,Engineering,Electrical & Computer,Energy Systems Management,"Stochastic control theory, optimization and information theory, with applications to secure cyberphysical systems and develop mechanisms for electricity markets",
+â€¢	Radical ASCcades for sustainable synthesis of pharmaceuticals"
+Derek Sawyer,Assistant Professor,sawyer.144,Arts & Sciences,Earth Sciences,Energy Resources,geophysics; petroleum geology; geohazards; stratigraphy
+Franklin Schwartz,Professor,schwartz.11,Arts & Sciences,Earth Sciences,Energy Resources,hydroclimatology; energy infrastructure; contaminant hydrogeology
+Hongping Zhao,Associate Professor,zhao.2592,Engineering,Electrical & Computer,Energy Resources,Mei 
+Ilham El-Monier,Assistant Professor of Practice,el-monier.1,Engineering,Chemical & Biomolecular,Energy Resources,fluid mechanics & petrophysics; fracturing; reservoir engineering
+James Lee,Faculty Emeritus,lee.31,Engineering,Chemical & Biomolecular,Energy Resources,Wind Energy
+Jay Hollick,"Professor, Director (CAPS)",hollick.3,Arts & Sciences,Molecular Genetics,Energy Resources,"Director, CAPS; epigenetic mechanisms of gene control, chromosome structure and function"
+Joachim Moortgat,Assistant Professor,moortgat.1,Arts & Sciences,Earth Sciences,Energy Resources,carbon sequestration; energy resources; geothermal energy; groundwater quality
+John Newton Reeve,Faculty Emeritus,reeve.2,Arts & Sciences,Microbiology,Energy Resources,Biomass/Biofuels
+John Olesik,Staff Research Scientist,olesik.2,Arts & Sciences,Earth Sciences,Energy Resources,Nuclear Energy
+Jon Parquette,Professor,parquette.1,Arts & Sciences,Chemistry & Biochemistry,Energy Resources,Novel Materials
+Joseph Krzycki,Professor,krzycki.1,Arts & Sciences,Microbiology,Energy Resources,Biomass/Biofuels
+Jovica Badjic,Professor,badjic.1,Arts & Sciences,Chemistry & Biochemistry,Energy Resources,"Supramolecular chemistry, physical organic chemistry, organic synthesis.  Contact Badjic for energy research info."
+Julie Sheets,Senior Lecturer,sheets.2,Arts & Sciences,Earth Sciences,Energy Resources,mineralogy; gemology
+Kenneth Saint Martin,"Professor, Associate Director",martin.1540,"Food, Agricultural and Environmental Sciences",Extension,Energy Resources,Biomass/Biofuels
+Loren Babcock,Professor,babcock.5,Arts & Sciences,Earth Sciences,Energy Resources,paleontology; sedimentary geology
+Matthew Saltzman,Professor & School Director,saltzman.11,Arts & Sciences,Earth Sciences,Energy Resources,climate change; carbon cycle
+Mei Zhaung,Professor,zhuang.15,Engineering,Mechanical & Aerospace,Energy Resources,Wind Energy
+Michael Barton,Professor,barton.2,Arts & Sciences,Earth Sciences,Energy Resources,"Geothermal energy; generation, movement and evolution of magma within the Earth using techniques from petrology, thermodynamics, geochemistry and geophysics"
+Michael Bevis,Professor,bevis.6,Arts & Sciences,Earth Sciences,Energy Resources,"geodesy, geodynamics; geophysics; climate change"
+Ralph von Frese,Faculty Emeritus,von-frese.3,Arts & Sciences,Earth Sciences,Energy Resources,Fossil Fuels
+Richard Carl Pratt,Faculty Emeritus,pratt.3,"Food, Agricultural and Environmental Sciences",Horticulture and Crop Science,Energy Resources,Biomass/Biofuels
+Russell Pitzer,Faculty Emeritus,pitzer.3,Arts & Sciences,Chemistry & Biochemistry,Energy Resources,Nuclear Energy
+Sabine Jeschonnek,Professor,jeschonnek.1,Lima,Lima Regional Campus,Energy Resources,Nuclear Energy 
+Tom Darrah,Associate Professor,darrah.24,Arts & Sciences,Earth Sciences,Energy Resources,"geochemistry, noble gases, energy"
+Ulrich Heinz,Distinquished Faculty,heinz.9,Arts & Sciences,Physics,Energy Resources,Theoretical nuclear physics
+Venkat Gopalan,Professor,gopalan.5,Arts & Sciences,Chemistry & Biochemistry,Energy Resources,Biomass/Biofuels
+Wesley Greene,Faculty Emeritus,greene.2,"Food, Agricultural and Environmental Sciences",Agricultural Technical Institute,Energy Resources,Renewable Energy
+Abdollah Shafieezadeh,Assistant Professor,shafieezadeh.1,Engineering,"Civil, Environmental & Geodetic Engineering",Energy Systems Management,transportation infrastructure
+Abhisek Gupta,Assistant Professor,gupta.706,Engineering,Electrical & Computer,Energy Systems Management,"Stochastic control theory, optimization and information theory, with applications to secure cyberphysical systems and develop mechanisms for electricity markets"
 Ahmet Kahraman,Professor,kahraman.1,Engineering,Mechanical & Aerospace,Energy Systems Management,"Advanced Aerospace Systems
 Advanced Automotive Systems
-Energy and Environmental Quality",
-Ahmet Selamet,Professor,selamet.1,Engineering,Mechanical & Aerospace,Energy Systems Management,internal combustion engines; acoustics; noise control,
-Ajay Shah,Associate Professor,shah.971,"Food, Agricultural and Environmental Sciences","OARDC Food, Agriculture & Biological",Energy Systems Management,bioenergy,
-Alfred Soboyejo,Professor,soboyejo.2,"Food, Agricultural and Environmental Sciences","Food, Agricultures & Biological Engineering",Energy Systems Management,Energy Systems,
-Anant Agarwal,Professor,agarwal.334,Engineering,Electrical & Computer,Energy Systems Management,"design & development of high-voltage devices for EV charging, PV & wind inverters",
-Andrew Cruse,Associate Professor,cruse.40,Engineering,Knowlton School of Architecture,Energy Systems Management,"Architecture and energy, including weather influence",
-Anish Arora,Professor,arora.9,Engineering,Computer Science & Engineering,Energy Systems Management,"(electricity systs) With regard to the smart grid, develops algorithms for distributed state estimation that support control; (bldgs & manuf) Low-power wireless sensor network technologies for smart building operations; developing a low-power sensing capability for counting people in building spaces and support intelligent decisions related to comfort, air quality, and conservation; models of large buildings to improve the energy efficiency of the HVAC control",
-Ann Christy,Professor,christy.14,Engineering,Engineering Education,Energy Systems Management,bioenergy,
-Antonio J. Conejo,Professor,conejonavarro.1,Engineering,Electrical & Computer,Energy Systems Management,wind; emissions trading?,
-Aravind Asthagiri,Associate Professor,asthagiri.1,Engineering,Chemical & Biomolecular,Energy Systems Management,modeling to predict material properties,
-Atilla Eryilmaz,Professor,eryilmaz.2,Engineering,Electrical & Computer,Energy Systems Management,Control & pricing for battery & demand management of large-scale electricity systems; sensor & wireless communication networks; distributed & randomized algorithms; network coding; and application of optimization theory to network design & analysis,
-Ayman Fayed,Assistant Professor,fayed.1,Engineering,Electrical & Computer,Energy Systems Management,Power Management Research Lab,
+Energy and Environmental Quality"
+Ahmet Selamet,Professor,selamet.1,Engineering,Mechanical & Aerospace,Energy Systems Management,internal combustion engines; acoustics; noise control
+Ajay Shah,Associate Professor,shah.971,"Food, Agricultural and Environmental Sciences","OARDC Food, Agriculture & Biological",Energy Systems Management,bioenergy
+Alfred Soboyejo,Professor,soboyejo.2,"Food, Agricultural and Environmental Sciences","Food, Agricultures & Biological Engineering",Energy Systems Management,Energy Systems
+Anant Agarwal,Professor,agarwal.334,Engineering,Electrical & Computer,Energy Systems Management,"design & development of high-voltage devices for EV charging, PV & wind inverters"
+Andrew Cruse,Associate Professor,cruse.40,Engineering,Knowlton School of Architecture,Energy Systems Management,"Architecture and energy, including weather influence"
+Anish Arora,Professor,arora.9,Engineering,Computer Science & Engineering,Energy Systems Management,"(electricity systs) With regard to the smart grid, develops algorithms for distributed state estimation that support control; (bldgs & manuf) Low-power wireless sensor network technologies for smart building operations; developing a low-power sensing capability for counting people in building spaces and support intelligent decisions related to comfort, air quality, and conservation; models of large buildings to improve the energy efficiency of the HVAC control"
+Ann Christy,Professor,christy.14,Engineering,Engineering Education,Energy Systems Management,bioenergy
+Antonio J. Conejo,Professor,conejonavarro.1,Engineering,Electrical & Computer,Energy Systems Management,wind; emissions trading?
+Aravind Asthagiri,Associate Professor,asthagiri.1,Engineering,Chemical & Biomolecular,Energy Systems Management,modeling to predict material properties
+Atilla Eryilmaz,Professor,eryilmaz.2,Engineering,Electrical & Computer,Energy Systems Management,Control & pricing for battery & demand management of large-scale electricity systems; sensor & wireless communication networks; distributed & randomized algorithms; network coding; and application of optimization theory to network design & analysis
+Ayman Fayed,Assistant Professor,fayed.1,Engineering,Electrical & Computer,Energy Systems Management,Power Management Research Lab
 Benjamin Coifman,Associate Professor,coifman.,Engineering,"Civil, Environmental & Geodetic Engineering
-Electrical & Computer",Energy Systems Management,intelligent transportation systems,
-Bhavik Bakshi,Professor,bakshi.2,Engineering,Chemical & Biomolecular,Energy Systems Management,sustainability science & engineering; process systems engineering,
-Cam Giang,Staff Research Associate Engineer,giang.1,Engineering,Mechanical & Aerospace,Energy Systems Management,Sustainable mobility,
-Carol Smidts,Professor,smidts.1,Engineering,Mechanical & Aerospace,Energy Systems Management,probabilistic risk assessment; dynamic methodologies; modeling,
-Chen Chen,Assistant Professor,chen.8018,Engineering,Integrated Systems,Energy Systems Management,optimization algorithms (leveraging computers & math to help make better decisions); power systems,
-Christopher Stewart,Associate Professor,stewart.962,Engineering,Computer Science & Engineering,Energy Systems Management,cost/energy efficiency for instrastructure services; managing renewable energy in grid-tied datacenters,
-Codrin Gruie Cantemir,Staff Research Scientist,cantemir.1,Engineering,Center for Automotive Research,Energy Systems Management,Sustainable mobility; powertrain solutions; tactical truck vehicle systems; defense and security,
-David Talbot,Research Assistant Professor,talbot.11,Engineering,Mechanical & Aerospace,Energy Systems Management,power transmission; load distribution modeling; car dynamics & vibrations,
-David Woods,Faculty Emeritus,woods.2,Engineering,Integrated Systems,Energy Systems Management,"Improving systems safety in high risk, complex settings, including human coordination with automated and intelligent systems and accident investigations in aviation, nuclear power, critical care medicine, crisis response, military operations, outages of critical digital services, and space operations",
-Dean Wang,Associate Professor,wang.12239,Engineering,Mechanical & Aerospace,Energy Systems Management,"nuclear reactor design, modeling, systems & safety",
-Dennis Heldman,Professor,heldman.20,"Food, Agricultural and Environmental Sciences",Food Science & Technology,Energy Systems Management,process design to achieve maximum efficiency and optimum food product quality,
-Dongbin Xiu,"Professor, Ohio Eminent Scholar",xiu.16,Arts & Sciences,Mathmatics,Energy Systems Management,"Uncertainty quantification, data sciences, and scientific computing; strong interest to work on energy related problems; Ohio Eminent Scholar",
-Eylem Ekici,Professor,ekici.2,Engineering,Electrical & Computer,Energy Systems Management,"Communications networks for the power grid, computer networks, wireless and satellite systems, routing protocols, and QoS provisioning",
-Farhang Pourboghrat,Professor,pourboghrat.2,Engineering,Integrated Systems,Energy Systems Management,materials processing,
+Electrical & Computer",Energy Systems Management,intelligent transportation systems
+Bhavik Bakshi,Professor,bakshi.2,Engineering,Chemical & Biomolecular,Energy Systems Management,sustainability science & engineering; process systems engineering
+Cam Giang,Staff Research Associate Engineer,giang.1,Engineering,Mechanical & Aerospace,Energy Systems Management,Sustainable mobility
+Carol Smidts,Professor,smidts.1,Engineering,Mechanical & Aerospace,Energy Systems Management,probabilistic risk assessment; dynamic methodologies; modeling
+Chen Chen,Assistant Professor,chen.8018,Engineering,Integrated Systems,Energy Systems Management,optimization algorithms (leveraging computers & math to help make better decisions); power systems
+Christopher Stewart,Associate Professor,stewart.962,Engineering,Computer Science & Engineering,Energy Systems Management,cost/energy efficiency for instrastructure services; managing renewable energy in grid-tied datacenters
+Codrin Gruie Cantemir,Staff Research Scientist,cantemir.1,Engineering,Center for Automotive Research,Energy Systems Management,Sustainable mobility; powertrain solutions; tactical truck vehicle systems; defense and security
+David Talbot,Research Assistant Professor,talbot.11,Engineering,Mechanical & Aerospace,Energy Systems Management,power transmission; load distribution modeling; car dynamics & vibrations
+David Woods,Faculty Emeritus,woods.2,Engineering,Integrated Systems,Energy Systems Management,"Improving systems safety in high risk, complex settings, including human coordination with automated and intelligent systems and accident investigations in aviation, nuclear power, critical care medicine, crisis response, military operations, outages of critical digital services, and space operations"
+Dean Wang,Associate Professor,wang.12239,Engineering,Mechanical & Aerospace,Energy Systems Management,"nuclear reactor design, modeling, systems & safety"
+Dennis Heldman,Professor,heldman.20,"Food, Agricultural and Environmental Sciences",Food Science & Technology,Energy Systems Management,process design to achieve maximum efficiency and optimum food product quality
+Dongbin Xiu,"Professor, Ohio Eminent Scholar",xiu.16,Arts & Sciences,Mathmatics,Energy Systems Management,"Uncertainty quantification, data sciences, and scientific computing; strong interest to work on energy related problems; Ohio Eminent Scholar"
+Eylem Ekici,Professor,ekici.2,Engineering,Electrical & Computer,Energy Systems Management,"Communications networks for the power grid, computer networks, wireless and satellite systems, routing protocols, and QoS provisioning"
+Farhang Pourboghrat,Professor,pourboghrat.2,Engineering,Integrated Systems,Energy Systems Management,materials processing
 Feng Qin,Associate Professor,qin.34,Engineering,Computer Science & Engineering,Energy Systems Management,"Dependability of various types of systems and software applications such as distributed systems, software systems
 deployed in smart grid, high performance systems, and cloud computing systems
-",
-Giorgio Rizzoni,Professor,rizzoni.1,Engineering,Mechanical & Aerospace,Energy Systems Management,future ground vehicle propulsion systems,
-Hanna Cho,Assistant Professor,cho.867,Engineering,Mechanical & Aerospace,Energy Systems Management,"broadband resonance, frequency tunability & nonlinear instability",
-Herman (Mo-how) Shen,Professor,shen.1,Engineering,Mechanical & Aerospace,Energy Systems Management,"Structural reliability, sustainability, and service life assessment/prediction, and health monitoring technologies for electric power generation equipment",
-Hesham El-Gamal,Professor,elgamal.2,Engineering,Electrical & Computer,Energy Systems Management,Fundamental performance vs security tradeoffs that occur in smart grid systems due to the increased flexibility in scheduling transmissions,
-Igor Adamovich,Professor,adamovich.1,Engineering,Mechanical & Aerospace,Energy Systems Management,"Supersonic flow control and combustion control by plasmas; nonequilibrium MHD flows; generation of stable high-pressure nonequilibrium plasmas; plasma chemical synthesis of advanced materials; and kinetics of gases, plasmas and liquids at extreme thermodynamic disequilibrium",
-Jack McNamara,Professor,mcnamara.190,Engineering,Mechanical & Aerospace,Energy Systems Management,fluid-structure interactions; multi-fidelity modeling,
-James Gregory,Professor,gregory.234,Engineering,Mechanical & Aerospace,Energy Systems Management,"unsteady wakes; rotorcraft aeromechanics, bluff body wake control",
-Jeanie (Chun Ning) Lau,Professor,lau.232,Arts & Sciences,Physics,Energy Systems Management,"Novel physics and phenomena of nanoscale systems, in particular, graphene and other two-dimensional materials; electronic, thermal, and mechanical properties of nanoscale systems; applications of developing faster information processing technologies with lower energy consumption",
-Jeffrey Bons,Professor,bons.2,Engineering,Mechanical & Aerospace,Energy Systems Management,heat transfer in gas turbines; flow control; turbines,
-Jeffrey Sutton,Associate Professor,sutton.235,Engineering,Mechanical & Aerospace,Energy Systems Management,turbulent flows; combustion dynamics,
-Jiankang Wang,Assistant Professor,wang.6536,Engineering,Electrical & Computer,Energy Systems Management,"emerging technologies of modern power system operation and planning, electricity markets, reconfiguration, demand side management, distributed generation and renewable energy",
-Jin Wang,Professor,wang.1248,Engineering,Electrical & Computer,Energy Systems Management,"Power electronics circuits and control, interface for renewable energy sources, hybrid electrical vehicle/fuel cell vehicle",
-Joel Paulson,Assistant Professor,paulson.82,Engineering,Chemical & Biomolecular,Energy Systems Management,"improving the quality, efficiency, and sustainability of engineered produces & processes",
-Joerg Jeschonnek,Associate Professor,jinschek.1,Engineering,Materials Science,Energy Systems Management,"Development of aberration-corrected transmission electron microscopy, with a focus on environmental modes of operation, to support research activities in materials for energy generation, conversion, and storage; high temperature materials for heat engines and propulsion; corrosion and degradation-resistant materials; light-weighting, and materials for biological applications",
-John Horack,Professor,horack.1,Engineering,Mechanical & Aerospace,Energy Systems Management,spaceflight; space policy; high-energy astrophysics,
-Julia Zhang,Assistant Professor,zhang.564,Engineering,Electrical & Computer,Energy Systems Management,"Design, modeling, controls of AC electric machines and drives; Applications: road vehicles, ships, aircraft, renewable energy conversion, power systems, robotic systems   ",
-Junmin Wang,Professor,wang.1381,Engineering,Mechanical & Aerospace,Energy Systems Management,"control, modeling, optimization of dynamical systems, esp for automotive, vehicle, transportation & sustainable mobility apps",
-Katrina Cornish,Professor,cornish.19,"Food, Agricultural and Environmental Sciences",OARDC Horticulture & Crop Science,Energy Systems Management,bioenergy,
-Kevin Passino,Professor,passino.1,Engineering,Electrical & Computer,Energy Systems Management,Interdisciplinary engineering-biology research on distributed decision-making systems; Distributed feedback control and optimization for energy systems; smart lighting,
-Li-Chiang Lin,Assistant Professor,lin.2645,Engineering,Chemical & Biomolecular,Energy Systems Management,molecular simulations for energy-related applications,
-Longya Xu,Professor,xu.12,Engineering,Electrical & Computer,Energy Systems Management,"Power electronic converters, control of variable-speed drives, finite element analysis, solid state control of electric power systems.",
-M.J. Benzakein,Professor,benzakein.2,Engineering,Mechanical & Aerospace,Energy Systems Management,"Wind turbine optimization and aircraft engine engineering; advanced propulsion and energy systems; computational aerodynamics, aeroacoustics, aeromechanics, and combustion",
-Mahesh Illindala,Associate Professor,illindala.1,Engineering,Electrical & Computer,Energy Systems Management,"Microgrids, distributed energy resources, electrical energy conversion and storage, as well as advanced electric drive transportation systems.",
-Marcello Canova,Associate Professor,canova.1,Engineering,Mechanical & Aerospace,Energy Systems Management,hybrid & electric vehicles; energy conversion & storage,
-Marcelo Dapino,Professor,dapino.1,Engineering,Mechanical & Aerospace,Energy Systems Management,"Mechanics of materials, vibrations, mechatronics, and system design; smart materials such as piezoelectric, magnetostrictive, shape memory, and active polymers; ultrasonic additive manufacturing; automotive and aerospace applications",
-Mohammad Samimy,Professor,samimy.1,Engineering,Mechanical & Aerospace,Energy Systems Management,"flow & acoustics control; fluid dynamics; aeroacoustics, turbulence",
-Ness Shroff,"Professor, Ohio Eminent ",shroff.11,Engineering,Computer Science & Engineering,Energy Systems Management,"Investigating how customers can reduce energy bills by determining when and how much energy to draw from the grid, and when to schedule various delay-tolerant tasks in presence of renewable energy sources and battery storage capability. Also, developing the foundations for design and operation of cellular base-stations equipped with energy harvesting devices and developing practical solutions based on these foundations ",
-Paul R. Berger,Professor,berger.143,Engineering,Electrical & Computer,Energy Systems Management,nanoelectronics; optoelectronic devices; advisor to Solar Education student group,
-Peter Ling,Associate Professor,ling.23,"Food, Agricultural and Environmental Sciences","Food, Agricultures & Biological Engineering",Energy Systems Management,"Energy-efficient greenhouses for commercial plant production, particularly developing technologies and management strategies to improve greenhouse operation efficiency and use them for solar heat collection",
-Prasun Sinha,Adjunct Professor,sinha.43,Engineering,Computer Science & Engineering,Energy Systems Management,"Research includes renewable energy, distributed wireless channel access protocols, vehicle to infrastructure communications, and the design and control of sensor networks.  Dr. Sinha and his colleagues are studying how energy management can be exploited in the context of scheduling delay-tolerant tasks in the consumer’s premises in a smart grid.",
-Qadeer Ahmed,Research Associate Professor,ahmed.358,Engineering,Mechanical & Aerospace,Energy Systems Management,"CAR: energy management, fuel economy",
-Rabi Mishalani,Professor,mishalani.1,Engineering,"Civil, Environmental & Geodetic Engineering",Energy Systems Management,Transportation,
-Rajendra Singh,Faculty Emeritus,singh.3,Engineering,Mechanical & Aerospace,Energy Systems Management,Advanced Automotive Systems,
-Ramteen Sioshansi,Professor,sioshansi.1,Engineering,Integrated Systems,Energy Systems Management,"integration of advanced energy technologies, including renewables, energy storage, and electric transportation, into energy systems. He also works in energy policy and electricity market design",
-Randall Mathison,Assistant Professor,mathison.4,Engineering,Mechanical & Aerospace,Energy Systems Management,turbine heat transfer,
-Ryan Harne,Assistant Professor,harne.3,Engineering,Mechanical & Aerospace,Energy Systems Management,"vibrations, acoustics, mechanics & nonlinear dynamics; energy harvesting, energy transfer",
-Sam Davanloo,Assistant Professor,davanloo.1,Engineering,Integrated Systems,Energy Systems Management,"interested in solving model/feature selection problems using first-order methods, providing convergence guarantees, and establishing convergence rates. His works find applications in renewable energy systems",
-Sami Khanal,Assistant Professor,khanal.3,"Food, Agricultural and Environmental Sciences","Food, Agricultures & Biological Engineering",Energy Systems Management,bioenergy; food-energy-water nexus,
-Sanjay Krishna,Professor,krishna.53,Engineering,Electrical & Computer,Energy Systems Management,Narrow bandgap semiconductors applied to infrared imaging sensors and related technologies with applications to create information technologies with vastly lower power consumption,
-Scott Shearer,Chair,shearer.95,"Food, Agricultural and Environmental Sciences","Food, Agricultures & Biological Engineering",Energy Systems Management,"Controls and methodologies for metering and spatial distribution of inputs (seed, fertilizer and chemicals) to broadacre crop production; remote sensing capabilities to understand crop health from UAV sensor data; design of off-road vehicles including energy conversion, power transmission, vehicle dynamics, ergonomics, and exhaust emissions",
-Seppo Antero Korpela,Professor Emeritus,korpela.1,Engineering,Mechanical & Aerospace,Energy Systems Management,energy systems,
-Seung Hyun Kim,Associate Professor,kim.5061,Engineering,Mechanical & Aerospace,Energy Systems Management,turbulent combustion modeling; ,
-Shamsul Arafin,Assistant Professor,arafin.1,Engineering,Electrical & Computer,Energy Systems Management,"Semiconductor technology for materials and devices; molecular beam epitaxial growth and characterization of thin films and nanoscale materials as well as the associated optoelectronic devices; photonic integrated circuits, nanophotonic, semiconductor diode lasers, micro- and nanocavity light sources and quantum photonics",
-Shawn Midlam-Mohler,Professor-Clinical,midlam-mohler.1,Engineering,Mechanical & Aerospace,Energy Systems Management,"CAR: computer-aided engineering techniques in research, design & manufacturing",
-Siddarth Rajan,Professor,rajan.21,Engineering,Electrical & Computer,Energy Systems Management,"Gallium nitride devices for high power circuits, nano-scale semiconductor devices, molecular beam epitaxy, and III-nitride semiconductors",
-Stephanie Stockar,Assistant Professor,stockar.1,Engineering,Mechanical & Aerospace,Energy Systems Management,CAR: intelligent control to reduce vehicular fuel consumption; system efficiency wrt energy conversion & storage,
-Terrence Conlisk,Faculty Emeritus,conlisk.1,Engineering,Mechanical & Aerospace,Energy Systems Management,Expertise in all areas of fluid mechanics and mass transfer; Theoretical and computational analysis; Micro and nanofluidics; Electrochemistry of batteries; Battery modeling,
-Tyler J. Grassman,Assistant Professor,grassman.5,Engineering,Electrical & Computer,Energy Systems Management,novel electronic & optoelectronic materials; focus on photovoltaics and other clean energy and energy efficiency applications,
-Vaibjav Sinha,"Assistant Professor, Clinical",sinha.181,Engineering,Mechanical & Aerospace,Energy Systems Management,Nuclear power and thermal hydraulics; reactor physics and techniques,
-Vicky Doan-Nguyen,Assistant Professor,doan-nguyen.1,Engineering,Materials Science,Energy Systems Management,energy storage & conversion; energy storage materials; renewable energy,
-Victoria (Qian) Chen,Associate Professor,chen.1399,"Food, Agricultural and Environmental Sciences","Food, Agricultures & Biological Engineering",Energy Systems Management,Optimization of energy-aware wireless network infrastructure and sensing for smart buildings; adaptive and optimal building energy management and control; environmentally friendly building materials and construction processes; and verification and measurement of sustainable building performance,
-Xiaodong Sun,Adjunct Professor,sun.200,Engineering,Mechanical & Aerospace,Energy Systems Management,"Reactor thermal hydraulics, reactor safety, two-phase flows and heat transfer, advanced reactor systems, thermal hydraulics in small modular reactors, and compact heat exchangers",
-Zhongtang Yu,Professor,yu.226,"Food, Agricultural and Environmental Sciences",Animal Sciences,Energy Systems Management,"Control and estimation of hybrid dynamical systems, game theory, stochastic analysis, and their applications in various engineering fields, especially power systems, air transportation systems, and robotics",
+"
+Giorgio Rizzoni,Professor,rizzoni.1,Engineering,Mechanical & Aerospace,Energy Systems Management,future ground vehicle propulsion systems
+Hanna Cho,Assistant Professor,cho.867,Engineering,Mechanical & Aerospace,Energy Systems Management,"broadband resonance, frequency tunability & nonlinear instability"
+Herman (Mo-how) Shen,Professor,shen.1,Engineering,Mechanical & Aerospace,Energy Systems Management,"Structural reliability, sustainability, and service life assessment/prediction, and health monitoring technologies for electric power generation equipment"
+Hesham El-Gamal,Professor,elgamal.2,Engineering,Electrical & Computer,Energy Systems Management,Fundamental performance vs security tradeoffs that occur in smart grid systems due to the increased flexibility in scheduling transmissions
+Igor Adamovich,Professor,adamovich.1,Engineering,Mechanical & Aerospace,Energy Systems Management,"Supersonic flow control and combustion control by plasmas; nonequilibrium MHD flows; generation of stable high-pressure nonequilibrium plasmas; plasma chemical synthesis of advanced materials; and kinetics of gases, plasmas and liquids at extreme thermodynamic disequilibrium"
+Jack McNamara,Professor,mcnamara.190,Engineering,Mechanical & Aerospace,Energy Systems Management,fluid-structure interactions; multi-fidelity modeling
+James Gregory,Professor,gregory.234,Engineering,Mechanical & Aerospace,Energy Systems Management,"unsteady wakes; rotorcraft aeromechanics, bluff body wake control"
+Jeanie (Chun Ning) Lau,Professor,lau.232,Arts & Sciences,Physics,Energy Systems Management,"Novel physics and phenomena of nanoscale systems, in particular, graphene and other two-dimensional materials; electronic, thermal, and mechanical properties of nanoscale systems; applications of developing faster information processing technologies with lower energy consumption"
+Jeffrey Bons,Professor,bons.2,Engineering,Mechanical & Aerospace,Energy Systems Management,heat transfer in gas turbines; flow control; turbines
+Jeffrey Sutton,Associate Professor,sutton.235,Engineering,Mechanical & Aerospace,Energy Systems Management,turbulent flows; combustion dynamics
+Jiankang Wang,Assistant Professor,wang.6536,Engineering,Electrical & Computer,Energy Systems Management,"emerging technologies of modern power system operation and planning, electricity markets, reconfiguration, demand side management, distributed generation and renewable energy"
+Jin Wang,Professor,wang.1248,Engineering,Electrical & Computer,Energy Systems Management,"Power electronics circuits and control, interface for renewable energy sources, hybrid electrical vehicle/fuel cell vehicle"
+Joel Paulson,Assistant Professor,paulson.82,Engineering,Chemical & Biomolecular,Energy Systems Management,"improving the quality, efficiency, and sustainability of engineered produces & processes"
+Joerg Jeschonnek,Associate Professor,jinschek.1,Engineering,Materials Science,Energy Systems Management,"Development of aberration-corrected transmission electron microscopy, with a focus on environmental modes of operation, to support research activities in materials for energy generation, conversion, and storage; high temperature materials for heat engines and propulsion; corrosion and degradation-resistant materials; light-weighting, and materials for biological applications"
+John Horack,Professor,horack.1,Engineering,Mechanical & Aerospace,Energy Systems Management,spaceflight; space policy; high-energy astrophysics
+Julia Zhang,Assistant Professor,zhang.564,Engineering,Electrical & Computer,Energy Systems Management,"Design, modeling, controls of AC electric machines and drives; Applications: road vehicles, ships, aircraft, renewable energy conversion, power systems, robotic systems   "
+Junmin Wang,Professor,wang.1381,Engineering,Mechanical & Aerospace,Energy Systems Management,"control, modeling, optimization of dynamical systems, esp for automotive, vehicle, transportation & sustainable mobility apps"
+Katrina Cornish,Professor,cornish.19,"Food, Agricultural and Environmental Sciences",OARDC Horticulture & Crop Science,Energy Systems Management,bioenergy
+Kevin Passino,Professor,passino.1,Engineering,Electrical & Computer,Energy Systems Management,Interdisciplinary engineering-biology research on distributed decision-making systems; Distributed feedback control and optimization for energy systems; smart lighting
+Li-Chiang Lin,Assistant Professor,lin.2645,Engineering,Chemical & Biomolecular,Energy Systems Management,molecular simulations for energy-related applications
+Longya Xu,Professor,xu.12,Engineering,Electrical & Computer,Energy Systems Management,"Power electronic converters, control of variable-speed drives, finite element analysis, solid state control of electric power systems."
+M.J. Benzakein,Professor,benzakein.2,Engineering,Mechanical & Aerospace,Energy Systems Management,"Wind turbine optimization and aircraft engine engineering; advanced propulsion and energy systems; computational aerodynamics, aeroacoustics, aeromechanics, and combustion"
+Mahesh Illindala,Associate Professor,illindala.1,Engineering,Electrical & Computer,Energy Systems Management,"Microgrids, distributed energy resources, electrical energy conversion and storage, as well as advanced electric drive transportation systems."
+Marcello Canova,Associate Professor,canova.1,Engineering,Mechanical & Aerospace,Energy Systems Management,hybrid & electric vehicles; energy conversion & storage
+Marcelo Dapino,Professor,dapino.1,Engineering,Mechanical & Aerospace,Energy Systems Management,"Mechanics of materials, vibrations, mechatronics, and system design; smart materials such as piezoelectric, magnetostrictive, shape memory, and active polymers; ultrasonic additive manufacturing; automotive and aerospace applications"
+Mohammad Samimy,Professor,samimy.1,Engineering,Mechanical & Aerospace,Energy Systems Management,"flow & acoustics control; fluid dynamics; aeroacoustics, turbulence"
+Ness Shroff,"Professor, Ohio Eminent ",shroff.11,Engineering,Computer Science & Engineering,Energy Systems Management,"Investigating how customers can reduce energy bills by determining when and how much energy to draw from the grid, and when to schedule various delay-tolerant tasks in presence of renewable energy sources and battery storage capability. Also, developing the foundations for design and operation of cellular base-stations equipped with energy harvesting devices and developing practical solutions based on these foundations "
+Peter Ling,Associate Professor,ling.23,"Food, Agricultural and Environmental Sciences","Food, Agricultures & Biological Engineering",Energy Systems Management,"Energy-efficient greenhouses for commercial plant production, particularly developing technologies and management strategies to improve greenhouse operation efficiency and use them for solar heat collection"
+Prasun Sinha,Adjunct Professor,sinha.43,Engineering,Computer Science & Engineering,Energy Systems Management,"Research includes renewable energy, distributed wireless channel access protocols, vehicle to infrastructure communications, and the design and control of sensor networks.  Dr. Sinha and his colleagues are studying how energy management can be exploited in the context of scheduling delay-tolerant tasks in the consumer’s premises in a smart grid."
+Qadeer Ahmed,Research Associate Professor,ahmed.358,Engineering,Mechanical & Aerospace,Energy Systems Management,"CAR: energy management, fuel economy"
+Rabi Mishalani,Professor,mishalani.1,Engineering,"Civil, Environmental & Geodetic Engineering",Energy Systems Management,Transportation
+Rajendra Singh,Faculty Emeritus,singh.3,Engineering,Mechanical & Aerospace,Energy Systems Management,Advanced Automotive Systems
+Ramteen Sioshansi,Professor,sioshansi.1,Engineering,Integrated Systems,Energy Systems Management,"integration of advanced energy technologies, including renewables, energy storage, and electric transportation, into energy systems. He also works in energy policy and electricity market design"
+Randall Mathison,Assistant Professor,mathison.4,Engineering,Mechanical & Aerospace,Energy Systems Management,turbine heat transfer
+Ryan Harne,Assistant Professor,harne.3,Engineering,Mechanical & Aerospace,Energy Systems Management,"vibrations, acoustics, mechanics & nonlinear dynamics; energy harvesting, energy transfer"
+Sam Davanloo,Assistant Professor,davanloo.1,Engineering,Integrated Systems,Energy Systems Management,"interested in solving model/feature selection problems using first-order methods, providing convergence guarantees, and establishing convergence rates. His works find applications in renewable energy systems"
+Sami Khanal,Assistant Professor,khanal.3,"Food, Agricultural and Environmental Sciences","Food, Agricultures & Biological Engineering",Energy Systems Management,bioenergy; food-energy-water nexus
+Sanjay Krishna,Professor,krishna.53,Engineering,Electrical & Computer,Energy Systems Management,Narrow bandgap semiconductors applied to infrared imaging sensors and related technologies with applications to create information technologies with vastly lower power consumption
+Scott Shearer,Chair,shearer.95,"Food, Agricultural and Environmental Sciences","Food, Agricultures & Biological Engineering",Energy Systems Management,"Controls and methodologies for metering and spatial distribution of inputs (seed, fertilizer and chemicals) to broadacre crop production; remote sensing capabilities to understand crop health from UAV sensor data; design of off-road vehicles including energy conversion, power transmission, vehicle dynamics, ergonomics, and exhaust emissions"
+Seppo Antero Korpela,Professor Emeritus,korpela.1,Engineering,Mechanical & Aerospace,Energy Systems Management,energy systems
+Seung Hyun Kim,Associate Professor,kim.5061,Engineering,Mechanical & Aerospace,Energy Systems Management,turbulent combustion modeling; 
+Shamsul Arafin,Assistant Professor,arafin.1,Engineering,Electrical & Computer,Energy Systems Management,"Semiconductor technology for materials and devices; molecular beam epitaxial growth and characterization of thin films and nanoscale materials as well as the associated optoelectronic devices; photonic integrated circuits, nanophotonic, semiconductor diode lasers, micro- and nanocavity light sources and quantum photonics"
+Shawn Midlam-Mohler,Professor-Clinical,midlam-mohler.1,Engineering,Mechanical & Aerospace,Energy Systems Management,"CAR: computer-aided engineering techniques in research, design & manufacturing"
+Siddarth Rajan,Professor,rajan.21,Engineering,Electrical & Computer,Energy Systems Management,"Gallium nitride devices for high power circuits, nano-scale semiconductor devices, molecular beam epitaxy, and III-nitride semiconductors"
+Stephanie Stockar,Assistant Professor,stockar.1,Engineering,Mechanical & Aerospace,Energy Systems Management,CAR: intelligent control to reduce vehicular fuel consumption; system efficiency wrt energy conversion & storage
+Terrence Conlisk,Faculty Emeritus,conlisk.1,Engineering,Mechanical & Aerospace,Energy Systems Management,Expertise in all areas of fluid mechanics and mass transfer; Theoretical and computational analysis; Micro and nanofluidics; Electrochemistry of batteries; Battery modeling
+Tyler J. Grassman,Assistant Professor,grassman.5,Engineering,Electrical & Computer,Energy Systems Management,novel electronic & optoelectronic materials; focus on photovoltaics and other clean energy and energy efficiency applications
+Vaibjav Sinha,"Assistant Professor, Clinical",sinha.181,Engineering,Mechanical & Aerospace,Energy Systems Management,Nuclear power and thermal hydraulics; reactor physics and techniques
+Vicky Doan-Nguyen,Assistant Professor,doan-nguyen.1,Engineering,Materials Science,Energy Systems Management,energy storage & conversion; energy storage materials; renewable energy
+Victoria (Qian) Chen,Associate Professor,chen.1399,"Food, Agricultural and Environmental Sciences","Food, Agricultures & Biological Engineering",Energy Systems Management,Optimization of energy-aware wireless network infrastructure and sensing for smart buildings; adaptive and optimal building energy management and control; environmentally friendly building materials and construction processes; and verification and measurement of sustainable building performance
+Xiaodong Sun,Adjunct Professor,sun.200,Engineering,Mechanical & Aerospace,Energy Systems Management,"Reactor thermal hydraulics, reactor safety, two-phase flows and heat transfer, advanced reactor systems, thermal hydraulics in small modular reactors, and compact heat exchangers"
+Zhongtang Yu,Professor,yu.226,"Food, Agricultural and Environmental Sciences",Animal Sciences,Energy Systems Management,"Control and estimation of hybrid dynamical systems, game theory, stochastic analysis, and their applications in various engineering fields, especially power systems, air transportation systems, and robotics"
 Jeffrey Bielicki,Assistant Professor,bielicki.2,Engineering,"Civil, Environmental & Geodetic Engineering","Energy Systems Management
-Economics, Business, and Policy","Interactions between energy and environmental systems and policy, with a focus on understanding how energy systems have evolved and how this evolution can be directed in ways that improve environmental, economic and social conditions",
+Economics, Business, and Policy","Interactions between energy and environmental systems and policy, with a focus on understanding how energy systems have evolved and how this evolution can be directed in ways that improve environmental, economic and social conditions"
 Vishnu Baba Sundaresan,Associate Professor,sundaresan.19,Engineering,Mechanical & Aerospace,"Energy Systems Management
-Energy Technologies",smart materials systems; ionic smart materials; sustainable conversion of greenhouse gases using biomolecular materials,
-Aaron Arehart,Research Associate Professor,arehart.5,Engineering,Electrical & Computer,Energy Technologies,Characterization and identification of electrically-active defects in semiconductors as well as solar materials,
-Abraham Badu-Tawiah,Assistant Professor,badu-tawiah.1,Arts & Sciences,Chemistry & Biochemistry,Energy Technologies,Mass spectrometry tools for use by non-experts; catalysts to transfer energy from sunlight,
-Alan Luo,Professor,luo.445,Engineering,Materials Science,Energy Technologies,light materials & manufacturing; energy-efficient materials; low-carbon manufacturing,
-Ali Ameri,Staff Research Scientist,ameri.1,Engineering,Mechanical & Aerospace,Energy Technologies,Wind turbines: computational fluid dynamics; steady and unsteady turbine heat transfer; compressor aerodynamics; turbine aerodynamics; noise computations,
-Andrew Tong,Research Assistant Professor,tong.48,Engineering,Chemical & Biomolecular,Energy Technologies,chemical looping technologies; clean coal,
-Anne Co,Associate Professor,co.5,Arts & Sciences,Chemistry & Biochemistry,Energy Technologies,batteries,
-Ardeshir Contractor,Professor,contractor.15,Engineering,Mechanical & Aerospace,Energy Technologies,"director, innovation and entrepreneurship, engineering and business; founder/CEO of Kiran Energy, solar energy utility at the forefront of India’s solar energy market",
-Chris Hammel,Professor,hammel.7,Arts & Sciences,Physics,Energy Technologies,Center for Emergent materials,
-Christine Thomas,Professor,thomas.3877,Arts & Sciences,Chemistry & Biochemistry,Energy Technologies,green fuels; development of new technologies to maximize efficiency towards a more sustainable future,
-Christo Sevov,Assistant Professor,sevov.1,Arts & Sciences,Chemistry & Biochemistry,Energy Technologies,energy storage; homogeneous catalysis,
-ChunNing  (Jeanie) Lau,Professor,lau.232,Arts & Sciences,Physics,Energy Technologies,quantum materials,
-Clarissa Belloni,Assistant Professor-Clinical,belloni.5,Engineering,Mechanical & Aerospace,Energy Technologies,hydrokinetic energy extraction,
-Claudia Turro,Professor,turro.1,Arts & Sciences,Chemistry & Biochemistry,Energy Technologies,solar energy conversion,
-Datta Gaitonde,Professor,gaitonde.1,Engineering,Mechanical & Aerospace,Energy Technologies,Aerospace,
-David McComb,Professor,mccomb.29,Engineering,Materials Science,Energy Technologies,electron energy-loss spectroscopy (EELS),
-Ezekiel Johnston-Halperin,Associate Professor,johnston-halperin.1,Arts & Sciences,Physics,Energy Technologies,semiconducting nanowires,
-Fengyuan Yang, Professor,yang.1006,Arts & Sciences,Physics,Energy Technologies,complex materials; heterostructures,
-Frederick Michel,Professor,michel.36,Engineering,Chemical & Biomolecular,Energy Technologies,solar energy systems,
-Gerald Frankel,Professor,frankel.10,Engineering,Materials Science,Energy Technologies,"degradation of materials, including passivation and localized corrosion; leads WastePD, DoE Energy Frontier Research Center",
+Energy Technologies",smart materials systems; ionic smart materials; sustainable conversion of greenhouse gases using biomolecular materials
+Aaron Arehart,Research Associate Professor,arehart.5,Engineering,Electrical & Computer,Energy Technologies,Characterization and identification of electrically-active defects in semiconductors as well as solar materials
+Abraham Badu-Tawiah,Assistant Professor,badu-tawiah.1,Arts & Sciences,Chemistry & Biochemistry,Energy Technologies,Mass spectrometry tools for use by non-experts; catalysts to transfer energy from sunlight
+Alan Luo,Professor,luo.445,Engineering,Materials Science,Energy Technologies,light materials & manufacturing; energy-efficient materials; low-carbon manufacturing
+Ali Ameri,Staff Research Scientist,ameri.1,Engineering,Mechanical & Aerospace,Energy Technologies,Wind turbines: computational fluid dynamics; steady and unsteady turbine heat transfer; compressor aerodynamics; turbine aerodynamics; noise computations
+Andrew Tong,Research Assistant Professor,tong.48,Engineering,Chemical & Biomolecular,Energy Technologies,chemical looping technologies; clean coal
+Anne Co,Associate Professor,co.5,Arts & Sciences,Chemistry & Biochemistry,Energy Technologies,batteries
+Ardeshir Contractor,Professor,contractor.15,Engineering,Mechanical & Aerospace,Energy Technologies,"director, innovation and entrepreneurship, engineering and business; founder/CEO of Kiran Energy, solar energy utility at the forefront of India’s solar energy market"
+Chris Hammel,Professor,hammel.7,Arts & Sciences,Physics,Energy Technologies,Center for Emergent materials
+Christine Thomas,Professor,thomas.3877,Arts & Sciences,Chemistry & Biochemistry,Energy Technologies,green fuels; development of new technologies to maximize efficiency towards a more sustainable future
+Christo Sevov,Assistant Professor,sevov.1,Arts & Sciences,Chemistry & Biochemistry,Energy Technologies,energy storage; homogeneous catalysis
+ChunNing  (Jeanie) Lau,Professor,lau.232,Arts & Sciences,Physics,Energy Technologies,quantum materials
+Clarissa Belloni,Assistant Professor-Clinical,belloni.5,Engineering,Mechanical & Aerospace,Energy Technologies,hydrokinetic energy extraction
+Claudia Turro,Professor,turro.1,Arts & Sciences,Chemistry & Biochemistry,Energy Technologies,solar energy conversion
+Datta Gaitonde,Professor,gaitonde.1,Engineering,Mechanical & Aerospace,Energy Technologies,Aerospace
+David McComb,Professor,mccomb.29,Engineering,Materials Science,Energy Technologies,electron energy-loss spectroscopy (EELS)
+Ezekiel Johnston-Halperin,Associate Professor,johnston-halperin.1,Arts & Sciences,Physics,Energy Technologies,semiconducting nanowires
+Fengyuan Yang, Professor,yang.1006,Arts & Sciences,Physics,Energy Technologies,complex materials; heterostructures
+Frederick Michel,Professor,michel.36,Engineering,Chemical & Biomolecular,Energy Technologies,solar energy systems
+Gerald Frankel,Professor,frankel.10,Engineering,Materials Science,Energy Technologies,"degradation of materials, including passivation and localized corrosion; leads WastePD, DoE Energy Frontier Research Center"
 Glenn Daehn,Professor,daehn.1,Engineering,Materials Science,Energy Technologies,"Ceramic materials
 Composite materials
 Mechanical properties and deformation
 Metallurgy
 Polymers
 Processing and manufacturing
-Welding / Joining",
-Hannah Shafaat,Associate Professor,shafaat.1,Arts & Sciences,Chemistry & Biochemistry,Energy Technologies,energy conversion reactions,
-Hendrik Verweij,Faculty Emeritus,verweij.1,Engineering,Materials Science,Energy Technologies,characterizing and multi-scale transport properties of supported membrane and fuel cell structures; energy storage,
-Hojjat Adeli,Faculty Emeritus,adeli.1,Engineering,"Civil, Environmental & Geodetic Engineering",Energy Technologies,Creation of novel structural shapes for highrise building structures incorporating wind turbines to harness  wind energy,
-Jonathan Pelz,Professor,pelz.2,Arts & Sciences,Physics,Energy Technologies,semiconductor; nanostructures,
-Joseph Heremans,post-doctoral researcher,heremans.1,Engineering,Mechanical & Aerospace,Energy Technologies,thermal and thermodynamic properties of materials,
-Josh Goldberger,Associate Professor,goldberger.4,Arts & Sciences,Chemistry & Biochemistry,Energy Technologies,materials chemistry; energy conversion,
-Jung Hyun Kim,Assistant Professor,kim.6776,Engineering,Mechanical & Aerospace,Energy Technologies,materials synthesis for energy storage and conversion devices; batteries & fuel cells,
-Kiran D'Souza,Assistant Professor,dsouza.60,Engineering,Mechanical & Aerospace,Energy Technologies,turbine aeromechanics,
-Lei Cao,Associate Professor,cao.76,Engineering,Mechanical & Aerospace,Energy Technologies,"Radiation sensor development; nuclear instrumentation and detection methods; Reactor instrumentation; Modeling, simulation of ionizing radiation interactions;  reactor based nuclear analytical techniques for advanced materials characterization; Neutron Depth Profiling (NDP); neutron radiography/tomography",
+Welding / Joining"
+Hannah Shafaat,Associate Professor,shafaat.1,Arts & Sciences,Chemistry & Biochemistry,Energy Technologies,energy conversion reactions
+Hendrik Verweij,Faculty Emeritus,verweij.1,Engineering,Materials Science,Energy Technologies,characterizing and multi-scale transport properties of supported membrane and fuel cell structures; energy storage
+Hojjat Adeli,Faculty Emeritus,adeli.1,Engineering,"Civil, Environmental & Geodetic Engineering",Energy Technologies,Creation of novel structural shapes for highrise building structures incorporating wind turbines to harness  wind energy
+Jonathan Pelz,Professor,pelz.2,Arts & Sciences,Physics,Energy Technologies,semiconductor; nanostructures
+Joseph Heremans,post-doctoral researcher,heremans.1,Engineering,Mechanical & Aerospace,Energy Technologies,thermal and thermodynamic properties of materials
+Josh Goldberger,Associate Professor,goldberger.4,Arts & Sciences,Chemistry & Biochemistry,Energy Technologies,materials chemistry; energy conversion
+Jung Hyun Kim,Assistant Professor,kim.6776,Engineering,Mechanical & Aerospace,Energy Technologies,materials synthesis for energy storage and conversion devices; batteries & fuel cells
+Kiran D'Souza,Assistant Professor,dsouza.60,Engineering,Mechanical & Aerospace,Energy Technologies,turbine aeromechanics
+Lei Cao,Associate Professor,cao.76,Engineering,Mechanical & Aerospace,Energy Technologies,"Radiation sensor development; nuclear instrumentation and detection methods; Reactor instrumentation; Modeling, simulation of ionizing radiation interactions;  reactor based nuclear analytical techniques for advanced materials characterization; Neutron Depth Profiling (NDP); neutron radiography/tomography"
 Leonard Brillson,Professor,brillson.1,"Arts & Sciences
 Engineering","Physics
-Electrical & Computer",Energy Technologies,semiconductors; heterostructures for renewable energy generation,
-Liang-Shih Fan,Distinguished University Professor,fan.1,Engineering,Chemical & Biomolecular,Energy Technologies,chemical looping processes; clean coal,
-Lingying Zhao,Professor,zhao.119,"Food, Agricultural and Environmental Sciences","Food, Agricultures & Biological Engineering",Energy Technologies,"Wide bandgap and ultra-wide bandgap semiconductor materials and devices with implications for semiconductor electronic and optoelectronic devices: transistors, power electronics, light-emitting diodes for solid state lighting, UV photodetectors and solar cells for renewable energy generation, as well as semiconductor nanomaterials and structures for chemical and biomedical sensing, and microelectromechanical/nanoelectromechanical systems ",
-Lisa Hall,Associate Professor,hall.1004,Engineering,Chemical & Biomolecular,Energy Technologies,polymeric materials (energy density of batteries),
-Marat Khafizov,Assistant Professor,khafizov.1,Engineering,Mechanical & Aerospace,Energy Technologies,thermal properties of materials; materials science of nuclear fuel,
-Marc Bockrath,Professor,bockrath.31,Art & Sciences,Physics,Energy Technologies,"New transport phenomena in nanostructured materials, and learning how to control and detect their mechanical motion; high mobility nanotube electronics and low-loss mechanical resonators that enable novel approaches to quantum information systems to tie to developing advanced information technologies with lower power consumption",
-Michael Dunn,Faculty Emeritus,dunn.129,Engineering,Mechanical & Aerospace,Energy Technologies,"Aircraft engine components, particularly turbines; Gas Turbine Lab: the study of time-accurate and time-averaged heat transfer and aerodynamics for full-stage, fully cooled high-pressure turbines operating at design-corrected conditions",
-Nandini Trivedi,Professor,trivedi.15,Arts & Sciences,Physics,Energy Technologies,superconductors; perovskites,
-Narasi Sridhar,Research Professor,sridhar.13,Engineering,Materials Science,Energy Technologies,"corrosion & life prediction of metallic materials: for spent nuclear fuel, bioethanol & methanol; developed electrochemical process for converting carbon dioxide to formic acid",
-Nick Brunelli,Professor,brunelli.2,Engineering,Chemical & Biomolecular,Energy Technologies,"catalysis & catalytic materials; sustainability, energy",
+Electrical & Computer",Energy Technologies,semiconductors; heterostructures for renewable energy generation
+Liang-Shih Fan,Distinguished University Professor,fan.1,Engineering,Chemical & Biomolecular,Energy Technologies,chemical looping processes; clean coal
+Lingying Zhao,Professor,zhao.119,"Food, Agricultural and Environmental Sciences","Food, Agricultures & Biological Engineering",Energy Technologies,"Wide bandgap and ultra-wide bandgap semiconductor materials and devices with implications for semiconductor electronic and optoelectronic devices: transistors, power electronics, light-emitting diodes for solid state lighting, UV photodetectors and solar cells for renewable energy generation, as well as semiconductor nanomaterials and structures for chemical and biomedical sensing, and microelectromechanical/nanoelectromechanical systems "
+Lisa Hall,Associate Professor,hall.1004,Engineering,Chemical & Biomolecular,Energy Technologies,polymeric materials (energy density of batteries)
+Marat Khafizov,Assistant Professor,khafizov.1,Engineering,Mechanical & Aerospace,Energy Technologies,thermal properties of materials; materials science of nuclear fuel
+Marc Bockrath,Professor,bockrath.31,Art & Sciences,Physics,Energy Technologies,"New transport phenomena in nanostructured materials, and learning how to control and detect their mechanical motion; high mobility nanotube electronics and low-loss mechanical resonators that enable novel approaches to quantum information systems to tie to developing advanced information technologies with lower power consumption"
+Michael Dunn,Faculty Emeritus,dunn.129,Engineering,Mechanical & Aerospace,Energy Technologies,"Aircraft engine components, particularly turbines; Gas Turbine Lab: the study of time-accurate and time-averaged heat transfer and aerodynamics for full-stage, fully cooled high-pressure turbines operating at design-corrected conditions"
+Nandini Trivedi,Professor,trivedi.15,Arts & Sciences,Physics,Energy Technologies,superconductors; perovskites
+Narasi Sridhar,Research Professor,sridhar.13,Engineering,Materials Science,Energy Technologies,"corrosion & life prediction of metallic materials: for spent nuclear fuel, bioethanol & methanol; developed electrochemical process for converting carbon dioxide to formic acid"
+Nick Brunelli,Professor,brunelli.2,Engineering,Chemical & Biomolecular,Energy Technologies,"catalysis & catalytic materials; sustainability, energy"
 Patrice Hamel,Associate Professor,hamel.16,Arts & Sciences,Molecular Genetics,Energy Technologies,"-mitochondrial and chloroplast biogenesis
 -energy conversion in respiration and photosynthesis
--pathways for biofuel production (hydrogen and triacylglycerides)",
-Patrick Woodward,Professor,woodward.55,Arts & Sciences,Chemistry & Biochemistry,Energy Technologies,semi-conductors,
-Paul Berger,Professor,berger.143,Engineering,Electrical & Computer,Energy Technologies,"Nanoelectronics, Si-based tunneling junctions, optoelectronic devices and integrated circuits, polymer-based photonics and electronics and semiconductor materials",
-Pelagia-Iren (Perena) Gouma,Chair,gouma.2,Engineering,Materials Science,Energy Technologies,"materials for food, water, energy related research",
-Peter Anderson,Chair,anderson.1,Engineering,Materials Science,Energy Technologies,"Solid state actuators, defect modeling in semiconductor films,  wear resistant materials for nuclear energy applications, radiation-tolerant nanolayered composites",
-Philip Grandinetti,Professor,grandinetti.1,Arts & Sciences,Chemistry & Biochemistry,Energy Technologies,batteries,
-Renee Zhao,Assistant Professor,zhao.2885,Engineering,Mechanical & Aerospace,Energy Technologies,shape memory polymers; wind power,
+-pathways for biofuel production (hydrogen and triacylglycerides)"
+Patrick Woodward,Professor,woodward.55,Arts & Sciences,Chemistry & Biochemistry,Energy Technologies,semi-conductors
+Paul Berger,Professor,berger.143,Engineering,Electrical & Computer,Energy Technologies,"Nanoelectronics, Si-based tunneling junctions, optoelectronic devices and integrated circuits, polymer-based photonics and electronics and semiconductor materials"
+Pelagia-Iren (Perena) Gouma,Chair,gouma.2,Engineering,Materials Science,Energy Technologies,"materials for food, water, energy related research"
+Peter Anderson,Chair,anderson.1,Engineering,Materials Science,Energy Technologies,"Solid state actuators, defect modeling in semiconductor films,  wear resistant materials for nuclear energy applications, radiation-tolerant nanolayered composites"
+Philip Grandinetti,Professor,grandinetti.1,Arts & Sciences,Chemistry & Biochemistry,Energy Technologies,batteries
+Renee Zhao,Assistant Professor,zhao.2885,Engineering,Mechanical & Aerospace,Energy Technologies,shape memory polymers; wind power
 Roberto Myers,Professor,myers.1079,Engineering,Materials Science and Engineering,Energy Technologies,"Electronic, optical, and magnetic materials
-Energy applications",
-Rolando Valdes Aguilar,Assistant Professor,valdesaguilar.1,Arts & Sciences,Physics,Energy Technologies,superconductors; metal oxides,
-Sandip Mazumder,Professor,mazumder.2,Engineering,Mechanical & Aerospace,Energy Technologies,computational flue dynamics (fuel cell applications),
-Shang-Tian Yang,Professor,yang.15,Engineering,Chemical & Biomolecular,Energy Technologies,biotechnology & bioprocesses; biomass/biofuels,
-Sheikh Akbar,Professor,akbar.1,Engineering,Materials Science,Energy Technologies,"ceramic bulk, thin-film & nanostructures for electrochemical devices & biomedical applications",
-Shiyu Zhang,Assistant Professor,zhang.8941,Arts & Sciences,Chemistry & Biochemistry,Energy Technologies,batteries,
-Steve Ringel,Professor,ringel.5,Engineering,Electrical & Computer,Energy Technologies,"electronic materials and devices, particularly in photovoltaics, defect characterization techniques, wide bandgap semiconductors, and compound semiconductor-silicon integration",
-Susan Fisher,Faculty Emeritus,fisher.14,"Food, Agricultural and Environmental Sciences",Entomology,Energy Technologies,Energy Efficiency,
-Terry Gustafson,Professor Emeritus,gustafson.5,Arts & Sciences,Chemistry & Biochemistry,Energy Technologies,materials for solar energy conversion,
-Umit Ozkan,Distinguished Professor,ozkan.1,Engineering,Chemical & Biomolecular,Energy Technologies,"heterogeneous catalysis, sustainability, energy",
-Victor Ujor,"Assistant Professor, Clinical",ujor.1,"Food, Agricultural and Environmental Sciences",Agricultural Technical Institute,Energy Technologies,"My research efforts are geared towards bioconversion of agricultural products and wastes to biofuels and value-added chemicals, using metabolic engineering and bioprocess design. Also, I research biological technologies for efficient water recovery from recalcitrant waste streams",
-William Xiaoguang Wang,Assistant Professor,wang.12206,Engineering,Chemical & Biomolecular,Energy Technologies,sustainable energy; polymers; liquid crystals,
-Xiaoxue Wang,Assistant Professor,wang.12262,Engineering,Chemical & Biomolecular,Energy Technologies,soft materials & soft electronics; 'flexible electrodes & organic photovoltaics',
-Yiying Wu,Professor,wu.531,Arts & Sciences,Chemistry & Biochemistry,Energy Technologies,"solar cells, Li batteries",
-Aimee Moore,Senior Lecturer,moore.544,Engineering,Knowlton School of Architecture,Environmental Technologies and Systems,Sustainability in the built environment,
-Audrey Sawyer,Associate Professor,sawyer.143,Arts & Sciences,Earth Sciences,Environmental Technologies and Systems,hydrogeology; surface water-groundwater interactions; coastal hydrology,
-Berry Lyons,Professor,lyons.142,Arts & Sciences,Earth Sciences,Environmental Technologies and Systems,hydrogeology; earth system science; geochemistry; water quality; climate change,
-Bharat Bhushan,Professor,bhushan.2,Engineering,Mechanical & Aerospace,Environmental Technologies and Systems,"Fundamental studies, particularly nature-inspired, in the interdisciplinary areas of bio/nanotribiology/nanomechanics and nanomaterials characterization in bio/nanotechnology and biomemetrics with a focus on scanning probe techniques",
-Brian Slater,Associate Professor,slater.39,"Food, Agricultural and Environmental Sciences",School of Environment and Natural Resources,Environmental Technologies and Systems,soil sciences,
-C.K. Shum,Professor,shum.3,Arts & Sciences,Earth Sciences,Environmental Technologies and Systems,satellite geodesy; sea level; climate change; geodynamics,
-Chin-Men Cheng,Senior Research Associate-Engineer,cheng.160,Engineering,"Civil, Environmental & Geodetic Engineering",Environmental Technologies and Systems,fly ash; energy waste,
-Chris Hadad,Professor,hadad.1,Arts & Sciences,Chemistry & Biochemistry,Environmental Technologies and Systems,"environmental chemistry, sustainable energy",
-Douglas Jackson-Smith,Professor,jackson-smith.1,"Food, Agricultural and Environmental Sciences",OARDC-Environment & Natural Resources,Environmental Technologies and Systems,"water security, land-use transformations, environmental social sciences",
-Elizabeth Dayton,Research Scientist,dayton.15,"Food, Agricultural and Environmental Sciences",School of Environment and Natural Resources,Environmental Technologies and Systems,geology & subsurface energy expertise,
-Ellen Mosley Thompson,Distinguished University Professor,thompson.4,Arts & Sciences,Geography,Environmental Technologies and Systems,climate change and the need to encourage energy conservation measures & development of alternative energy sources,
-Ethan Kubatko,Associate Professor,kubatko.3,Engineering,"Civil, Environmental & Geodetic Engineering",Environmental Technologies and Systems,tidal and wave energy models,
-Gabriel Karns,Visiting Assistant Professor,karns.36,"Food, Agricultural and Environmental Sciences",School of Environment and Natural Resources,Environmental Technologies and Systems,interface of energy development with wildlife habitat management & landscape ecology,
-Guzin Bayraksan,Associate Professor,bayraksan.1,Engineering,Integrated Systems,Environmental Technologies and Systems,water resources management; climate adaptation,
-Huyen Le,Assistant Professor,le.253,Arts & Sciences,Geography,Environmental Technologies and Systems,impacts of information & communication technology on energy efficiency,
-Ian Howat,Professor,howat.4,Arts & Sciences,Earth Sciences,Environmental Technologies and Systems,climate change,
-Jay Martin,Professor,martin.1130,"Food, Agricultural and Environmental Sciences","Food, Agricultures & Biological Engineering",Environmental Technologies and Systems,"water sustainability; energy systems, biofuels",
-Jean-Michel Guldmann,Faculty Emeritus,guldmann.1,Engineering,Architecture,Environmental Technologies and Systems,analysis and modeling of energy systems,
-Jeffrey Fisher,Faculty Emeritus,fisher.7,"Food, Agricultural and Environmental Sciences",Extension,Environmental Technologies and Systems,carbon sequestration,
-John Lenhart,Associate Professor,lenhart.49,Engineering,"Civil, Environmental & Geodetic Engineering",Environmental Technologies and Systems,"water quality, resource recovery, environmental engineering",
-Jonathan Fresnedo Ramirez,Assistant Professor,fresnedoramirez.1,"Food, Agricultural and Environmental Sciences",OARDC Horticulture & Crop Science,Environmental Technologies and Systems,plant domestication & breeding; plant genomics,
-Jordan Clark,Assistant Professor,clark.1217,Engineering,"Civil, Environmental & Geodetic Engineering",Environmental Technologies and Systems,"physical processes affecting energy consumption, thermal environments, air quality in sustainable buildings",
-Katherine Jenkins,Assistant Professor,jenkins.1060,Engineering,Architecture,Environmental Technologies and Systems,landscape design; spatial demands of oil extraction,
-Kenneth Jezek,Faculty Emeritus,jezek.1,Arts & Sciences,Earth Sciences,Environmental Technologies and Systems,Remote Sensing; Solid Earth Dynamics; Paleoclimatology/Glaciology,
-Kimberly Burton,Associate Professor of Practice,burton.90,Engineering,Architecture,Environmental Technologies and Systems,energy & resiliency planning,
+Energy applications"
+Rolando Valdes Aguilar,Assistant Professor,valdesaguilar.1,Arts & Sciences,Physics,Energy Technologies,superconductors; metal oxides
+Sandip Mazumder,Professor,mazumder.2,Engineering,Mechanical & Aerospace,Energy Technologies,computational flue dynamics (fuel cell applications)
+Shang-Tian Yang,Professor,yang.15,Engineering,Chemical & Biomolecular,Energy Technologies,biotechnology & bioprocesses; biomass/biofuels
+Sheikh Akbar,Professor,akbar.1,Engineering,Materials Science,Energy Technologies,"ceramic bulk, thin-film & nanostructures for electrochemical devices & biomedical applications"
+Shiyu Zhang,Assistant Professor,zhang.8941,Arts & Sciences,Chemistry & Biochemistry,Energy Technologies,batteries
+Steve Ringel,Professor,ringel.5,Engineering,Electrical & Computer,Energy Technologies,"electronic materials and devices, particularly in photovoltaics, defect characterization techniques, wide bandgap semiconductors, and compound semiconductor-silicon integration"
+Susan Fisher,Faculty Emeritus,fisher.14,"Food, Agricultural and Environmental Sciences",Entomology,Energy Technologies,Energy Efficiency
+Terry Gustafson,Professor Emeritus,gustafson.5,Arts & Sciences,Chemistry & Biochemistry,Energy Technologies,materials for solar energy conversion
+Umit Ozkan,Distinguished Professor,ozkan.1,Engineering,Chemical & Biomolecular,Energy Technologies,"heterogeneous catalysis, sustainability, energy"
+Victor Ujor,"Assistant Professor, Clinical",ujor.1,"Food, Agricultural and Environmental Sciences",Agricultural Technical Institute,Energy Technologies,"My research efforts are geared towards bioconversion of agricultural products and wastes to biofuels and value-added chemicals, using metabolic engineering and bioprocess design. Also, I research biological technologies for efficient water recovery from recalcitrant waste streams"
+William Xiaoguang Wang,Assistant Professor,wang.12206,Engineering,Chemical & Biomolecular,Energy Technologies,sustainable energy; polymers; liquid crystals
+Xiaoxue Wang,Assistant Professor,wang.12262,Engineering,Chemical & Biomolecular,Energy Technologies,soft materials & soft electronics; 'flexible electrodes & organic photovoltaics'
+Yiying Wu,Professor,wu.531,Arts & Sciences,Chemistry & Biochemistry,Energy Technologies,"solar cells, Li batteries"
+Aimee Moore,Senior Lecturer,moore.544,Engineering,Knowlton School of Architecture,Environmental Technologies and Systems,Sustainability in the built environment
+Audrey Sawyer,Associate Professor,sawyer.143,Arts & Sciences,Earth Sciences,Environmental Technologies and Systems,hydrogeology; surface water-groundwater interactions; coastal hydrology
+Berry Lyons,Professor,lyons.142,Arts & Sciences,Earth Sciences,Environmental Technologies and Systems,hydrogeology; earth system science; geochemistry; water quality; climate change
+Bharat Bhushan,Professor,bhushan.2,Engineering,Mechanical & Aerospace,Environmental Technologies and Systems,"Fundamental studies, particularly nature-inspired, in the interdisciplinary areas of bio/nanotribiology/nanomechanics and nanomaterials characterization in bio/nanotechnology and biomemetrics with a focus on scanning probe techniques"
+Brian Slater,Associate Professor,slater.39,"Food, Agricultural and Environmental Sciences",School of Environment and Natural Resources,Environmental Technologies and Systems,soil sciences
+C.K. Shum,Professor,shum.3,Arts & Sciences,Earth Sciences,Environmental Technologies and Systems,satellite geodesy; sea level; climate change; geodynamics
+Chin-Men Cheng,Senior Research Associate-Engineer,cheng.160,Engineering,"Civil, Environmental & Geodetic Engineering",Environmental Technologies and Systems,fly ash; energy waste
+Chris Hadad,Professor,hadad.1,Arts & Sciences,Chemistry & Biochemistry,Environmental Technologies and Systems,"environmental chemistry, sustainable energy"
+Douglas Jackson-Smith,Professor,jackson-smith.1,"Food, Agricultural and Environmental Sciences",OARDC-Environment & Natural Resources,Environmental Technologies and Systems,"water security, land-use transformations, environmental social sciences"
+Elizabeth Dayton,Research Scientist,dayton.15,"Food, Agricultural and Environmental Sciences",School of Environment and Natural Resources,Environmental Technologies and Systems,geology & subsurface energy expertise
+Ellen Mosley Thompson,Distinguished University Professor,thompson.4,Arts & Sciences,Geography,Environmental Technologies and Systems,climate change and the need to encourage energy conservation measures & development of alternative energy sources
+Ethan Kubatko,Associate Professor,kubatko.3,Engineering,"Civil, Environmental & Geodetic Engineering",Environmental Technologies and Systems,tidal and wave energy models
+Gabriel Karns,Visiting Assistant Professor,karns.36,"Food, Agricultural and Environmental Sciences",School of Environment and Natural Resources,Environmental Technologies and Systems,interface of energy development with wildlife habitat management & landscape ecology
+Guzin Bayraksan,Associate Professor,bayraksan.1,Engineering,Integrated Systems,Environmental Technologies and Systems,water resources management; climate adaptation
+Huyen Le,Assistant Professor,le.253,Arts & Sciences,Geography,Environmental Technologies and Systems,impacts of information & communication technology on energy efficiency
+Ian Howat,Professor,howat.4,Arts & Sciences,Earth Sciences,Environmental Technologies and Systems,climate change
+Jay Martin,Professor,martin.1130,"Food, Agricultural and Environmental Sciences","Food, Agricultures & Biological Engineering",Environmental Technologies and Systems,"water sustainability; energy systems, biofuels"
+Jean-Michel Guldmann,Faculty Emeritus,guldmann.1,Engineering,Architecture,Environmental Technologies and Systems,analysis and modeling of energy systems
+Jeffrey Fisher,Faculty Emeritus,fisher.7,"Food, Agricultural and Environmental Sciences",Extension,Environmental Technologies and Systems,carbon sequestration
+John Lenhart,Associate Professor,lenhart.49,Engineering,"Civil, Environmental & Geodetic Engineering",Environmental Technologies and Systems,"water quality, resource recovery, environmental engineering"
+Jonathan Fresnedo Ramirez,Assistant Professor,fresnedoramirez.1,"Food, Agricultural and Environmental Sciences",OARDC Horticulture & Crop Science,Environmental Technologies and Systems,plant domestication & breeding; plant genomics
+Jordan Clark,Assistant Professor,clark.1217,Engineering,"Civil, Environmental & Geodetic Engineering",Environmental Technologies and Systems,"physical processes affecting energy consumption, thermal environments, air quality in sustainable buildings"
+Katherine Jenkins,Assistant Professor,jenkins.1060,Engineering,Architecture,Environmental Technologies and Systems,landscape design; spatial demands of oil extraction
+Kenneth Jezek,Faculty Emeritus,jezek.1,Arts & Sciences,Earth Sciences,Environmental Technologies and Systems,Remote Sensing; Solid Earth Dynamics; Paleoclimatology/Glaciology
+Kimberly Burton,Associate Professor of Practice,burton.90,Engineering,Architecture,Environmental Technologies and Systems,energy & resiliency planning
 Klaus Lorenz,Staff Post Doctoral Scholar,lorenz.59,"Food, Agricultural and Environmental Sciences",School of Environment and Natural Resources,Environmental Technologies and Systems,"Climate change adaptation and mitigation, sustainable land use and soil
 management, urban agriculture, organic and inorganic carbon
-sequestration in soil profiles",
-Linda Weavers,Professor,weavers.1,Engineering,"Civil, Environmental & Geodetic Engineering",Environmental Technologies and Systems,"water quality, water treatment, emerging contaminants",
-Mrinal Kumar,Associate Professor,kumar.672,Engineering,Mechanical & Aerospace,Environmental Technologies and Systems,complex systems,
-Nick Basta,Professor,basta.4,"Food, Agricultural and Environmental Sciences",School of Environment and Natural Resources,Environmental Technologies and Systems,"soil quality, soil remediation, and toxic organic and inorganic pollutants ",
-Prabir Dutta,Faculty Emeritus,dutta.1,Arts & Sciences,Chemistry & Biochemistry,Environmental Technologies and Systems,"harsh environment sensors, as in automotive exhausts for detecting gases such as carbon monoxide, hydrocarbons, nitrogen oxides",
-Roman Lanno,Associate Professor,lanno.1,Arts & Sciences,"Evolution, Ecology, and Organismal Biology",Environmental Technologies and Systems,"Applied and theoretical aspects of determining the bioavailability of chemicals in the environment, particularly in soil systems",
-Shaurya Prakash,Associate Professor,prakash.31,Engineering,Mechanical & Aerospace,Environmental Technologies and Systems,nanofluidics & microfluidics; water purification; sustainable energy generation,
-Stacey Fineran,Assistant Professor-Clinical,fineran.2,"Food, Agricultural and Environmental Sciences",School of Environment and Natural Resources,Environmental Technologies and Systems,energy & environmental impact assessment,
-Steven Quiring,Professor,quiring.10,Arts & Sciences,Geography,Environmental Technologies and Systems,climatologist,
-Susan Welch,Research Scientist,welch.318,Byrd Polar,Office of Research,Environmental Technologies and Systems,environmental geochemistry,
-Tarunjit Butalia,Research Associate,butalia.1,Engineering,"Civil, Environmental & Geodetic Engineering",Environmental Technologies and Systems,carbon capture; land use; reclamation,
-Terry Wilson,Faculty Emeritus,wilson.43,Arts & Sciences,Earth Sciences,Environmental Technologies and Systems,"Engineering, Environmental Sciences, Geology and Subsurface Energy Expertise",
-Tony Parker,Associate Professor,parker.1203,"Food, Agricultural and Environmental Sciences",Animal Sciences,Environmental Technologies and Systems,The use of marine and freshwater algae produced from coal fired power stations as a food for cattle and sheep,
-Van R. Haden,Assistant Professor,haden.9,"Food, Agricultural and Environmental Sciences",Agricultural Technical Institute,Environmental Technologies and Systems,Soils and agronomy; climate change adaptation and greenhouse gases mitigation,
-W.S. Winston Ho,Distinguished Professor,ho.192,Engineering,Chemical & Biomolecular,Environmental Technologies and Systems,fuel cell membranes; carbon dioxide capture; hydrogen purification,
-Warren Dick,Professor Emeritus,dick.5,"Food, Agricultural and Environmental Sciences",School of Environment and Natural Resources,Environmental Technologies and Systems,Technologies to remediate degraded mine lands by treating with organic and other types of by-products including clean coal combustion by-products,
-Wei Zhang,Adjunct Associate Professor,zhang.491,Engineering,Electrical & Computer,Environmental Technologies and Systems,"Ventilation for thermal comfort and indoor air quality, wireless control of smart HVAC systems for energy saving and increased personal comforts in residential house, building energy efficiency, and green building science and engineering",
-William Clevenger,Associate Professor,clevenger.10,"Food, Agricultural and Environmental Sciences",Extension,Environmental Technologies and Systems,carbon sequestration,
-Yue Qin,Assistant Professor,qin.548,Arts & Sciences,Geography,Environmental Technologies and Systems,food-energy-water nexus; environmental impacts of energy transition; air quality & water implications of energy development,
-Zuzana Bohrerova,Research Specialist,bohrerova.1,Engineering,"Civil, Environmental & Geodetic Engineering",Environmental Technologies and Systems,"Associate Director, OWRC",
+sequestration in soil profiles"
+Linda Weavers,Professor,weavers.1,Engineering,"Civil, Environmental & Geodetic Engineering",Environmental Technologies and Systems,"water quality, water treatment, emerging contaminants"
+Mrinal Kumar,Associate Professor,kumar.672,Engineering,Mechanical & Aerospace,Environmental Technologies and Systems,complex systems
+Nick Basta,Professor,basta.4,"Food, Agricultural and Environmental Sciences",School of Environment and Natural Resources,Environmental Technologies and Systems,"soil quality, soil remediation, and toxic organic and inorganic pollutants "
+Prabir Dutta,Faculty Emeritus,dutta.1,Arts & Sciences,Chemistry & Biochemistry,Environmental Technologies and Systems,"harsh environment sensors, as in automotive exhausts for detecting gases such as carbon monoxide, hydrocarbons, nitrogen oxides"
+Roman Lanno,Associate Professor,lanno.1,Arts & Sciences,"Evolution, Ecology, and Organismal Biology",Environmental Technologies and Systems,"Applied and theoretical aspects of determining the bioavailability of chemicals in the environment, particularly in soil systems"
+Shaurya Prakash,Associate Professor,prakash.31,Engineering,Mechanical & Aerospace,Environmental Technologies and Systems,nanofluidics & microfluidics; water purification; sustainable energy generation
+Stacey Fineran,Assistant Professor-Clinical,fineran.2,"Food, Agricultural and Environmental Sciences",School of Environment and Natural Resources,Environmental Technologies and Systems,energy & environmental impact assessment
+Steven Quiring,Professor,quiring.10,Arts & Sciences,Geography,Environmental Technologies and Systems,climatologist
+Susan Welch,Research Scientist,welch.318,Byrd Polar,Office of Research,Environmental Technologies and Systems,environmental geochemistry
+Tarunjit Butalia,Research Associate,butalia.1,Engineering,"Civil, Environmental & Geodetic Engineering",Environmental Technologies and Systems,carbon capture; land use; reclamation
+Terry Wilson,Faculty Emeritus,wilson.43,Arts & Sciences,Earth Sciences,Environmental Technologies and Systems,"Engineering, Environmental Sciences, Geology and Subsurface Energy Expertise"
+Tony Parker,Associate Professor,parker.1203,"Food, Agricultural and Environmental Sciences",Animal Sciences,Environmental Technologies and Systems,The use of marine and freshwater algae produced from coal fired power stations as a food for cattle and sheep
+Van R. Haden,Assistant Professor,haden.9,"Food, Agricultural and Environmental Sciences",Agricultural Technical Institute,Environmental Technologies and Systems,Soils and agronomy; climate change adaptation and greenhouse gases mitigation
+W.S. Winston Ho,Distinguished Professor,ho.192,Engineering,Chemical & Biomolecular,Environmental Technologies and Systems,fuel cell membranes; carbon dioxide capture; hydrogen purification
+Warren Dick,Professor Emeritus,dick.5,"Food, Agricultural and Environmental Sciences",School of Environment and Natural Resources,Environmental Technologies and Systems,Technologies to remediate degraded mine lands by treating with organic and other types of by-products including clean coal combustion by-products
+Wei Zhang,Adjunct Associate Professor,zhang.491,Engineering,Electrical & Computer,Environmental Technologies and Systems,"Ventilation for thermal comfort and indoor air quality, wireless control of smart HVAC systems for energy saving and increased personal comforts in residential house, building energy efficiency, and green building science and engineering"
+William Clevenger,Associate Professor,clevenger.10,"Food, Agricultural and Environmental Sciences",Extension,Environmental Technologies and Systems,carbon sequestration
+Yue Qin,Assistant Professor,qin.548,Arts & Sciences,Geography,Environmental Technologies and Systems,food-energy-water nexus; environmental impacts of energy transition; air quality & water implications of energy development
+Zuzana Bohrerova,Research Specialist,bohrerova.1,Engineering,"Civil, Environmental & Geodetic Engineering",Environmental Technologies and Systems,"Associate Director, OWRC"
 Alison MacKay,Professor,mackay.49,Engineering,"Civil, Environmental & Geodetic Engineering","Environmental Technologies and Systems
-Energy Technologies",water; microbial fuel cells,
+Energy Technologies",water; microbial fuel cells
 Dennis Hall,Faculty Emeritus,hall.16,"Food, Agricultural and Environmental Sciences",Extension,"Environmental Technologies and Systems
-Energy Technologies",Director of OBIC (Ohio Bioproducts Innovation Center); bioenergy,
+Energy Technologies",Director of OBIC (Ohio Bioproducts Innovation Center); bioenergy
 Khandakar Rafiq Islam,Adjunct Assistant Professor,islam.27,"Food, Agricultural and Environmental Sciences",School of Environment and Natural Resources,"Environmental Technologies and Systems
-Energy Technologies","carbon sequestration, biomass/biofuels",
+Energy Technologies","carbon sequestration, biomass/biofuels"
 Rattan Lal,Professor,lal.1,"Food, Agricultural and Environmental Sciences",School of Environment and Natural Resources,"Environmental Technologies and Systems
-Energy Technologies",carbon management & sequestration; bioenergy crops,
-Anastasia Snyder,Associate Professor,snyder.893,Education & Human Ecology,Human Sciences,Human Behavior & Well-Being,shale boom impact on rural communities,
-Anna Willow,Associate Professor,willow.1,Arts & Sciences,Anthropology,Human Behavior & Well-Being,environmental anthropologist,
-Becky Nesbitt,Assistant Professor,nesbitt.21,"Food, Agricultural and Environmental Sciences",Extension,Human Behavior & Well-Being,"extension educator, community development",
-Chris Penrose, Professor,penrose.1,"Food, Agricultural and Environmental Sciences",Extension,Human Behavior & Well-Being,"energy education, including educating landowners about drilling and leasing rights",
-Chris Zoller,Assistant Professor,zoller.1,"Food, Agricultural and Environmental Sciences",Extension,Human Behavior & Well-Being,Tuscarawas County extension educator,
-Cindy Bond,Assistant Professor,bond.227,"Food, Agricultural and Environmental Sciences",Extension,Human Behavior & Well-Being,Guernsey County extension educator; community development,
-Clif Little,Associate Professor,little.16,"Food, Agricultural and Environmental Sciences",Extension,Human Behavior & Well-Being,Guernsey County extension educator,
-Dee Jepsen,Associate Professor,jepsen.4,"Food, Agricultural and Environmental Sciences","Food, Agricultures & Biological Engineering",Human Behavior & Well-Being,occupational safety & health for rural community; rural road safety,
-Duane Wegener,Professor,wegener.1,Arts & Sciences,Psychology,Human Behavior & Well-Being,social psychological dimensions of energy development & public acceptance,
-Grant Donnelly,Assistant Professor,donnelly.177,Fisher College of Business,Marketing & Logistics,Human Behavior & Well-Being,behavioral energy conservation,
-Greg Davis,Professor,davis.1081,"Food, Agricultural and Environmental Sciences",Extension,Human Behavior & Well-Being,extension educator,
-Jake Boswell,Associate Professor,boswell.33,Engineering,Architecture,Human Behavior & Well-Being,"landscape 'social imaginaries' (ways people imagine their social existence, & how things fit together); has designed solar array landscaping",
-Jeffrey Jacquet,Assistant Professor,jacquet.8,"Food, Agricultural and Environmental Sciences",School of Environment and Natural Resources,Human Behavior & Well-Being,rural & Natural resource sociologist with a focus on energy development,
-Jennifer Eaglin,Assistant Professor,eaglin.5,Arts & Sciences,History,Human Behavior & Well-Being,"Brazilian ethanol industry, energy development, state intervention and private industrial development, environmental history",
-Ken Martin,Professor,martin.1540,"Food, Agricultural and Environmental Sciences",Extension,Human Behavior & Well-Being,extension educator,
-Linda Lobao,Professor,lobao.1,"Food, Agricultural and Environmental Sciences",School of Environment and Natural Resources,Human Behavior & Well-Being,rural sociology (wrt shale development),
-Mark Landefeld,Faculty Emeritus,landefeld.6,"Food, Agricultural and Environmental Sciences",Extension,Human Behavior & Well-Being,extension educator; food & community; food production,
-Matthew Hamilton,Assistant Professor,hamilton.1323,"Food, Agricultural and Environmental Sciences",School of Environment and Natural Resources,Human Behavior & Well-Being,human-environment interactions; decision making,
-Michael Bisesi,Professor,bisesi.12,Public Health,Env. Health Science,Human Behavior & Well-Being,"Assessment of human exposure to and control of chemical and biological agents; environmental-related human exposure, disease and prevention; mechanistic toxicology/pathophysiology; applied environmental chemistry/microbiology; and emergency preparation, recognition and response",
-Michael Mercil,Professor,mercil.1,Arts & Sciences,Art,Human Behavior & Well-Being,"In 1870, The Ohio State University was founded as a public land-grant college for teaching ""the agricultural, mechanical, and liberal arts."" In 2005, with Ann Hamilton, I began The Living Culture Initiative as an array of cross-campus partnerships integrating contemporary art practices into the core research framework and sustainability goals of OSU. ",
-Nicole Sintov,Assistant Professor,sintov.2,"Food, Agricultural and Environmental Sciences",School of Environment and Natural Resources,Human Behavior & Well-Being,"how individuals use energy in households, the adoption and use of energy efficient technologies",
-Robyn Wilson,Professor,wilson.1376,"Food, Agricultural and Environmental Sciences",School of Environment and Natural Resources,Human Behavior & Well-Being,risk analysis & decision science,
-Tunc Aldemir,Professor,aldemir.1,Engineering,Mechanical & Aerospace,Human Behavior & Well-Being,nuclear reactor safety,
-Wendy Hesford,Professor,hesford.1,Arts & Sciences,English,Human Behavior & Well-Being,"Rhetoric and Writing Studies, Human Rights Studies, Transnational Feminist Studies",
+Energy Technologies",carbon management & sequestration; bioenergy crops
+Anastasia Snyder,Associate Professor,snyder.893,Education & Human Ecology,Human Sciences,Human Behavior & Well-Being,shale boom impact on rural communities
+Anna Willow,Associate Professor,willow.1,Arts & Sciences,Anthropology,Human Behavior & Well-Being,environmental anthropologist
+Becky Nesbitt,Assistant Professor,nesbitt.21,"Food, Agricultural and Environmental Sciences",Extension,Human Behavior & Well-Being,"extension educator, community development"
+Chris Penrose, Professor,penrose.1,"Food, Agricultural and Environmental Sciences",Extension,Human Behavior & Well-Being,"energy education, including educating landowners about drilling and leasing rights"
+Chris Zoller,Assistant Professor,zoller.1,"Food, Agricultural and Environmental Sciences",Extension,Human Behavior & Well-Being,Tuscarawas County extension educator
+Cindy Bond,Assistant Professor,bond.227,"Food, Agricultural and Environmental Sciences",Extension,Human Behavior & Well-Being,Guernsey County extension educator; community development
+Clif Little,Associate Professor,little.16,"Food, Agricultural and Environmental Sciences",Extension,Human Behavior & Well-Being,Guernsey County extension educator
+Dee Jepsen,Associate Professor,jepsen.4,"Food, Agricultural and Environmental Sciences","Food, Agricultures & Biological Engineering",Human Behavior & Well-Being,occupational safety & health for rural community; rural road safety
+Duane Wegener,Professor,wegener.1,Arts & Sciences,Psychology,Human Behavior & Well-Being,social psychological dimensions of energy development & public acceptance
+Grant Donnelly,Assistant Professor,donnelly.177,Fisher College of Business,Marketing & Logistics,Human Behavior & Well-Being,behavioral energy conservation
+Greg Davis,Professor,davis.1081,"Food, Agricultural and Environmental Sciences",Extension,Human Behavior & Well-Being,extension educator
+Jake Boswell,Associate Professor,boswell.33,Engineering,Architecture,Human Behavior & Well-Being,"landscape 'social imaginaries' (ways people imagine their social existence, & how things fit together); has designed solar array landscaping"
+Jeffrey Jacquet,Assistant Professor,jacquet.8,"Food, Agricultural and Environmental Sciences",School of Environment and Natural Resources,Human Behavior & Well-Being,rural & Natural resource sociologist with a focus on energy development
+Jennifer Eaglin,Assistant Professor,eaglin.5,Arts & Sciences,History,Human Behavior & Well-Being,"Brazilian ethanol industry, energy development, state intervention and private industrial development, environmental history"
+Ken Martin,Professor,martin.1540,"Food, Agricultural and Environmental Sciences",Extension,Human Behavior & Well-Being,extension educator
+Linda Lobao,Professor,lobao.1,"Food, Agricultural and Environmental Sciences",School of Environment and Natural Resources,Human Behavior & Well-Being,rural sociology (wrt shale development)
+Mark Landefeld,Faculty Emeritus,landefeld.6,"Food, Agricultural and Environmental Sciences",Extension,Human Behavior & Well-Being,extension educator; food & community; food production
+Matthew Hamilton,Assistant Professor,hamilton.1323,"Food, Agricultural and Environmental Sciences",School of Environment and Natural Resources,Human Behavior & Well-Being,human-environment interactions; decision making
+Michael Bisesi,Professor,bisesi.12,Public Health,Env. Health Science,Human Behavior & Well-Being,"Assessment of human exposure to and control of chemical and biological agents; environmental-related human exposure, disease and prevention; mechanistic toxicology/pathophysiology; applied environmental chemistry/microbiology; and emergency preparation, recognition and response"
+Michael Mercil,Professor,mercil.1,Arts & Sciences,Art,Human Behavior & Well-Being,"In 1870, The Ohio State University was founded as a public land-grant college for teaching ""the agricultural, mechanical, and liberal arts."" In 2005, with Ann Hamilton, I began The Living Culture Initiative as an array of cross-campus partnerships integrating contemporary art practices into the core research framework and sustainability goals of OSU. "
+Nicole Sintov,Assistant Professor,sintov.2,"Food, Agricultural and Environmental Sciences",School of Environment and Natural Resources,Human Behavior & Well-Being,"how individuals use energy in households, the adoption and use of energy efficient technologies"
+Robyn Wilson,Professor,wilson.1376,"Food, Agricultural and Environmental Sciences",School of Environment and Natural Resources,Human Behavior & Well-Being,risk analysis & decision science
+Tunc Aldemir,Professor,aldemir.1,Engineering,Mechanical & Aerospace,Human Behavior & Well-Being,nuclear reactor safety
+Wendy Hesford,Professor,hesford.1,Arts & Sciences,English,Human Behavior & Well-Being,"Rhetoric and Writing Studies, Human Rights Studies, Transnational Feminist Studies"
 Joe Lucente,Associate Professor,lucente.6,"Food, Agricultural and Environmental Sciences",Extension,"Human Behavior & Well-Being
-Economics, Business, and Policy",Lucas County extension educator; economic development; land use; community resiliency,
-Atar Herzinger,Staff Post Doctoral Researcher,herziger.1,"Food, Agricultural and Environmental Sciences",School of Environment and Natural Resources,Human Behavior and Well Being,"Behavior and sustainability: consumer behavior in pro-social and pro-environmental contexts, often utilizing experimental design; ethical decision making;  translating basic research to applied implications; consumption reduction; sustainable consumption; consumer habits; self-control; charitable giving",
-Curtis Haugtvedt,Associate Professor,haugtvedt.1,Business,Marketing & Logistics,Human Behavior and Well Being,Consumer Psychology,
+Economics, Business, and Policy",Lucas County extension educator; economic development; land use; community resiliency
+Atar Herzinger,Staff Post Doctoral Researcher,herziger.1,"Food, Agricultural and Environmental Sciences",School of Environment and Natural Resources,Human Behavior and Well Being,"Behavior and sustainability: consumer behavior in pro-social and pro-environmental contexts, often utilizing experimental design; ethical decision making;  translating basic research to applied implications; consumption reduction; sustainable consumption; consumer habits; self-control; charitable giving"
+Curtis Haugtvedt,Associate Professor,haugtvedt.1,Business,Marketing & Logistics,Human Behavior and Well Being,Consumer Psychology
 Gregory Hitzhusen,Assistant Professor,hitzhusen.3,"Food, Agricultural and Environmental Sciences",School of Environment and Natural Resources,Human Behavior and Well Being,"Theory and practice of faith-community environmental education and ethics
 Environmental Ethics
 Ecotheology
 Religion and Ecology
-biomass",
-Jesus Lara,Associate Professor,lara.13,Engineering,City and Regional Planning,Human Behavior and Well Being,"My research and pedagogy are centered on sustainable urban design, Latino Urbanism, resilient communities, community development, and sociocultural factors in design. This work emphasizes the creation of responsive and adaptive urban environments that focus on people and place, and university-community partnerships. ",
-Michael Dekay,Associate Professor,dekay.3,Arts & Sciences,Psychology,Human Behavior and Well Being,"Social Energy Behavior & Perceptions, Conservation",
-Mike Lloyd,Faculty Emeritus,lloyd.4,"Food, Agricultural and Environmental Sciences",Extension,Human Behavior and Well Being,Extension and Community Support,
-Tristram McPherson,Associate Professor,mcpherson.164,Arts & Sciences,Philosophy,Human Behavior and Well Being,Foundational philosophical questions about ethics,
-,,,,,,,
+biomass"
+Jesus Lara,Associate Professor,lara.13,Engineering,City and Regional Planning,Human Behavior and Well Being,"My research and pedagogy are centered on sustainable urban design, Latino Urbanism, resilient communities, community development, and sociocultural factors in design. This work emphasizes the creation of responsive and adaptive urban environments that focus on people and place, and university-community partnerships. "
+Michael Dekay,Associate Professor,dekay.3,Arts & Sciences,Psychology,Human Behavior and Well Being,"Social Energy Behavior & Perceptions, Conservation"
+Mike Lloyd,Faculty Emeritus,lloyd.4,"Food, Agricultural and Environmental Sciences",Extension,Human Behavior and Well Being,Extension and Community Support
+Tristram McPherson,Associate Professor,mcpherson.164,Arts & Sciences,Philosophy,Human Behavior and Well Being,Foundational philosophical questions about ethics

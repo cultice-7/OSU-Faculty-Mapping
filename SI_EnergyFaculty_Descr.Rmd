@@ -1019,13 +1019,15 @@ fwrite(prop_binary_dt,
 ```
 ## Using merged author data and SI energy faculty dataset to identify "adjacent" researchers
 ```{r Identify, include=FALSE, echo=FALSE}
-SI_Eng_m_auth <- fread(here("SI_EnergyFaculty_Auth_m.csv"))
+SI_Eng_m_auth <- fread(here("Data", "SI_EnergyFaculty_Auth_m.csv")) %>%
+  setnames(c("A_ID"),
+           c("Prop_AuthID"))
   
-SI_sal.m      <- fread(here("SI_Affiliates_Sal_m.csv")) %>%
+SI_sal.m      <- fread(here("Data", "SI_Affiliates_Sal_m.csv")) %>%
   filter(!is.na(IDENTIFIER))
 
 ### Unique Author Names
-authors_dt <- read_csv(here("Proposals_UniqueAuthors.csv")) %>%
+authors_dt <- read_csv(here("Data", "Proposals_UniqueAuthors.csv")) %>%
   left_join(SI_Eng_m_auth,
             by = "A_ID")                                    %>%
   rename(IDENTIFIER = IDENTIFIER.x)                         %>%

@@ -151,7 +151,7 @@ out.df <- data.frame("SI_faculty_ID" = unlist(out.l[[1]]),
 
 SI_faculty_m.df <- SI_faculty.df    %>%
   left_join(out.df,
-            by = "SI_faculty_ID") %>%
+            by = "SI_faculty_ID")   %>%
   left_join(sal_trim.df,
             by = "Sal_ID",
             suffix = c("", ".sal"))
@@ -190,7 +190,7 @@ test <- correct.df %>%
                             0))       %>%
   group_by(Sal_ID)                    %>%
   mutate(ColMatchMax = max(ColMatch)) %>%
-  .[, c(keep.v, 45)]                  %>%
+  .[, c(keep.v, 46,49)]               %>%
   filter(ColMatchMax != 1 | is.na(ColMatchMax))
 wrong.v <- c(1,7,13)
 wrong.df <- wrong.df %>%
@@ -937,12 +937,18 @@ sal.dt      <- fread(here("Data", "OSU_FY2020_Sal_Edits.csv"))              %>%
   setnames(c("Last_Name_e"),
            c("Name_l"))
 sal_trim.dt <- sal.dt %>%
-  .[,c("NAME", "Sal_ID", "Name_fl", "Name_fml", "Name_l")]
+  .[,c("NAME", "VP_COLLEGE", "Sal_ID", "Name_fl", "Name_fml", "Name_l")]
 ### Note: Functions
 s_locate <- function(x){
   str_sub(x, 
           end = str_locate(x,
                            "\\.")[1,1]-1)
+}
+s_replace <- function(x,y){
+  out <- str_trim(str_replace_all(x,
+                                  y,
+                                  ""))
+  return(out)
 }
 
 ### Note: Create cleaned energy faculty master
@@ -960,8 +966,12 @@ energy.dt <- fread(here("Data", "SI_EnergyFaculty_List.csv"),
                                         "  ",
                                         " "))]                 %>%
   .[, Name_l := apply(.SD, 1, s_locate), .SDcols = c("email")] %>%
-  .[name != "Allen Klaiber"]
-
+  .[, Name_l := str_replace_all(Name_l, 
+                                "[:punct:]",
+                                "")]                           %>%
+  .[name != "Allen Klaiber"]                                   %>%
+  .[name != "Atar Herzinger"]                                  %>%
+  .[name != "Jeanie (Chun Ning) Lau"]
 
 # Note: Replace specific names for consistency
 col_rename <- matrix(data = c("Arts & Sciences\nEngineering", "Arts & Sciences",
@@ -997,7 +1007,8 @@ testmat <- matrix(data  = c(cols_si, match_v),
 for (i in 1:dim(testmat)[1]){
   energy.dt <- energy.dt[college == testmat[i,1], VP_COLLEGE := testmat[i,2]]
 }
-
+fwrite(energy.dt,
+       here("Data", "SI_EnergyFaculty_List_edits.csv"))
 ### Note: Matching Process from energy to salaries
 f_mergesort <- function(id1, tolerance){
   temp.df  <- energy.dt[id1, ]
@@ -1059,16 +1070,27 @@ test <- energy_m.dt %>%
 wrong.df <- wrong.df %>%
   rbind(test)
 
-# Note: Check merges: filter if first names don't match
-test <- prop_m.df                   %>%
+### Note: Hand check correct.dt
+correct.dt <- energy_m.dt %>%
   anti_join(wrong.df,
-            by = "Prop_AuthID")   %>%
-  filter(Name_fm != Name_fm.sal)      %>%
-  filter(Min_s > (1/3))
+            by = "Eng_ID") %>%
+  .[,c("Sal_ID", "Name_fl", "Eng_ID")]
 
+### Note: Correcting wrong matches
+wrong.df <- wrong.df[,c(2:12)]                                                        %>%
+  merge.data.table(sal_trim.dt,
+                   by = "Name_l",
+                   suffixes = c("", ".sal"),
+                   all.x = TRUE)                                                      %>%
+  .[,c("Sal_ID", "Name_fl", "VP_COLLEGE", "VP_COLLEGE.sal", "Eng_ID", "Name_fl.sal")] %>%
+  .[,c("Name_fl", "Eng_ID")]                                                          %>%
+  unique()
+wrong_c.df <- fread(here("Data", "SI_EnergyFaculty_HardCode.csv")) %>%
+  .[,Eng_ID := as.character(Eng_ID)]
 wrong.df <- wrong.df %>%
-  bind_rows(test)
-
-correct.df <- prop_m.df %>%
-  anti_join(wrong.df,
-            by = "Prop_AuthID")
+  merge.data.table(wrong_c.df,
+                   by = "Eng_ID",
+                   all = TRUE)
+final.dt <- rbind(correct.dt, wrong.df)
+fwrite(final.dt,
+       here("Data", "SI_EnergyFaculty_Sal.csv"))
